@@ -9,7 +9,7 @@ interface ClientParams {
   password: string;
 }
 
-export default class AspaceClient {
+export class AspaceClient {
   baseUrl!: string;
   username!: string;
   password!: string;
@@ -48,6 +48,15 @@ export default class AspaceClient {
         success: false,
         error: `Error ${response.status} : ${response.statusText}`,
       };
+    }
+  }
+
+  async getRelativeUrl(relativeUrl: String) {
+    try {
+      const url = new URL(`${this.baseUrl}${relativeUrl}`);
+      return await this.executeFetch(url);
+    } catch (error) {
+      throw error;
     }
   }
 

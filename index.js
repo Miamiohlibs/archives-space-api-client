@@ -1,3 +1,3 @@
-import AspaceClient from './AspaceClient';
+import AspaceClient from './AspaceClient.ts';
 
 export { AspaceClient };
