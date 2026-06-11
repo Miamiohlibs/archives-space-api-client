@@ -1,0 +1,17 @@
+{
+  "name": "archives-space-api-client",
+  "version": "0.0.1",
+  "description": "Read-only API client for ArchivesSpace API",
+  "keywords": [
+    "Archives",
+    "ArchivesSpace",
+    "ASpace"
+  ],
+  "license": "MIT",
+  "author": "Ken Irwin",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
