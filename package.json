@@ -1,5 +1,5 @@
 {
-  "name": "archives-space-api-client",
+  "name": "@kenxirwin/archives-space-api-client",
   "version": "0.0.1",
   "description": "Read-only API client for ArchivesSpace API",
   "keywords": [
@@ -10,9 +10,12 @@
   "license": "MIT",
   "author": "Ken Irwin",
   "type": "module",
-  "main": "index.js",
-  "types": "types/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
   }
 }

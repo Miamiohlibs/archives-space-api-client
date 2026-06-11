@@ -1,4 +1,4 @@
-import type { TokenResponse } from './types/TokenResponse';
+import type { TokenResponse } from './types/TokenResponse.ts';
 
 const expectedKeys = ['baseUrl', 'username', 'password'] as const;
 type ExpectedKey = (typeof expectedKeys)[number];
@@ -9,7 +9,7 @@ interface ClientParams {
   password: string;
 }
 
-export class AspaceClient {
+export default class AspaceClient {
   baseUrl!: string;
   username!: string;
   password!: string;
