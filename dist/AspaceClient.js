@@ -33,10 +33,16 @@ export default class AspaceClient {
             };
         }
     }
-    async getRelativeUrl(relativeUrl) {
+    async getUrl(urlString) {
         try {
-            const url = new URL(`${this.baseUrl}${relativeUrl}`);
-            return await this.executeFetch(url);
+            // if it's a full URL, request it
+            if (urlString.startsWith(this.baseUrl)) {
+                return await this.executeFetch(new URL(`${urlString}`));
+            }
+            else {
+                // else append the baseURL
+                return await this.executeFetch(new URL(`${this.baseUrl}${urlString}`));
+            }
         }
         catch (error) {
             throw error;

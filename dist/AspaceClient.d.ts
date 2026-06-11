@@ -12,7 +12,7 @@ export default class AspaceClient {
     user: any;
     constructor(params: ClientParams);
     getToken(): Promise<TokenResponse>;
-    getRelativeUrl(relativeUrl: String): Promise<any>;
+    getUrl(urlString: String): Promise<any>;
     executeFetch(url: URL): Promise<any>;
 }
 export {};
