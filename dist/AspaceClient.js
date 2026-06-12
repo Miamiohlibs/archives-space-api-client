@@ -3,7 +3,6 @@ export default class AspaceClient {
     baseUrl;
     username;
     password;
-    verbose;
     token;
     user;
     constructor(params) {
@@ -20,7 +19,6 @@ export default class AspaceClient {
     }
     async getToken() {
         const url = `${this.baseUrl}/users/${this.username}/login?password=${this.password}`;
-        console.log(`AspaceClient: Getting token with url: ${url}`);
         const response = await fetch(url, { method: 'POST' });
         const contentType = response.headers.get('content-type');
         // handle non-json responses

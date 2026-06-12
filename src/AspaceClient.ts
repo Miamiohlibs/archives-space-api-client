@@ -7,14 +7,12 @@ interface ClientParams {
   baseUrl: string;
   username: string;
   password: string;
-  verbose?: boolean;
 }
 
 export default class AspaceClient {
   baseUrl!: string;
   username!: string;
   password!: string;
-  verbose?: boolean;
   token!: string;
   user!: any;
 
@@ -38,7 +36,6 @@ export default class AspaceClient {
 
   async getToken(): Promise<TokenResponse> {
     const url = `${this.baseUrl}/users/${this.username}/login?password=${this.password}`;
-    console.log(`AspaceClient: Getting token with url: ${url}`);
     const response = await fetch(url, { method: 'POST' });
 
     const contentType = response.headers.get('content-type');
