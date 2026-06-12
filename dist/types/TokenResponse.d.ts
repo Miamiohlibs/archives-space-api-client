@@ -7,6 +7,9 @@ export type TokenResponse = {
     success: false;
     token?: never;
     user?: never;
-    error: string;
+    error: {
+        status: number;
+        message: string;
+    };
 };
 //# sourceMappingURL=TokenResponse.d.ts.map

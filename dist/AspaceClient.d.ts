@@ -3,11 +3,13 @@ interface ClientParams {
     baseUrl: string;
     username: string;
     password: string;
+    verbose?: boolean;
 }
 export default class AspaceClient {
     baseUrl: string;
     username: string;
     password: string;
+    verbose?: boolean;
     token: string;
     user: any;
     constructor(params: ClientParams);

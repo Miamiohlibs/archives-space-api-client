@@ -3,6 +3,7 @@ export default class AspaceClient {
     baseUrl;
     username;
     password;
+    verbose;
     token;
     user;
     constructor(params) {
@@ -19,7 +20,16 @@ export default class AspaceClient {
     }
     async getToken() {
         const url = `${this.baseUrl}/users/${this.username}/login?password=${this.password}`;
+        console.log(`AspaceClient: Getting token with url: ${url}`);
         const response = await fetch(url, { method: 'POST' });
+        const contentType = response.headers.get('content-type');
+        // handle non-json responses
+        if (contentType != 'application/json') {
+            return {
+                success: false,
+                error: { status: response.status, message: response.statusText },
+            };
+        }
         const data = await response.json();
         if (response.status == 200) {
             this.token = data.session;
@@ -29,7 +39,7 @@ export default class AspaceClient {
         else {
             return {
                 success: false,
-                error: `Error ${response.status} : ${response.statusText}`,
+                error: { status: response.status, message: response.statusText },
             };
         }
     }
@@ -49,7 +59,6 @@ export default class AspaceClient {
         }
     }
     async executeFetch(url) {
-        console.log(`Requesting: ${url.toString()}, with token: ${this.token}`);
         const response = await fetch(url.toString(), {
             method: 'GET',
             headers: {
