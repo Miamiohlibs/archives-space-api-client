@@ -4,8 +4,7 @@ import { describe, it, expect } from 'vitest';
 import AspaceClient from '../dist/AspaceClient.js';
 import { z } from 'zod';
 import { repoResourcesSchema } from '../dist/schemas/repoResourcesSchema';
-import { topContainerResolvedSchema } from '../dist/schemas/repoResourcesSchema';
-import { topContainerSchema } from '../dist/schemas/repoResourcesSchema';
+import { repoTopContainerSchema } from '../dist/schemas/RepoTopContainersSchema.js';
 const baseUrl = process.env.ASPACE_BASE_URL || '';
 const username = process.env.USERNAME || '';
 const password = process.env.PASSWORD || '';
@@ -33,11 +32,10 @@ describe('getUrl', () => {
       password,
     });
     await client.getToken();
-    // console.log(`Token: ${client.token}`);
     const url =
       'https://archivesstaff.lib.miamioh.edu/api/repositories/2/top_containers/7836';
     const raw = await client.getUrl(url);
-    const results = topContainerSchema.parse(raw);
+    const results = repoTopContainerSchema.parse(raw);
     expect(results).toEqual(raw);
   });
 });
