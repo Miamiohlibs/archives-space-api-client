@@ -64,6 +64,8 @@ export default class AspaceClient {
     }
   }
 
+  // options: { resolve?: string[] }
+
   async getUrl(urlString: string) {
     try {
       // if it's a full URL, request it
