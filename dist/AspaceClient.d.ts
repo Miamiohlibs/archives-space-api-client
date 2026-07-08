@@ -14,7 +14,9 @@ export default class AspaceClient {
     user: any;
     constructor(params: ClientParams);
     getToken(): Promise<TokenResponse>;
-    getUrl(urlString: string): Promise<any>;
+    getUrl(urlString: string, options?: {
+        resolve: string[];
+    }): Promise<any>;
     executeFetch(url: URL): Promise<any>;
 }
 export {};

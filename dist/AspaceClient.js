@@ -42,7 +42,12 @@ export default class AspaceClient {
         }
     }
     // options: { resolve?: string[] }
-    async getUrl(urlString) {
+    async getUrl(urlString, options) {
+        if (options && options.resolve) {
+            const params = new URLSearchParams();
+            options.resolve.forEach((item) => params.append('resolve[]', item));
+            urlString += `?${params.toString()}`;
+        }
         try {
             // if it's a full URL, request it
             if (urlString.startsWith(this.baseUrl)) {
