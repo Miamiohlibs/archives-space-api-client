@@ -1,4 +1,6 @@
-import type { TokenResponse } from './types/TokenResponse.ts';
+import { z } from 'zod';
+import { tokenResponseSchema } from './schemas/TokenResponseSchema.js';
+type TokenResponse = z.infer<typeof tokenResponseSchema>;
 
 const expectedKeys = ['baseUrl', 'username', 'password'] as const;
 type ExpectedKey = (typeof expectedKeys)[number];
@@ -62,7 +64,7 @@ export default class AspaceClient {
     }
   }
 
-  async getUrl(urlString: String) {
+  async getUrl(urlString: string) {
     try {
       // if it's a full URL, request it
       if (urlString.startsWith(this.baseUrl)) {

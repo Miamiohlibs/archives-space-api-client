@@ -1,6 +1,6 @@
 {
   "name": "@kenxirwin/archives-space-api-client",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Read-only API client for ArchivesSpace API",
   "keywords": [
     "Archives",
@@ -16,6 +16,10 @@
     "build": "tsc"
   },
   "devDependencies": {
-    "typescript": "^6.0.3"
+    "ts-to-zod": "^5.1.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "zod": "^4.4.3"
   }
 }

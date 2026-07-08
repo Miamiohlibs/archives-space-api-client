@@ -1,3 +1,7 @@
+import { z } from 'zod';
 export { default as AspaceClient } from './AspaceClient.js';
 
-export type { TokenResponse } from './types/TokenResponse.js';
+import { tokenResponseSchema } from './schemas/TokenResponseSchema.js';
+export { tokenResponseSchema };
+
+export type TokenResponse = z.infer<typeof tokenResponseSchema>;
