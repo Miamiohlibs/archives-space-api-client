@@ -1,15 +1,15 @@
 import { z } from 'zod';
 // A bare reference to another record, with no embedded data.
-const refSchema = z.object({
+export const refSchema = z.object({
     ref: z.string(),
 });
 // A reference that may optionally be expanded (via the ArchivesSpace
 // `resolve[]` query param) to include the referenced record under `_resolved`.
-const resolvableRefSchema = (resolvedSchema) => z.object({
+export const resolvableRefSchema = (resolvedSchema) => z.object({
     ref: z.string(),
     _resolved: resolvedSchema.optional(),
 });
-const dateSchema = z.object({
+export const dateSchema = z.object({
     lock_version: z.number(),
     begin: z.string(),
     end: z.string(),
@@ -25,7 +25,7 @@ const dateSchema = z.object({
     system_mtime: z.string(),
     user_mtime: z.string(),
 });
-const extentSchema = z.object({
+export const extentSchema = z.object({
     lock_version: z.number(),
     number: z.string(),
     portion: z.string(),
@@ -37,10 +37,30 @@ const extentSchema = z.object({
     system_mtime: z.string(),
     user_mtime: z.string(),
 });
-const externalIdSchema = z.object({
+export const externalIdSchema = z.object({
     external_id: z.string(),
     source: z.string(),
     jsonmodel_type: z.string(),
+    created_by: z.string(),
+    last_modified_by: z.string(),
+    create_time: z.string(),
+    system_mtime: z.string(),
+    user_mtime: z.string(),
+});
+// Rights statements. `acts`, `linked_agents`, and `notes` were always empty
+// across the sample data, so their item shapes are left unknown rather than
+// guessed.
+export const rightsStatementSchema = z.object({
+    lock_version: z.number(),
+    identifier: z.string(),
+    rights_type: z.string(),
+    other_rights_basis: z.string().optional(),
+    start_date: z.string().optional(),
+    jsonmodel_type: z.string(),
+    external_documents: z.array(z.unknown()),
+    acts: z.array(z.unknown()),
+    linked_agents: z.array(z.unknown()),
+    notes: z.array(z.unknown()),
     created_by: z.string(),
     last_modified_by: z.string(),
     create_time: z.string(),
@@ -81,7 +101,7 @@ const noteLangmaterialSchema = z.object({
     content: z.array(z.string()),
     publish: z.boolean(),
 });
-const noteSchema = z.discriminatedUnion('jsonmodel_type', [
+export const noteSchema = z.discriminatedUnion('jsonmodel_type', [
     noteSinglepartSchema,
     noteMultipartSchema,
     noteLangmaterialSchema,
@@ -96,7 +116,7 @@ const languageAndScriptSchema = z.object({
     system_mtime: z.string(),
     user_mtime: z.string(),
 });
-const langMaterialSchema = z.object({
+export const langMaterialSchema = z.object({
     lock_version: z.number(),
     jsonmodel_type: z.string(),
     language_and_script: languageAndScriptSchema.optional(),
@@ -198,7 +218,7 @@ const agentResolvedSchema = z.object({
     system_mtime: z.string(),
     user_mtime: z.string(),
 });
-const linkedAgentSchema = resolvableRefSchema(agentResolvedSchema).extend({
+export const linkedAgentSchema = resolvableRefSchema(agentResolvedSchema).extend({
     role: z.string(),
     terms: z.array(z.unknown()),
 });
@@ -238,7 +258,7 @@ const subjectResolvedSchema = z.object({
     system_mtime: z.string(),
     user_mtime: z.string(),
 });
-const subjectSchema = resolvableRefSchema(subjectResolvedSchema);
+export const subjectSchema = resolvableRefSchema(subjectResolvedSchema);
 // Classifications.
 const classificationPathSchema = z.object({
     identifier: z.string(),
@@ -292,7 +312,7 @@ const linkedEventResolvedSchema = z.object({
     system_mtime: z.string(),
     user_mtime: z.string(),
 });
-const linkedEventSchema = resolvableRefSchema(linkedEventResolvedSchema);
+export const linkedEventSchema = resolvableRefSchema(linkedEventResolvedSchema);
 // Repository.
 const repositoryResolvedSchema = z.object({
     lock_version: z.number(),
@@ -314,7 +334,7 @@ const repositoryResolvedSchema = z.object({
     system_mtime: z.string(),
     user_mtime: z.string(),
 });
-const repositorySchema = resolvableRefSchema(repositoryResolvedSchema);
+export const repositorySchema = resolvableRefSchema(repositoryResolvedSchema);
 // Instances / containers.
 const activeRestrictionSchema = z.object({
     id: z.number(),
@@ -371,7 +391,7 @@ const subContainerSchema = z.object({
     system_mtime: z.string(),
     user_mtime: z.string(),
 });
-const instanceSchema = z.object({
+export const instanceSchema = z.object({
     lock_version: z.number(),
     instance_type: z.string(),
     is_representative: z.boolean(),
@@ -447,7 +467,7 @@ export const repoResourcesSchema = z.object({
     lang_materials: z.array(langMaterialSchema),
     dates: z.array(dateSchema),
     external_documents: z.array(z.unknown()),
-    rights_statements: z.array(z.unknown()),
+    rights_statements: z.array(rightsStatementSchema),
     linked_agents: z.array(linkedAgentSchema),
     import_previous_arks: z.array(z.unknown()),
     revision_statements: z.array(z.unknown()),
