@@ -2,8 +2,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 import { describe, it, expect, vi, afterEach } from 'vitest';
 import AspaceClient from '../dist/AspaceClient.js';
-import { z } from 'zod';
-import { repoResourcesSchema } from '../dist/schemas/repoResourcesSchema';
+import { repoResourcesSchema } from '../dist/schemas/RepoResourcesSchema.js';
 import { repoTopContainerSchema } from '../dist/schemas/RepoTopContainersSchema.js';
 import { repoArchivalObjectSchema } from '../dist/schemas/RepoArchivalObjectsSchema.js';
 
