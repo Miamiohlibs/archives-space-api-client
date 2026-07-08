@@ -368,7 +368,7 @@ const repositoryResolvedSchema = z.object({
 export const repositorySchema = resolvableRefSchema(repositoryResolvedSchema);
 
 // Instances / containers.
-const activeRestrictionSchema = z.object({
+export const activeRestrictionSchema = z.object({
   id: z.number(),
   resource_id: z.number().optional(),
   archival_object_id: z.number().optional(),
@@ -379,8 +379,31 @@ const activeRestrictionSchema = z.object({
   linked_records: refSchema,
 });
 
-const containerLocationSchema = z.object({
-  ref: z.string(),
+const locationResolvedSchema = z.object({
+  lock_version: z.number(),
+  building: z.string(),
+  title: z.string(),
+  floor: z.string().optional(),
+  room: z.string().optional(),
+  area: z.string().optional(),
+  coordinate_1_label: z.string().optional(),
+  coordinate_1_indicator: z.string().optional(),
+  coordinate_2_label: z.string().optional(),
+  coordinate_2_indicator: z.string().optional(),
+  coordinate_3_label: z.string().optional(),
+  coordinate_3_indicator: z.string().optional(),
+  jsonmodel_type: z.string(),
+  external_ids: z.array(z.unknown()),
+  functions: z.array(z.unknown()),
+  uri: z.string(),
+  created_by: z.string(),
+  last_modified_by: z.string(),
+  create_time: z.string(),
+  system_mtime: z.string(),
+  user_mtime: z.string(),
+});
+
+export const containerLocationSchema = resolvableRefSchema(locationResolvedSchema).extend({
   status: z.string(),
   start_date: z.string(),
   jsonmodel_type: z.string(),
@@ -388,13 +411,70 @@ const containerLocationSchema = z.object({
   user_mtime: z.string(),
 });
 
-const collectionRefSchema = z.object({
-  ref: z.string(),
+// `collection` points back at the owning resource. `repoResourcesSchema`'s
+// own inferred type can't be used directly here (that would be a genuine
+// type-inference cycle), so this interface mirrors its shape independently,
+// the same way `TreeNode` does for the tree recursion below.
+export interface ResourceRecord {
+  lock_version: number;
+  title: string;
+  publish: boolean;
+  restrictions: boolean;
+  suppressed: boolean;
+  is_slug_auto: boolean;
+  jsonmodel_type: string;
+  uri: string;
+  level: string;
+  resource_type: string;
+  id_0: string;
+  id_1: string;
+  id_2?: string;
+  finding_aid_title?: string;
+  finding_aid_filing_title?: string;
+  finding_aid_date?: string;
+  finding_aid_author?: string;
+  finding_aid_description_rules?: string;
+  finding_aid_language: string;
+  finding_aid_script: string;
+  finding_aid_language_note?: string;
+  finding_aid_status?: string;
+  created_by: string;
+  last_modified_by: string;
+  create_time: string;
+  system_mtime: string;
+  user_mtime: string;
+  external_ids: z.infer<typeof externalIdSchema>[];
+  subjects: z.infer<typeof subjectSchema>[];
+  linked_events: z.infer<typeof linkedEventSchema>[];
+  extents: z.infer<typeof extentSchema>[];
+  lang_materials: z.infer<typeof langMaterialSchema>[];
+  dates: z.infer<typeof dateSchema>[];
+  external_documents: unknown[];
+  rights_statements: z.infer<typeof rightsStatementSchema>[];
+  linked_agents: z.infer<typeof linkedAgentSchema>[];
+  import_previous_arks: unknown[];
+  revision_statements: unknown[];
+  instances: z.infer<typeof instanceSchema>[];
+  deaccessions: unknown[];
+  related_accessions: unknown[];
+  classifications: z.infer<typeof classificationSchema>[];
+  notes: z.infer<typeof noteSchema>[];
+  metadata_rights_declarations: unknown[];
+  repository: z.infer<typeof repositorySchema>;
+  tree: z.infer<typeof treeSchema>;
+}
+
+export const collectionRefSchema: z.ZodType<{
+  ref: string;
+  identifier: string;
+  display_string: string;
+  _resolved?: ResourceRecord;
+}> = resolvableRefSchema(z.lazy(() => repoResourcesSchema)).extend({
   identifier: z.string(),
   display_string: z.string(),
 });
 
-const topContainerResolvedSchema = z.object({
+export const topContainerResolvedSchema = z.object({
   lock_version: z.number(),
   indicator: z.string(),
   type: z.string(),
@@ -404,7 +484,7 @@ const topContainerResolvedSchema = z.object({
   is_linked_to_published_record: z.boolean(),
   jsonmodel_type: z.string(),
   uri: z.string(),
-  repository: refSchema,
+  repository: repositorySchema,
   collection: z.array(collectionRefSchema),
   series: z.array(z.unknown()),
   container_locations: z.array(containerLocationSchema),
@@ -416,7 +496,7 @@ const topContainerResolvedSchema = z.object({
   user_mtime: z.string(),
 });
 
-const topContainerSchema = resolvableRefSchema(topContainerResolvedSchema);
+export const topContainerSchema = resolvableRefSchema(topContainerResolvedSchema);
 
 const subContainerSchema = z.object({
   lock_version: z.number(),

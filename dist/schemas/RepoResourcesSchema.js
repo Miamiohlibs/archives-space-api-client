@@ -336,7 +336,7 @@ const repositoryResolvedSchema = z.object({
 });
 export const repositorySchema = resolvableRefSchema(repositoryResolvedSchema);
 // Instances / containers.
-const activeRestrictionSchema = z.object({
+export const activeRestrictionSchema = z.object({
     id: z.number(),
     resource_id: z.number().optional(),
     archival_object_id: z.number().optional(),
@@ -346,20 +346,41 @@ const activeRestrictionSchema = z.object({
     jsonmodel_type: z.string(),
     linked_records: refSchema,
 });
-const containerLocationSchema = z.object({
-    ref: z.string(),
+const locationResolvedSchema = z.object({
+    lock_version: z.number(),
+    building: z.string(),
+    title: z.string(),
+    floor: z.string().optional(),
+    room: z.string().optional(),
+    area: z.string().optional(),
+    coordinate_1_label: z.string().optional(),
+    coordinate_1_indicator: z.string().optional(),
+    coordinate_2_label: z.string().optional(),
+    coordinate_2_indicator: z.string().optional(),
+    coordinate_3_label: z.string().optional(),
+    coordinate_3_indicator: z.string().optional(),
+    jsonmodel_type: z.string(),
+    external_ids: z.array(z.unknown()),
+    functions: z.array(z.unknown()),
+    uri: z.string(),
+    created_by: z.string(),
+    last_modified_by: z.string(),
+    create_time: z.string(),
+    system_mtime: z.string(),
+    user_mtime: z.string(),
+});
+export const containerLocationSchema = resolvableRefSchema(locationResolvedSchema).extend({
     status: z.string(),
     start_date: z.string(),
     jsonmodel_type: z.string(),
     system_mtime: z.string(),
     user_mtime: z.string(),
 });
-const collectionRefSchema = z.object({
-    ref: z.string(),
+export const collectionRefSchema = resolvableRefSchema(z.lazy(() => repoResourcesSchema)).extend({
     identifier: z.string(),
     display_string: z.string(),
 });
-const topContainerResolvedSchema = z.object({
+export const topContainerResolvedSchema = z.object({
     lock_version: z.number(),
     indicator: z.string(),
     type: z.string(),
@@ -369,7 +390,7 @@ const topContainerResolvedSchema = z.object({
     is_linked_to_published_record: z.boolean(),
     jsonmodel_type: z.string(),
     uri: z.string(),
-    repository: refSchema,
+    repository: repositorySchema,
     collection: z.array(collectionRefSchema),
     series: z.array(z.unknown()),
     container_locations: z.array(containerLocationSchema),
@@ -380,7 +401,7 @@ const topContainerResolvedSchema = z.object({
     system_mtime: z.string(),
     user_mtime: z.string(),
 });
-const topContainerSchema = resolvableRefSchema(topContainerResolvedSchema);
+export const topContainerSchema = resolvableRefSchema(topContainerResolvedSchema);
 const subContainerSchema = z.object({
     lock_version: z.number(),
     jsonmodel_type: z.string(),

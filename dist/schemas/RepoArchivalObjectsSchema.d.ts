@@ -653,15 +653,66 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                             uri: z.ZodString;
                             repository: z.ZodObject<{
                                 ref: z.ZodString;
+                                _resolved: z.ZodOptional<z.ZodObject<{
+                                    lock_version: z.ZodNumber;
+                                    repo_code: z.ZodString;
+                                    name: z.ZodString;
+                                    display_string: z.ZodString;
+                                    slug: z.ZodString;
+                                    is_slug_auto: z.ZodBoolean;
+                                    publish: z.ZodBoolean;
+                                    oai_is_disabled: z.ZodBoolean;
+                                    oai_sets_available: z.ZodString;
+                                    position: z.ZodNumber;
+                                    jsonmodel_type: z.ZodString;
+                                    uri: z.ZodString;
+                                    agent_representation: z.ZodObject<{
+                                        ref: z.ZodString;
+                                    }, z.core.$strip>;
+                                    created_by: z.ZodString;
+                                    last_modified_by: z.ZodString;
+                                    create_time: z.ZodString;
+                                    system_mtime: z.ZodString;
+                                    user_mtime: z.ZodString;
+                                }, z.core.$strip>>;
                             }, z.core.$strip>;
-                            collection: z.ZodArray<z.ZodObject<{
-                                ref: z.ZodString;
-                                identifier: z.ZodString;
-                                display_string: z.ZodString;
-                            }, z.core.$strip>>;
+                            collection: z.ZodArray<z.ZodType<{
+                                ref: string;
+                                identifier: string;
+                                display_string: string;
+                                _resolved?: import("./RepoResourcesSchema.js").ResourceRecord;
+                            }, unknown, z.core.$ZodTypeInternals<{
+                                ref: string;
+                                identifier: string;
+                                display_string: string;
+                                _resolved?: import("./RepoResourcesSchema.js").ResourceRecord;
+                            }, unknown>>>;
                             series: z.ZodArray<z.ZodUnknown>;
                             container_locations: z.ZodArray<z.ZodObject<{
                                 ref: z.ZodString;
+                                _resolved: z.ZodOptional<z.ZodObject<{
+                                    lock_version: z.ZodNumber;
+                                    building: z.ZodString;
+                                    title: z.ZodString;
+                                    floor: z.ZodOptional<z.ZodString>;
+                                    room: z.ZodOptional<z.ZodString>;
+                                    area: z.ZodOptional<z.ZodString>;
+                                    coordinate_1_label: z.ZodOptional<z.ZodString>;
+                                    coordinate_1_indicator: z.ZodOptional<z.ZodString>;
+                                    coordinate_2_label: z.ZodOptional<z.ZodString>;
+                                    coordinate_2_indicator: z.ZodOptional<z.ZodString>;
+                                    coordinate_3_label: z.ZodOptional<z.ZodString>;
+                                    coordinate_3_indicator: z.ZodOptional<z.ZodString>;
+                                    jsonmodel_type: z.ZodString;
+                                    external_ids: z.ZodArray<z.ZodUnknown>;
+                                    functions: z.ZodArray<z.ZodUnknown>;
+                                    uri: z.ZodString;
+                                    created_by: z.ZodString;
+                                    last_modified_by: z.ZodString;
+                                    create_time: z.ZodString;
+                                    system_mtime: z.ZodString;
+                                    user_mtime: z.ZodString;
+                                }, z.core.$strip>>;
                                 status: z.ZodString;
                                 start_date: z.ZodString;
                                 jsonmodel_type: z.ZodString;
@@ -823,15 +874,66 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     uri: z.ZodString;
                     repository: z.ZodObject<{
                         ref: z.ZodString;
+                        _resolved: z.ZodOptional<z.ZodObject<{
+                            lock_version: z.ZodNumber;
+                            repo_code: z.ZodString;
+                            name: z.ZodString;
+                            display_string: z.ZodString;
+                            slug: z.ZodString;
+                            is_slug_auto: z.ZodBoolean;
+                            publish: z.ZodBoolean;
+                            oai_is_disabled: z.ZodBoolean;
+                            oai_sets_available: z.ZodString;
+                            position: z.ZodNumber;
+                            jsonmodel_type: z.ZodString;
+                            uri: z.ZodString;
+                            agent_representation: z.ZodObject<{
+                                ref: z.ZodString;
+                            }, z.core.$strip>;
+                            created_by: z.ZodString;
+                            last_modified_by: z.ZodString;
+                            create_time: z.ZodString;
+                            system_mtime: z.ZodString;
+                            user_mtime: z.ZodString;
+                        }, z.core.$strip>>;
                     }, z.core.$strip>;
-                    collection: z.ZodArray<z.ZodObject<{
-                        ref: z.ZodString;
-                        identifier: z.ZodString;
-                        display_string: z.ZodString;
-                    }, z.core.$strip>>;
+                    collection: z.ZodArray<z.ZodType<{
+                        ref: string;
+                        identifier: string;
+                        display_string: string;
+                        _resolved?: import("./RepoResourcesSchema.js").ResourceRecord;
+                    }, unknown, z.core.$ZodTypeInternals<{
+                        ref: string;
+                        identifier: string;
+                        display_string: string;
+                        _resolved?: import("./RepoResourcesSchema.js").ResourceRecord;
+                    }, unknown>>>;
                     series: z.ZodArray<z.ZodUnknown>;
                     container_locations: z.ZodArray<z.ZodObject<{
                         ref: z.ZodString;
+                        _resolved: z.ZodOptional<z.ZodObject<{
+                            lock_version: z.ZodNumber;
+                            building: z.ZodString;
+                            title: z.ZodString;
+                            floor: z.ZodOptional<z.ZodString>;
+                            room: z.ZodOptional<z.ZodString>;
+                            area: z.ZodOptional<z.ZodString>;
+                            coordinate_1_label: z.ZodOptional<z.ZodString>;
+                            coordinate_1_indicator: z.ZodOptional<z.ZodString>;
+                            coordinate_2_label: z.ZodOptional<z.ZodString>;
+                            coordinate_2_indicator: z.ZodOptional<z.ZodString>;
+                            coordinate_3_label: z.ZodOptional<z.ZodString>;
+                            coordinate_3_indicator: z.ZodOptional<z.ZodString>;
+                            jsonmodel_type: z.ZodString;
+                            external_ids: z.ZodArray<z.ZodUnknown>;
+                            functions: z.ZodArray<z.ZodUnknown>;
+                            uri: z.ZodString;
+                            created_by: z.ZodString;
+                            last_modified_by: z.ZodString;
+                            create_time: z.ZodString;
+                            system_mtime: z.ZodString;
+                            user_mtime: z.ZodString;
+                        }, z.core.$strip>>;
                         status: z.ZodString;
                         start_date: z.ZodString;
                         jsonmodel_type: z.ZodString;
@@ -1267,15 +1369,66 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                             uri: z.ZodString;
                             repository: z.ZodObject<{
                                 ref: z.ZodString;
+                                _resolved: z.ZodOptional<z.ZodObject<{
+                                    lock_version: z.ZodNumber;
+                                    repo_code: z.ZodString;
+                                    name: z.ZodString;
+                                    display_string: z.ZodString;
+                                    slug: z.ZodString;
+                                    is_slug_auto: z.ZodBoolean;
+                                    publish: z.ZodBoolean;
+                                    oai_is_disabled: z.ZodBoolean;
+                                    oai_sets_available: z.ZodString;
+                                    position: z.ZodNumber;
+                                    jsonmodel_type: z.ZodString;
+                                    uri: z.ZodString;
+                                    agent_representation: z.ZodObject<{
+                                        ref: z.ZodString;
+                                    }, z.core.$strip>;
+                                    created_by: z.ZodString;
+                                    last_modified_by: z.ZodString;
+                                    create_time: z.ZodString;
+                                    system_mtime: z.ZodString;
+                                    user_mtime: z.ZodString;
+                                }, z.core.$strip>>;
                             }, z.core.$strip>;
-                            collection: z.ZodArray<z.ZodObject<{
-                                ref: z.ZodString;
-                                identifier: z.ZodString;
-                                display_string: z.ZodString;
-                            }, z.core.$strip>>;
+                            collection: z.ZodArray<z.ZodType<{
+                                ref: string;
+                                identifier: string;
+                                display_string: string;
+                                _resolved?: import("./RepoResourcesSchema.js").ResourceRecord;
+                            }, unknown, z.core.$ZodTypeInternals<{
+                                ref: string;
+                                identifier: string;
+                                display_string: string;
+                                _resolved?: import("./RepoResourcesSchema.js").ResourceRecord;
+                            }, unknown>>>;
                             series: z.ZodArray<z.ZodUnknown>;
                             container_locations: z.ZodArray<z.ZodObject<{
                                 ref: z.ZodString;
+                                _resolved: z.ZodOptional<z.ZodObject<{
+                                    lock_version: z.ZodNumber;
+                                    building: z.ZodString;
+                                    title: z.ZodString;
+                                    floor: z.ZodOptional<z.ZodString>;
+                                    room: z.ZodOptional<z.ZodString>;
+                                    area: z.ZodOptional<z.ZodString>;
+                                    coordinate_1_label: z.ZodOptional<z.ZodString>;
+                                    coordinate_1_indicator: z.ZodOptional<z.ZodString>;
+                                    coordinate_2_label: z.ZodOptional<z.ZodString>;
+                                    coordinate_2_indicator: z.ZodOptional<z.ZodString>;
+                                    coordinate_3_label: z.ZodOptional<z.ZodString>;
+                                    coordinate_3_indicator: z.ZodOptional<z.ZodString>;
+                                    jsonmodel_type: z.ZodString;
+                                    external_ids: z.ZodArray<z.ZodUnknown>;
+                                    functions: z.ZodArray<z.ZodUnknown>;
+                                    uri: z.ZodString;
+                                    created_by: z.ZodString;
+                                    last_modified_by: z.ZodString;
+                                    create_time: z.ZodString;
+                                    system_mtime: z.ZodString;
+                                    user_mtime: z.ZodString;
+                                }, z.core.$strip>>;
                                 status: z.ZodString;
                                 start_date: z.ZodString;
                                 jsonmodel_type: z.ZodString;
