@@ -444,8 +444,8 @@ export interface ResourceRecord {
   finding_aid_script: string;
   finding_aid_language_note?: string;
   finding_aid_status?: string;
-  created_by: string;
-  last_modified_by: string;
+  created_by?: string;
+  last_modified_by?: string;
   create_time: string;
   system_mtime: string;
   user_mtime: string;
