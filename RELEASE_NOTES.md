@@ -1,5 +1,11 @@
 # Release Notes
 
+## v. 0.2.1
+
+### Fixed
+
+- made created_by and last_modified_by fields optional in zod schemas, as we find them to be at least sometimes optional in the real world
+
 ## v. 0.2.0
 
 ### Added
