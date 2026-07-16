@@ -1,5 +1,11 @@
 # Release Notes
 
+## v. 0.2.3
+
+### Fixed
+
+- implemented 0.2.2 fixes that weren't built to dist/ in the 0.2.2 release
+
 ## v. 0.2.2
 
 ### Fixed
