@@ -483,7 +483,7 @@ export const collectionRefSchema: z.ZodType<{
 export const topContainerResolvedSchema = z.object({
   lock_version: z.number(),
   indicator: z.string(),
-  type: z.string().optional(),
+  type: z.string(),
   display_string: z.string(),
   long_display_string: z.string(),
   restricted: z.boolean(),
