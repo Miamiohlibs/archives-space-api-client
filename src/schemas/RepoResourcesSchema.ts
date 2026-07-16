@@ -17,8 +17,8 @@ export const resolvableRefSchema = <T extends z.ZodTypeAny>(
 
 export const dateSchema = z.object({
   lock_version: z.number(),
-  begin: z.string(),
-  end: z.string(),
+  begin: z.string().optional(),
+  end: z.string().optional(),
   calendar: z.string().optional(),
   certainty: z.string().optional(),
   era: z.string().optional(),
@@ -47,7 +47,7 @@ export const extentSchema = z.object({
 
 export const externalIdSchema = z.object({
   external_id: z.string(),
-  source: z.string(),
+  source: z.string().optional(),
   jsonmodel_type: z.string(),
   created_by: z.string().optional(),
   last_modified_by: z.string().optional(),
@@ -62,7 +62,7 @@ export const externalIdSchema = z.object({
 export const rightsStatementSchema = z.object({
   lock_version: z.number(),
   identifier: z.string(),
-  rights_type: z.string(),
+  rights_type: z.string().optional(),
   other_rights_basis: z.string().optional(),
   start_date: z.string().optional(),
   jsonmodel_type: z.string(),
@@ -177,7 +177,7 @@ const agentNameSchema = z.object({
   sort_name_auto_generate: z.boolean(),
   authorized: z.boolean(),
   is_display_name: z.boolean(),
-  source: z.string(),
+  source: z.string().optional(),
   rules: z.string().optional(),
   language: z.string().optional(),
   name_order: z.string().optional(),
@@ -264,7 +264,7 @@ const subjectTermSchema = z.object({
 const subjectResolvedSchema = z.object({
   lock_version: z.number(),
   title: z.string(),
-  source: z.string(),
+  source: z.string().optional(),
   vocabulary: z.string(),
   uri: z.string(),
   publish: z.boolean(),
@@ -483,7 +483,7 @@ export const collectionRefSchema: z.ZodType<{
 export const topContainerResolvedSchema = z.object({
   lock_version: z.number(),
   indicator: z.string(),
-  type: z.string(),
+  type: z.string().optional(),
   display_string: z.string(),
   long_display_string: z.string(),
   restricted: z.boolean(),
