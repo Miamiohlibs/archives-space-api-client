@@ -8,8 +8,8 @@ export declare const resolvableRefSchema: <T extends z.ZodTypeAny>(resolvedSchem
 }, z.core.$strip>;
 export declare const dateSchema: z.ZodObject<{
     lock_version: z.ZodNumber;
-    begin: z.ZodString;
-    end: z.ZodString;
+    begin: z.ZodOptional<z.ZodString>;
+    end: z.ZodOptional<z.ZodString>;
     calendar: z.ZodOptional<z.ZodString>;
     certainty: z.ZodOptional<z.ZodString>;
     era: z.ZodOptional<z.ZodString>;
@@ -36,7 +36,7 @@ export declare const extentSchema: z.ZodObject<{
 }, z.core.$strip>;
 export declare const externalIdSchema: z.ZodObject<{
     external_id: z.ZodString;
-    source: z.ZodString;
+    source: z.ZodOptional<z.ZodString>;
     jsonmodel_type: z.ZodString;
     created_by: z.ZodOptional<z.ZodString>;
     last_modified_by: z.ZodOptional<z.ZodString>;
@@ -47,7 +47,7 @@ export declare const externalIdSchema: z.ZodObject<{
 export declare const rightsStatementSchema: z.ZodObject<{
     lock_version: z.ZodNumber;
     identifier: z.ZodString;
-    rights_type: z.ZodString;
+    rights_type: z.ZodOptional<z.ZodString>;
     other_rights_basis: z.ZodOptional<z.ZodString>;
     start_date: z.ZodOptional<z.ZodString>;
     jsonmodel_type: z.ZodString;
@@ -152,7 +152,7 @@ export declare const linkedAgentSchema: z.ZodObject<{
             sort_name_auto_generate: z.ZodBoolean;
             authorized: z.ZodBoolean;
             is_display_name: z.ZodBoolean;
-            source: z.ZodString;
+            source: z.ZodOptional<z.ZodString>;
             rules: z.ZodOptional<z.ZodString>;
             language: z.ZodOptional<z.ZodString>;
             name_order: z.ZodOptional<z.ZodString>;
@@ -177,7 +177,7 @@ export declare const linkedAgentSchema: z.ZodObject<{
             sort_name_auto_generate: z.ZodBoolean;
             authorized: z.ZodBoolean;
             is_display_name: z.ZodBoolean;
-            source: z.ZodString;
+            source: z.ZodOptional<z.ZodString>;
             rules: z.ZodOptional<z.ZodString>;
             language: z.ZodOptional<z.ZodString>;
             name_order: z.ZodOptional<z.ZodString>;
@@ -250,7 +250,7 @@ export declare const subjectSchema: z.ZodObject<{
     _resolved: z.ZodOptional<z.ZodObject<{
         lock_version: z.ZodNumber;
         title: z.ZodString;
-        source: z.ZodString;
+        source: z.ZodOptional<z.ZodString>;
         vocabulary: z.ZodString;
         uri: z.ZodString;
         publish: z.ZodBoolean;
@@ -272,7 +272,7 @@ export declare const subjectSchema: z.ZodObject<{
         }, z.core.$strip>>;
         external_ids: z.ZodArray<z.ZodObject<{
             external_id: z.ZodString;
-            source: z.ZodString;
+            source: z.ZodOptional<z.ZodString>;
             jsonmodel_type: z.ZodString;
             created_by: z.ZodOptional<z.ZodString>;
             last_modified_by: z.ZodOptional<z.ZodString>;
@@ -846,7 +846,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
     user_mtime: z.ZodString;
     external_ids: z.ZodArray<z.ZodObject<{
         external_id: z.ZodString;
-        source: z.ZodString;
+        source: z.ZodOptional<z.ZodString>;
         jsonmodel_type: z.ZodString;
         created_by: z.ZodOptional<z.ZodString>;
         last_modified_by: z.ZodOptional<z.ZodString>;
@@ -859,7 +859,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
         _resolved: z.ZodOptional<z.ZodObject<{
             lock_version: z.ZodNumber;
             title: z.ZodString;
-            source: z.ZodString;
+            source: z.ZodOptional<z.ZodString>;
             vocabulary: z.ZodString;
             uri: z.ZodString;
             publish: z.ZodBoolean;
@@ -881,7 +881,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
             }, z.core.$strip>>;
             external_ids: z.ZodArray<z.ZodObject<{
                 external_id: z.ZodString;
-                source: z.ZodString;
+                source: z.ZodOptional<z.ZodString>;
                 jsonmodel_type: z.ZodString;
                 created_by: z.ZodOptional<z.ZodString>;
                 last_modified_by: z.ZodOptional<z.ZodString>;
@@ -990,8 +990,8 @@ export declare const repoResourcesSchema: z.ZodObject<{
     }, z.core.$strip>>;
     dates: z.ZodArray<z.ZodObject<{
         lock_version: z.ZodNumber;
-        begin: z.ZodString;
-        end: z.ZodString;
+        begin: z.ZodOptional<z.ZodString>;
+        end: z.ZodOptional<z.ZodString>;
         calendar: z.ZodOptional<z.ZodString>;
         certainty: z.ZodOptional<z.ZodString>;
         era: z.ZodOptional<z.ZodString>;
@@ -1008,7 +1008,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
     rights_statements: z.ZodArray<z.ZodObject<{
         lock_version: z.ZodNumber;
         identifier: z.ZodString;
-        rights_type: z.ZodString;
+        rights_type: z.ZodOptional<z.ZodString>;
         other_rights_basis: z.ZodOptional<z.ZodString>;
         start_date: z.ZodOptional<z.ZodString>;
         jsonmodel_type: z.ZodString;
@@ -1042,7 +1042,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
                 sort_name_auto_generate: z.ZodBoolean;
                 authorized: z.ZodBoolean;
                 is_display_name: z.ZodBoolean;
-                source: z.ZodString;
+                source: z.ZodOptional<z.ZodString>;
                 rules: z.ZodOptional<z.ZodString>;
                 language: z.ZodOptional<z.ZodString>;
                 name_order: z.ZodOptional<z.ZodString>;
@@ -1067,7 +1067,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
                 sort_name_auto_generate: z.ZodBoolean;
                 authorized: z.ZodBoolean;
                 is_display_name: z.ZodBoolean;
-                source: z.ZodString;
+                source: z.ZodOptional<z.ZodString>;
                 rules: z.ZodOptional<z.ZodString>;
                 language: z.ZodOptional<z.ZodString>;
                 name_order: z.ZodOptional<z.ZodString>;
