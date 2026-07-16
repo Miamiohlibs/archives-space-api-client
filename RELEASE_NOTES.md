@@ -1,5 +1,15 @@
 # Release Notes
 
+## v. 0.2.2
+
+### Fixed
+
+- made additional fields optional in zod schemas:
+  - dateSchema.begin and dateSchema.end
+  - externalIdSchema.source
+  - agentNameSchema.source
+  - subjectResolvedSchema.source
+
 ## v. 0.2.1
 
 ### Fixed
