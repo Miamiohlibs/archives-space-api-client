@@ -424,14 +424,14 @@ export const containerLocationSchema = resolvableRefSchema(
 export interface ResourceRecord {
   lock_version: number;
   title: string;
-  publish: boolean;
+  publish?: boolean;
   restrictions: boolean;
   suppressed: boolean;
   is_slug_auto: boolean;
   jsonmodel_type: string;
   uri: string;
   level: string;
-  resource_type: string;
+  resource_type?: string;
   id_0: string;
   id_1?: string;
   id_2?: string;
@@ -537,7 +537,7 @@ export interface TreeNode {
   title: string;
   id: number;
   record_uri: string;
-  publish: boolean;
+  publish?: boolean;
   suppressed: boolean;
   node_type: string;
   level: string;
