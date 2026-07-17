@@ -34,7 +34,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             source: z.ZodOptional<z.ZodString>;
             vocabulary: z.ZodString;
             uri: z.ZodString;
-            publish: z.ZodBoolean;
+            publish: z.ZodOptional<z.ZodBoolean>;
             is_slug_auto: z.ZodBoolean;
             is_linked_to_published_record: z.ZodBoolean;
             jsonmodel_type: z.ZodString;
@@ -133,7 +133,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             persistent_id: z.ZodString;
             type: z.ZodString;
             content: z.ZodArray<z.ZodString>;
-            publish: z.ZodBoolean;
+            publish: z.ZodOptional<z.ZodBoolean>;
         }, z.core.$strip>, z.ZodObject<{
             jsonmodel_type: z.ZodLiteral<"note_multipart">;
             persistent_id: z.ZodString;
@@ -141,9 +141,9 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             subnotes: z.ZodArray<z.ZodObject<{
                 jsonmodel_type: z.ZodLiteral<"note_text">;
                 content: z.ZodString;
-                publish: z.ZodBoolean;
+                publish: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$strip>>;
-            publish: z.ZodBoolean;
+            publish: z.ZodOptional<z.ZodBoolean>;
             rights_restriction: z.ZodOptional<z.ZodObject<{
                 local_access_restriction_type: z.ZodArray<z.ZodString>;
             }, z.core.$strip>>;
@@ -152,7 +152,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             persistent_id: z.ZodString;
             type: z.ZodString;
             content: z.ZodArray<z.ZodString>;
-            publish: z.ZodBoolean;
+            publish: z.ZodOptional<z.ZodBoolean>;
         }, z.core.$strip>], "jsonmodel_type">>;
         created_by: z.ZodOptional<z.ZodString>;
         last_modified_by: z.ZodOptional<z.ZodString>;
@@ -198,7 +198,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
         ref: z.ZodString;
         _resolved: z.ZodOptional<z.ZodObject<{
             lock_version: z.ZodNumber;
-            publish: z.ZodBoolean;
+            publish: z.ZodOptional<z.ZodBoolean>;
             is_slug_auto: z.ZodBoolean;
             is_linked_to_published_record: z.ZodBoolean;
             jsonmodel_type: z.ZodString;
@@ -313,14 +313,14 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
         _resolved: z.ZodOptional<z.ZodObject<{
             lock_version: z.ZodNumber;
             title: z.ZodString;
-            publish: z.ZodBoolean;
+            publish: z.ZodOptional<z.ZodBoolean>;
             restrictions: z.ZodBoolean;
             suppressed: z.ZodBoolean;
             is_slug_auto: z.ZodBoolean;
             jsonmodel_type: z.ZodString;
             uri: z.ZodString;
             level: z.ZodString;
-            resource_type: z.ZodString;
+            resource_type: z.ZodOptional<z.ZodString>;
             id_0: z.ZodString;
             id_1: z.ZodString;
             id_2: z.ZodOptional<z.ZodString>;
@@ -356,7 +356,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     source: z.ZodOptional<z.ZodString>;
                     vocabulary: z.ZodString;
                     uri: z.ZodString;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                     is_slug_auto: z.ZodBoolean;
                     is_linked_to_published_record: z.ZodBoolean;
                     jsonmodel_type: z.ZodString;
@@ -455,7 +455,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     persistent_id: z.ZodString;
                     type: z.ZodString;
                     content: z.ZodArray<z.ZodString>;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$strip>, z.ZodObject<{
                     jsonmodel_type: z.ZodLiteral<"note_multipart">;
                     persistent_id: z.ZodString;
@@ -463,9 +463,9 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     subnotes: z.ZodArray<z.ZodObject<{
                         jsonmodel_type: z.ZodLiteral<"note_text">;
                         content: z.ZodString;
-                        publish: z.ZodBoolean;
+                        publish: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$strip>>;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                     rights_restriction: z.ZodOptional<z.ZodObject<{
                         local_access_restriction_type: z.ZodArray<z.ZodString>;
                     }, z.core.$strip>>;
@@ -474,7 +474,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     persistent_id: z.ZodString;
                     type: z.ZodString;
                     content: z.ZodArray<z.ZodString>;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$strip>], "jsonmodel_type">>;
                 created_by: z.ZodOptional<z.ZodString>;
                 last_modified_by: z.ZodOptional<z.ZodString>;
@@ -520,7 +520,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 ref: z.ZodString;
                 _resolved: z.ZodOptional<z.ZodObject<{
                     lock_version: z.ZodNumber;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                     is_slug_auto: z.ZodBoolean;
                     is_linked_to_published_record: z.ZodBoolean;
                     jsonmodel_type: z.ZodString;
@@ -660,7 +660,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                                     display_string: z.ZodString;
                                     slug: z.ZodString;
                                     is_slug_auto: z.ZodBoolean;
-                                    publish: z.ZodBoolean;
+                                    publish: z.ZodOptional<z.ZodBoolean>;
                                     oai_is_disabled: z.ZodBoolean;
                                     oai_sets_available: z.ZodString;
                                     position: z.ZodNumber;
@@ -758,7 +758,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     lock_version: z.ZodNumber;
                     identifier: z.ZodString;
                     title: z.ZodString;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                     is_slug_auto: z.ZodBoolean;
                     has_classification_terms: z.ZodBoolean;
                     jsonmodel_type: z.ZodString;
@@ -785,7 +785,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 persistent_id: z.ZodString;
                 type: z.ZodString;
                 content: z.ZodArray<z.ZodString>;
-                publish: z.ZodBoolean;
+                publish: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$strip>, z.ZodObject<{
                 jsonmodel_type: z.ZodLiteral<"note_multipart">;
                 persistent_id: z.ZodString;
@@ -793,9 +793,9 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 subnotes: z.ZodArray<z.ZodObject<{
                     jsonmodel_type: z.ZodLiteral<"note_text">;
                     content: z.ZodString;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$strip>>;
-                publish: z.ZodBoolean;
+                publish: z.ZodOptional<z.ZodBoolean>;
                 rights_restriction: z.ZodOptional<z.ZodObject<{
                     local_access_restriction_type: z.ZodArray<z.ZodString>;
                 }, z.core.$strip>>;
@@ -804,7 +804,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 persistent_id: z.ZodString;
                 type: z.ZodString;
                 content: z.ZodArray<z.ZodString>;
-                publish: z.ZodBoolean;
+                publish: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$strip>], "jsonmodel_type">>;
             metadata_rights_declarations: z.ZodArray<z.ZodUnknown>;
             repository: z.ZodObject<{
@@ -816,7 +816,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     display_string: z.ZodString;
                     slug: z.ZodString;
                     is_slug_auto: z.ZodBoolean;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                     oai_is_disabled: z.ZodBoolean;
                     oai_sets_available: z.ZodString;
                     position: z.ZodNumber;
@@ -838,7 +838,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     title: z.ZodString;
                     id: z.ZodNumber;
                     record_uri: z.ZodString;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                     suppressed: z.ZodBoolean;
                     node_type: z.ZodString;
                     level: z.ZodString;
@@ -881,7 +881,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                             display_string: z.ZodString;
                             slug: z.ZodString;
                             is_slug_auto: z.ZodBoolean;
-                            publish: z.ZodBoolean;
+                            publish: z.ZodOptional<z.ZodBoolean>;
                             oai_is_disabled: z.ZodBoolean;
                             oai_sets_available: z.ZodString;
                             position: z.ZodNumber;
@@ -976,7 +976,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
         persistent_id: z.ZodString;
         type: z.ZodString;
         content: z.ZodArray<z.ZodString>;
-        publish: z.ZodBoolean;
+        publish: z.ZodOptional<z.ZodBoolean>;
     }, z.core.$strip>, z.ZodObject<{
         jsonmodel_type: z.ZodLiteral<"note_multipart">;
         persistent_id: z.ZodString;
@@ -984,9 +984,9 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
         subnotes: z.ZodArray<z.ZodObject<{
             jsonmodel_type: z.ZodLiteral<"note_text">;
             content: z.ZodString;
-            publish: z.ZodBoolean;
+            publish: z.ZodOptional<z.ZodBoolean>;
         }, z.core.$strip>>;
-        publish: z.ZodBoolean;
+        publish: z.ZodOptional<z.ZodBoolean>;
         rights_restriction: z.ZodOptional<z.ZodObject<{
             local_access_restriction_type: z.ZodArray<z.ZodString>;
         }, z.core.$strip>>;
@@ -995,7 +995,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
         persistent_id: z.ZodString;
         type: z.ZodString;
         content: z.ZodArray<z.ZodString>;
-        publish: z.ZodBoolean;
+        publish: z.ZodOptional<z.ZodBoolean>;
     }, z.core.$strip>], "jsonmodel_type">>;
     accession_links: z.ZodArray<z.ZodUnknown>;
     uri: z.ZodString;
@@ -1008,7 +1008,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             display_string: z.ZodString;
             slug: z.ZodString;
             is_slug_auto: z.ZodBoolean;
-            publish: z.ZodBoolean;
+            publish: z.ZodOptional<z.ZodBoolean>;
             oai_is_disabled: z.ZodBoolean;
             oai_sets_available: z.ZodString;
             position: z.ZodNumber;
@@ -1029,14 +1029,14 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
         _resolved: z.ZodOptional<z.ZodObject<{
             lock_version: z.ZodNumber;
             title: z.ZodString;
-            publish: z.ZodBoolean;
+            publish: z.ZodOptional<z.ZodBoolean>;
             restrictions: z.ZodBoolean;
             suppressed: z.ZodBoolean;
             is_slug_auto: z.ZodBoolean;
             jsonmodel_type: z.ZodString;
             uri: z.ZodString;
             level: z.ZodString;
-            resource_type: z.ZodString;
+            resource_type: z.ZodOptional<z.ZodString>;
             id_0: z.ZodString;
             id_1: z.ZodString;
             id_2: z.ZodOptional<z.ZodString>;
@@ -1072,7 +1072,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     source: z.ZodOptional<z.ZodString>;
                     vocabulary: z.ZodString;
                     uri: z.ZodString;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                     is_slug_auto: z.ZodBoolean;
                     is_linked_to_published_record: z.ZodBoolean;
                     jsonmodel_type: z.ZodString;
@@ -1171,7 +1171,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     persistent_id: z.ZodString;
                     type: z.ZodString;
                     content: z.ZodArray<z.ZodString>;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$strip>, z.ZodObject<{
                     jsonmodel_type: z.ZodLiteral<"note_multipart">;
                     persistent_id: z.ZodString;
@@ -1179,9 +1179,9 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     subnotes: z.ZodArray<z.ZodObject<{
                         jsonmodel_type: z.ZodLiteral<"note_text">;
                         content: z.ZodString;
-                        publish: z.ZodBoolean;
+                        publish: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$strip>>;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                     rights_restriction: z.ZodOptional<z.ZodObject<{
                         local_access_restriction_type: z.ZodArray<z.ZodString>;
                     }, z.core.$strip>>;
@@ -1190,7 +1190,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     persistent_id: z.ZodString;
                     type: z.ZodString;
                     content: z.ZodArray<z.ZodString>;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$strip>], "jsonmodel_type">>;
                 created_by: z.ZodOptional<z.ZodString>;
                 last_modified_by: z.ZodOptional<z.ZodString>;
@@ -1236,7 +1236,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 ref: z.ZodString;
                 _resolved: z.ZodOptional<z.ZodObject<{
                     lock_version: z.ZodNumber;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                     is_slug_auto: z.ZodBoolean;
                     is_linked_to_published_record: z.ZodBoolean;
                     jsonmodel_type: z.ZodString;
@@ -1376,7 +1376,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                                     display_string: z.ZodString;
                                     slug: z.ZodString;
                                     is_slug_auto: z.ZodBoolean;
-                                    publish: z.ZodBoolean;
+                                    publish: z.ZodOptional<z.ZodBoolean>;
                                     oai_is_disabled: z.ZodBoolean;
                                     oai_sets_available: z.ZodString;
                                     position: z.ZodNumber;
@@ -1474,7 +1474,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     lock_version: z.ZodNumber;
                     identifier: z.ZodString;
                     title: z.ZodString;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                     is_slug_auto: z.ZodBoolean;
                     has_classification_terms: z.ZodBoolean;
                     jsonmodel_type: z.ZodString;
@@ -1501,7 +1501,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 persistent_id: z.ZodString;
                 type: z.ZodString;
                 content: z.ZodArray<z.ZodString>;
-                publish: z.ZodBoolean;
+                publish: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$strip>, z.ZodObject<{
                 jsonmodel_type: z.ZodLiteral<"note_multipart">;
                 persistent_id: z.ZodString;
@@ -1509,9 +1509,9 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 subnotes: z.ZodArray<z.ZodObject<{
                     jsonmodel_type: z.ZodLiteral<"note_text">;
                     content: z.ZodString;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$strip>>;
-                publish: z.ZodBoolean;
+                publish: z.ZodOptional<z.ZodBoolean>;
                 rights_restriction: z.ZodOptional<z.ZodObject<{
                     local_access_restriction_type: z.ZodArray<z.ZodString>;
                 }, z.core.$strip>>;
@@ -1520,7 +1520,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 persistent_id: z.ZodString;
                 type: z.ZodString;
                 content: z.ZodArray<z.ZodString>;
-                publish: z.ZodBoolean;
+                publish: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$strip>], "jsonmodel_type">>;
             metadata_rights_declarations: z.ZodArray<z.ZodUnknown>;
             repository: z.ZodObject<{
@@ -1532,7 +1532,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     display_string: z.ZodString;
                     slug: z.ZodString;
                     is_slug_auto: z.ZodBoolean;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                     oai_is_disabled: z.ZodBoolean;
                     oai_sets_available: z.ZodString;
                     position: z.ZodNumber;
@@ -1554,7 +1554,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     title: z.ZodString;
                     id: z.ZodNumber;
                     record_uri: z.ZodString;
-                    publish: z.ZodBoolean;
+                    publish: z.ZodOptional<z.ZodBoolean>;
                     suppressed: z.ZodBoolean;
                     node_type: z.ZodString;
                     level: z.ZodString;

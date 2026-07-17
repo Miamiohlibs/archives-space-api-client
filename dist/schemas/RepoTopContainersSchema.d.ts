@@ -17,7 +17,7 @@ export declare const repoTopContainerSchema: import("zod").ZodObject<{
             display_string: import("zod").ZodString;
             slug: import("zod").ZodString;
             is_slug_auto: import("zod").ZodBoolean;
-            publish: import("zod").ZodBoolean;
+            publish: import("zod").ZodOptional<import("zod").ZodBoolean>;
             oai_is_disabled: import("zod").ZodBoolean;
             oai_sets_available: import("zod").ZodString;
             position: import("zod").ZodNumber;
