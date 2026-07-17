@@ -16,6 +16,7 @@ export const dateSchema = z.object({
     calendar: z.string().optional(),
     certainty: z.string().optional(),
     era: z.string().optional(),
+    expression: z.string().optional(),
     date_type: z.string(),
     label: z.string(),
     jsonmodel_type: z.string(),
@@ -79,6 +80,7 @@ const noteSinglepartSchema = z.object({
     jsonmodel_type: z.literal('note_singlepart'),
     persistent_id: z.string(),
     type: z.string(),
+    label: z.string().optional(),
     content: z.array(z.string()),
     publish: z.boolean().optional(),
 });
@@ -86,6 +88,7 @@ const noteMultipartSchema = z.object({
     jsonmodel_type: z.literal('note_multipart'),
     persistent_id: z.string(),
     type: z.string(),
+    label: z.string().optional(),
     subnotes: z.array(noteTextSchema),
     publish: z.boolean().optional(),
     rights_restriction: z
@@ -494,6 +497,8 @@ export const repoResourcesSchema = z.object({
     revision_statements: z.array(z.unknown()),
     instances: z.array(instanceSchema),
     deaccessions: z.array(z.unknown()),
+    ead_id: z.string().optional(),
+    ead_location: z.string().optional(),
     related_accessions: z.array(z.unknown()),
     classifications: z.array(classificationSchema),
     notes: z.array(noteSchema),

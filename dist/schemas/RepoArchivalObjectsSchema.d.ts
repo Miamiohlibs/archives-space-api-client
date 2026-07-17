@@ -132,12 +132,14 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             jsonmodel_type: z.ZodLiteral<"note_singlepart">;
             persistent_id: z.ZodString;
             type: z.ZodString;
+            label: z.ZodOptional<z.ZodString>;
             content: z.ZodArray<z.ZodString>;
             publish: z.ZodOptional<z.ZodBoolean>;
         }, z.core.$strip>, z.ZodObject<{
             jsonmodel_type: z.ZodLiteral<"note_multipart">;
             persistent_id: z.ZodString;
             type: z.ZodString;
+            label: z.ZodOptional<z.ZodString>;
             subnotes: z.ZodArray<z.ZodObject<{
                 jsonmodel_type: z.ZodLiteral<"note_text">;
                 content: z.ZodString;
@@ -167,6 +169,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
         calendar: z.ZodOptional<z.ZodString>;
         certainty: z.ZodOptional<z.ZodString>;
         era: z.ZodOptional<z.ZodString>;
+        expression: z.ZodOptional<z.ZodString>;
         date_type: z.ZodString;
         label: z.ZodString;
         jsonmodel_type: z.ZodString;
@@ -454,12 +457,14 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     jsonmodel_type: z.ZodLiteral<"note_singlepart">;
                     persistent_id: z.ZodString;
                     type: z.ZodString;
+                    label: z.ZodOptional<z.ZodString>;
                     content: z.ZodArray<z.ZodString>;
                     publish: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$strip>, z.ZodObject<{
                     jsonmodel_type: z.ZodLiteral<"note_multipart">;
                     persistent_id: z.ZodString;
                     type: z.ZodString;
+                    label: z.ZodOptional<z.ZodString>;
                     subnotes: z.ZodArray<z.ZodObject<{
                         jsonmodel_type: z.ZodLiteral<"note_text">;
                         content: z.ZodString;
@@ -489,6 +494,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 calendar: z.ZodOptional<z.ZodString>;
                 certainty: z.ZodOptional<z.ZodString>;
                 era: z.ZodOptional<z.ZodString>;
+                expression: z.ZodOptional<z.ZodString>;
                 date_type: z.ZodString;
                 label: z.ZodString;
                 jsonmodel_type: z.ZodString;
@@ -751,6 +757,8 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 user_mtime: z.ZodString;
             }, z.core.$strip>>;
             deaccessions: z.ZodArray<z.ZodUnknown>;
+            ead_id: z.ZodOptional<z.ZodString>;
+            ead_location: z.ZodOptional<z.ZodString>;
             related_accessions: z.ZodArray<z.ZodUnknown>;
             classifications: z.ZodArray<z.ZodObject<{
                 ref: z.ZodString;
@@ -784,12 +792,14 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 jsonmodel_type: z.ZodLiteral<"note_singlepart">;
                 persistent_id: z.ZodString;
                 type: z.ZodString;
+                label: z.ZodOptional<z.ZodString>;
                 content: z.ZodArray<z.ZodString>;
                 publish: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$strip>, z.ZodObject<{
                 jsonmodel_type: z.ZodLiteral<"note_multipart">;
                 persistent_id: z.ZodString;
                 type: z.ZodString;
+                label: z.ZodOptional<z.ZodString>;
                 subnotes: z.ZodArray<z.ZodObject<{
                     jsonmodel_type: z.ZodLiteral<"note_text">;
                     content: z.ZodString;
@@ -975,12 +985,14 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
         jsonmodel_type: z.ZodLiteral<"note_singlepart">;
         persistent_id: z.ZodString;
         type: z.ZodString;
+        label: z.ZodOptional<z.ZodString>;
         content: z.ZodArray<z.ZodString>;
         publish: z.ZodOptional<z.ZodBoolean>;
     }, z.core.$strip>, z.ZodObject<{
         jsonmodel_type: z.ZodLiteral<"note_multipart">;
         persistent_id: z.ZodString;
         type: z.ZodString;
+        label: z.ZodOptional<z.ZodString>;
         subnotes: z.ZodArray<z.ZodObject<{
             jsonmodel_type: z.ZodLiteral<"note_text">;
             content: z.ZodString;
@@ -1170,12 +1182,14 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     jsonmodel_type: z.ZodLiteral<"note_singlepart">;
                     persistent_id: z.ZodString;
                     type: z.ZodString;
+                    label: z.ZodOptional<z.ZodString>;
                     content: z.ZodArray<z.ZodString>;
                     publish: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$strip>, z.ZodObject<{
                     jsonmodel_type: z.ZodLiteral<"note_multipart">;
                     persistent_id: z.ZodString;
                     type: z.ZodString;
+                    label: z.ZodOptional<z.ZodString>;
                     subnotes: z.ZodArray<z.ZodObject<{
                         jsonmodel_type: z.ZodLiteral<"note_text">;
                         content: z.ZodString;
@@ -1205,6 +1219,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 calendar: z.ZodOptional<z.ZodString>;
                 certainty: z.ZodOptional<z.ZodString>;
                 era: z.ZodOptional<z.ZodString>;
+                expression: z.ZodOptional<z.ZodString>;
                 date_type: z.ZodString;
                 label: z.ZodString;
                 jsonmodel_type: z.ZodString;
@@ -1467,6 +1482,8 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 user_mtime: z.ZodString;
             }, z.core.$strip>>;
             deaccessions: z.ZodArray<z.ZodUnknown>;
+            ead_id: z.ZodOptional<z.ZodString>;
+            ead_location: z.ZodOptional<z.ZodString>;
             related_accessions: z.ZodArray<z.ZodUnknown>;
             classifications: z.ZodArray<z.ZodObject<{
                 ref: z.ZodString;
@@ -1500,12 +1517,14 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 jsonmodel_type: z.ZodLiteral<"note_singlepart">;
                 persistent_id: z.ZodString;
                 type: z.ZodString;
+                label: z.ZodOptional<z.ZodString>;
                 content: z.ZodArray<z.ZodString>;
                 publish: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$strip>, z.ZodObject<{
                 jsonmodel_type: z.ZodLiteral<"note_multipart">;
                 persistent_id: z.ZodString;
                 type: z.ZodString;
+                label: z.ZodOptional<z.ZodString>;
                 subnotes: z.ZodArray<z.ZodObject<{
                     jsonmodel_type: z.ZodLiteral<"note_text">;
                     content: z.ZodString;
