@@ -1,5 +1,11 @@
 # Release Notes
 
+## v.0.2.4
+
+### Fixed
+
+- made optional: publish, id_1, resource_type
+
 ## v. 0.2.3
 
 ### Fixed
