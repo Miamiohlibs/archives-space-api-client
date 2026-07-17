@@ -83,7 +83,7 @@ export const rightsStatementSchema = z.object({
 const noteTextSchema = z.object({
   jsonmodel_type: z.literal('note_text'),
   content: z.string(),
-  publish: z.boolean(),
+  publish: z.boolean().optional(),
 });
 
 const noteSinglepartSchema = z.object({
@@ -91,7 +91,7 @@ const noteSinglepartSchema = z.object({
   persistent_id: z.string(),
   type: z.string(),
   content: z.array(z.string()),
-  publish: z.boolean(),
+  publish: z.boolean().optional(),
 });
 
 const noteMultipartSchema = z.object({
@@ -99,7 +99,7 @@ const noteMultipartSchema = z.object({
   persistent_id: z.string(),
   type: z.string(),
   subnotes: z.array(noteTextSchema),
-  publish: z.boolean(),
+  publish: z.boolean().optional(),
   rights_restriction: z
     .object({
       local_access_restriction_type: z.array(z.string()),
@@ -112,7 +112,7 @@ const noteLangmaterialSchema = z.object({
   persistent_id: z.string(),
   type: z.string(),
   content: z.array(z.string()),
-  publish: z.boolean(),
+  publish: z.boolean().optional(),
 });
 
 export const noteSchema = z.discriminatedUnion('jsonmodel_type', [
@@ -199,7 +199,7 @@ const agentNameSchema = z.object({
 // is left unknown rather than guessed.
 const agentResolvedSchema = z.object({
   lock_version: z.number(),
-  publish: z.boolean(),
+  publish: z.boolean().optional(),
   is_slug_auto: z.boolean(),
   is_linked_to_published_record: z.boolean(),
   jsonmodel_type: z.string(),
@@ -267,7 +267,7 @@ const subjectResolvedSchema = z.object({
   source: z.string().optional(),
   vocabulary: z.string(),
   uri: z.string(),
-  publish: z.boolean(),
+  publish: z.boolean().optional(),
   is_slug_auto: z.boolean(),
   is_linked_to_published_record: z.boolean(),
   jsonmodel_type: z.string(),
@@ -296,7 +296,7 @@ const classificationResolvedSchema = z.object({
   lock_version: z.number(),
   identifier: z.string(),
   title: z.string(),
-  publish: z.boolean(),
+  publish: z.boolean().optional(),
   is_slug_auto: z.boolean(),
   has_classification_terms: z.boolean(),
   jsonmodel_type: z.string(),
@@ -355,7 +355,7 @@ const repositoryResolvedSchema = z.object({
   display_string: z.string(),
   slug: z.string(),
   is_slug_auto: z.boolean(),
-  publish: z.boolean(),
+  publish: z.boolean().optional(),
   oai_is_disabled: z.boolean(),
   oai_sets_available: z.string(),
   position: z.number(),
@@ -433,7 +433,7 @@ export interface ResourceRecord {
   level: string;
   resource_type: string;
   id_0: string;
-  id_1: string;
+  id_1?: string;
   id_2?: string;
   finding_aid_title?: string;
   finding_aid_filing_title?: string;
@@ -552,7 +552,7 @@ const treeNodeSchema: z.ZodType<TreeNode> = z.lazy(() =>
     title: z.string(),
     id: z.number(),
     record_uri: z.string(),
-    publish: z.boolean(),
+    publish: z.boolean().optional(),
     suppressed: z.boolean(),
     node_type: z.string(),
     level: z.string(),
@@ -567,7 +567,7 @@ const treeResolvedSchema = z.object({
   title: z.string(),
   id: z.number(),
   record_uri: z.string(),
-  publish: z.boolean(),
+  publish: z.boolean().optional(),
   suppressed: z.boolean(),
   node_type: z.string(),
   level: z.string(),
@@ -584,14 +584,14 @@ const treeSchema = resolvableRefSchema(treeResolvedSchema);
 export const repoResourcesSchema = z.object({
   lock_version: z.number(),
   title: z.string(),
-  publish: z.boolean(),
+  publish: z.boolean().optional(),
   restrictions: z.boolean(),
   suppressed: z.boolean(),
   is_slug_auto: z.boolean(),
   jsonmodel_type: z.string(),
   uri: z.string(),
   level: z.string(),
-  resource_type: z.string(),
+  resource_type: z.string().optional(),
   id_0: z.string(),
   id_1: z.string(),
   id_2: z.string().optional(),
