@@ -428,14 +428,14 @@ export interface ResourceRecord {
   lock_version: number;
   title: string;
   publish?: boolean;
-  restrictions: boolean;
+  restrictions?: boolean;
   suppressed: boolean;
   is_slug_auto: boolean;
   jsonmodel_type: string;
   uri: string;
   level: string;
   resource_type?: string;
-  id_0: string;
+  id_0?: string;
   id_1?: string;
   id_2?: string;
   finding_aid_title?: string;
@@ -443,8 +443,8 @@ export interface ResourceRecord {
   finding_aid_date?: string;
   finding_aid_author?: string;
   finding_aid_description_rules?: string;
-  finding_aid_language: string;
-  finding_aid_script: string;
+  finding_aid_language?: string;
+  finding_aid_script?: string;
   finding_aid_language_note?: string;
   finding_aid_status?: string;
   created_by?: string;
@@ -462,15 +462,15 @@ export interface ResourceRecord {
   rights_statements: z.infer<typeof rightsStatementSchema>[];
   linked_agents: z.infer<typeof linkedAgentSchema>[];
   import_previous_arks: unknown[];
-  revision_statements: unknown[];
+  revision_statements?: unknown[];
   instances: z.infer<typeof instanceSchema>[];
-  deaccessions: unknown[];
+  deaccessions?: unknown[];
   ead_id?: string;
   ead_location?: string;
-  related_accessions: unknown[];
-  classifications: z.infer<typeof classificationSchema>[];
+  related_accessions?: unknown[];
+  classifications?: z.infer<typeof classificationSchema>[];
   notes: z.infer<typeof noteSchema>[];
-  metadata_rights_declarations: unknown[];
+  metadata_rights_declarations?: unknown[];
   repository: z.infer<typeof repositorySchema>;
   tree: z.infer<typeof treeSchema>;
 }
@@ -590,14 +590,14 @@ export const repoResourcesSchema = z.object({
   lock_version: z.number(),
   title: z.string(),
   publish: z.boolean().optional(),
-  restrictions: z.boolean(),
+  restrictions: z.boolean().optional(),
   suppressed: z.boolean(),
   is_slug_auto: z.boolean(),
   jsonmodel_type: z.string(),
   uri: z.string(),
   level: z.string(),
   resource_type: z.string().optional(),
-  id_0: z.string(),
+  id_0: z.string().optional(),
   id_1: z.string().optional(),
   id_2: z.string().optional(),
   finding_aid_title: z.string().optional(),
@@ -605,8 +605,8 @@ export const repoResourcesSchema = z.object({
   finding_aid_date: z.string().optional(),
   finding_aid_author: z.string().optional(),
   finding_aid_description_rules: z.string().optional(),
-  finding_aid_language: z.string(),
-  finding_aid_script: z.string(),
+  finding_aid_language: z.string().optional(),
+  finding_aid_script: z.string().optional(),
   finding_aid_language_note: z.string().optional(),
   finding_aid_status: z.string().optional(),
   created_by: z.string().optional(),
@@ -624,15 +624,15 @@ export const repoResourcesSchema = z.object({
   rights_statements: z.array(rightsStatementSchema),
   linked_agents: z.array(linkedAgentSchema),
   import_previous_arks: z.array(z.unknown()),
-  revision_statements: z.array(z.unknown()),
+  revision_statements: z.array(z.unknown()).optional(),
   instances: z.array(instanceSchema),
-  deaccessions: z.array(z.unknown()),
+  deaccessions: z.array(z.unknown()).optional(),
   ead_id: z.string().optional(),
   ead_location: z.string().optional(),
-  related_accessions: z.array(z.unknown()),
-  classifications: z.array(classificationSchema),
+  related_accessions: z.array(z.unknown()).optional(),
+  classifications: z.array(classificationSchema).optional(),
   notes: z.array(noteSchema),
-  metadata_rights_declarations: z.array(z.unknown()),
+  metadata_rights_declarations: z.array(z.unknown()).optional(),
   repository: repositorySchema,
   tree: treeSchema,
 });

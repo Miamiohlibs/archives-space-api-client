@@ -317,7 +317,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             lock_version: z.ZodNumber;
             title: z.ZodString;
             publish: z.ZodOptional<z.ZodBoolean>;
-            restrictions: z.ZodBoolean;
+            restrictions: z.ZodOptional<z.ZodBoolean>;
             suppressed: z.ZodBoolean;
             is_slug_auto: z.ZodBoolean;
             jsonmodel_type: z.ZodString;
@@ -1042,7 +1042,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             lock_version: z.ZodNumber;
             title: z.ZodString;
             publish: z.ZodOptional<z.ZodBoolean>;
-            restrictions: z.ZodBoolean;
+            restrictions: z.ZodOptional<z.ZodBoolean>;
             suppressed: z.ZodBoolean;
             is_slug_auto: z.ZodBoolean;
             jsonmodel_type: z.ZodString;

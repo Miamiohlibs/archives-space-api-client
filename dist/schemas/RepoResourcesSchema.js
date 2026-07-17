@@ -460,7 +460,7 @@ export const repoResourcesSchema = z.object({
     lock_version: z.number(),
     title: z.string(),
     publish: z.boolean().optional(),
-    restrictions: z.boolean(),
+    restrictions: z.boolean().optional(),
     suppressed: z.boolean(),
     is_slug_auto: z.boolean(),
     jsonmodel_type: z.string(),

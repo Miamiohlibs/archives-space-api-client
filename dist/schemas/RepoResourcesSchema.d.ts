@@ -427,7 +427,7 @@ export interface ResourceRecord {
     lock_version: number;
     title: string;
     publish?: boolean;
-    restrictions: boolean;
+    restrictions?: boolean;
     suppressed: boolean;
     is_slug_auto: boolean;
     jsonmodel_type: string;
@@ -827,7 +827,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
     lock_version: z.ZodNumber;
     title: z.ZodString;
     publish: z.ZodOptional<z.ZodBoolean>;
-    restrictions: z.ZodBoolean;
+    restrictions: z.ZodOptional<z.ZodBoolean>;
     suppressed: z.ZodBoolean;
     is_slug_auto: z.ZodBoolean;
     jsonmodel_type: z.ZodString;
