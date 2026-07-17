@@ -322,7 +322,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             level: z.ZodString;
             resource_type: z.ZodOptional<z.ZodString>;
             id_0: z.ZodString;
-            id_1: z.ZodString;
+            id_1: z.ZodOptional<z.ZodString>;
             id_2: z.ZodOptional<z.ZodString>;
             finding_aid_title: z.ZodOptional<z.ZodString>;
             finding_aid_filing_title: z.ZodOptional<z.ZodString>;
@@ -1038,7 +1038,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             level: z.ZodString;
             resource_type: z.ZodOptional<z.ZodString>;
             id_0: z.ZodString;
-            id_1: z.ZodString;
+            id_1: z.ZodOptional<z.ZodString>;
             id_2: z.ZodOptional<z.ZodString>;
             finding_aid_title: z.ZodOptional<z.ZodString>;
             finding_aid_filing_title: z.ZodOptional<z.ZodString>;

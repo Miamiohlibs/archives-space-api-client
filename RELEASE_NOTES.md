@@ -1,6 +1,12 @@
 # Release Notes
 
-## v.0.2.4
+## v. 0.2.5
+
+### Fixed
+
+- second attempt to make id_1 optional
+
+## v 0.2.4
 
 ### Fixed
 

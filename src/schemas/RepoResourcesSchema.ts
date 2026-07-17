@@ -593,7 +593,7 @@ export const repoResourcesSchema = z.object({
   level: z.string(),
   resource_type: z.string().optional(),
   id_0: z.string(),
-  id_1: z.string(),
+  id_1: z.string().optional(),
   id_2: z.string().optional(),
   finding_aid_title: z.string().optional(),
   finding_aid_filing_title: z.string().optional(),

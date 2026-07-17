@@ -421,14 +421,14 @@ export declare const containerLocationSchema: z.ZodObject<{
 export interface ResourceRecord {
     lock_version: number;
     title: string;
-    publish: boolean | undefined;
+    publish?: boolean;
     restrictions: boolean;
     suppressed: boolean;
     is_slug_auto: boolean;
     jsonmodel_type: string;
     uri: string;
     level: string;
-    resource_type: string;
+    resource_type?: string;
     id_0: string;
     id_1?: string;
     id_2?: string;
@@ -790,7 +790,7 @@ export interface TreeNode {
     title: string;
     id: number;
     record_uri: string;
-    publish: boolean;
+    publish?: boolean;
     suppressed: boolean;
     node_type: string;
     level: string;
@@ -828,7 +828,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
     level: z.ZodString;
     resource_type: z.ZodOptional<z.ZodString>;
     id_0: z.ZodString;
-    id_1: z.ZodString;
+    id_1: z.ZodOptional<z.ZodString>;
     id_2: z.ZodOptional<z.ZodString>;
     finding_aid_title: z.ZodOptional<z.ZodString>;
     finding_aid_filing_title: z.ZodOptional<z.ZodString>;
