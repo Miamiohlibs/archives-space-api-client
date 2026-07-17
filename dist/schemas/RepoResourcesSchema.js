@@ -414,6 +414,8 @@ const subContainerSchema = z.object({
     create_time: z.string(),
     system_mtime: z.string(),
     user_mtime: z.string(),
+    indicator_2: z.string().optional(),
+    type_2: z.string().optional(),
 });
 export const instanceSchema = z.object({
     lock_version: z.number(),
@@ -440,6 +442,10 @@ const treeNodeSchema = z.lazy(() => z.object({
     children: z.array(treeNodeSchema),
     containers: z.array(z.unknown()),
 }));
+const nestedAncestorSchema = z.object({
+    level: z.string(),
+    ref: z.string(),
+});
 const treeResolvedSchema = z.object({
     title: z.string(),
     id: z.number(),
@@ -470,6 +476,9 @@ export const repoResourcesSchema = z.object({
     id_0: z.string().optional(),
     id_1: z.string().optional(),
     id_2: z.string().optional(),
+    accession_links: z.array(z.unknown()).optional(),
+    ancestors: z.array(nestedAncestorSchema).optional(),
+    display_string: z.string().optional(),
     finding_aid_title: z.string().optional(),
     finding_aid_filing_title: z.string().optional(),
     finding_aid_date: z.string().optional(),
@@ -479,6 +488,7 @@ export const repoResourcesSchema = z.object({
     finding_aid_script: z.string().optional(),
     finding_aid_language_note: z.string().optional(),
     finding_aid_status: z.string().optional(),
+    has_unpublished_ancestor: z.boolean().optional(),
     created_by: z.string().optional(),
     last_modified_by: z.string().optional(),
     create_time: z.string(),
@@ -503,6 +513,11 @@ export const repoResourcesSchema = z.object({
     classifications: z.array(classificationSchema).optional(),
     notes: z.array(noteSchema),
     metadata_rights_declarations: z.array(z.unknown()).optional(),
+    parent: refSchema.optional(),
+    position: z.number().optional(),
+    ref_id: z.string().optional(),
+    resource: refSchema.optional(),
+    restrictions_apply: z.boolean().optional(),
     repository: repositorySchema,
     tree: treeSchema.optional(),
 });

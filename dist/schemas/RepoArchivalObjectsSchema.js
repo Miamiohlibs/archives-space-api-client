@@ -41,5 +41,6 @@ export const repoArchivalObjectSchema = z.object({
     uri: z.string(),
     repository: repositorySchema,
     resource: resolvableRefSchema(repoResourcesSchema),
+    parent: z.any().optional(),
     has_unpublished_ancestor: z.boolean(),
 });

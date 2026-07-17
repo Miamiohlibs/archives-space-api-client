@@ -327,6 +327,12 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             id_0: z.ZodOptional<z.ZodString>;
             id_1: z.ZodOptional<z.ZodString>;
             id_2: z.ZodOptional<z.ZodString>;
+            accession_links: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
+            ancestors: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                level: z.ZodString;
+                ref: z.ZodString;
+            }, z.core.$strip>>>;
+            display_string: z.ZodOptional<z.ZodString>;
             finding_aid_title: z.ZodOptional<z.ZodString>;
             finding_aid_filing_title: z.ZodOptional<z.ZodString>;
             finding_aid_date: z.ZodOptional<z.ZodString>;
@@ -336,6 +342,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             finding_aid_script: z.ZodOptional<z.ZodString>;
             finding_aid_language_note: z.ZodOptional<z.ZodString>;
             finding_aid_status: z.ZodOptional<z.ZodString>;
+            has_unpublished_ancestor: z.ZodOptional<z.ZodBoolean>;
             created_by: z.ZodOptional<z.ZodString>;
             last_modified_by: z.ZodOptional<z.ZodString>;
             create_time: z.ZodString;
@@ -749,6 +756,8 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     create_time: z.ZodString;
                     system_mtime: z.ZodString;
                     user_mtime: z.ZodString;
+                    indicator_2: z.ZodOptional<z.ZodString>;
+                    type_2: z.ZodOptional<z.ZodString>;
                 }, z.core.$strip>;
                 created_by: z.ZodOptional<z.ZodString>;
                 last_modified_by: z.ZodOptional<z.ZodString>;
@@ -817,6 +826,15 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 publish: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$strip>], "jsonmodel_type">>;
             metadata_rights_declarations: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
+            parent: z.ZodOptional<z.ZodObject<{
+                ref: z.ZodString;
+            }, z.core.$strip>>;
+            position: z.ZodOptional<z.ZodNumber>;
+            ref_id: z.ZodOptional<z.ZodString>;
+            resource: z.ZodOptional<z.ZodObject<{
+                ref: z.ZodString;
+            }, z.core.$strip>>;
+            restrictions_apply: z.ZodOptional<z.ZodBoolean>;
             repository: z.ZodObject<{
                 ref: z.ZodString;
                 _resolved: z.ZodOptional<z.ZodObject<{
@@ -974,6 +992,8 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
+            indicator_2: z.ZodOptional<z.ZodString>;
+            type_2: z.ZodOptional<z.ZodString>;
         }, z.core.$strip>;
         created_by: z.ZodOptional<z.ZodString>;
         last_modified_by: z.ZodOptional<z.ZodString>;
@@ -1052,6 +1072,12 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             id_0: z.ZodOptional<z.ZodString>;
             id_1: z.ZodOptional<z.ZodString>;
             id_2: z.ZodOptional<z.ZodString>;
+            accession_links: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
+            ancestors: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                level: z.ZodString;
+                ref: z.ZodString;
+            }, z.core.$strip>>>;
+            display_string: z.ZodOptional<z.ZodString>;
             finding_aid_title: z.ZodOptional<z.ZodString>;
             finding_aid_filing_title: z.ZodOptional<z.ZodString>;
             finding_aid_date: z.ZodOptional<z.ZodString>;
@@ -1061,6 +1087,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             finding_aid_script: z.ZodOptional<z.ZodString>;
             finding_aid_language_note: z.ZodOptional<z.ZodString>;
             finding_aid_status: z.ZodOptional<z.ZodString>;
+            has_unpublished_ancestor: z.ZodOptional<z.ZodBoolean>;
             created_by: z.ZodOptional<z.ZodString>;
             last_modified_by: z.ZodOptional<z.ZodString>;
             create_time: z.ZodString;
@@ -1474,6 +1501,8 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     create_time: z.ZodString;
                     system_mtime: z.ZodString;
                     user_mtime: z.ZodString;
+                    indicator_2: z.ZodOptional<z.ZodString>;
+                    type_2: z.ZodOptional<z.ZodString>;
                 }, z.core.$strip>;
                 created_by: z.ZodOptional<z.ZodString>;
                 last_modified_by: z.ZodOptional<z.ZodString>;
@@ -1542,6 +1571,15 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 publish: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$strip>], "jsonmodel_type">>;
             metadata_rights_declarations: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
+            parent: z.ZodOptional<z.ZodObject<{
+                ref: z.ZodString;
+            }, z.core.$strip>>;
+            position: z.ZodOptional<z.ZodNumber>;
+            ref_id: z.ZodOptional<z.ZodString>;
+            resource: z.ZodOptional<z.ZodObject<{
+                ref: z.ZodString;
+            }, z.core.$strip>>;
+            restrictions_apply: z.ZodOptional<z.ZodBoolean>;
             repository: z.ZodObject<{
                 ref: z.ZodString;
                 _resolved: z.ZodOptional<z.ZodObject<{
@@ -1586,6 +1624,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             }, z.core.$strip>>;
         }, z.core.$strip>>;
     }, z.core.$strip>;
+    parent: z.ZodOptional<z.ZodAny>;
     has_unpublished_ancestor: z.ZodBoolean;
 }, z.core.$strip>;
 //# sourceMappingURL=RepoArchivalObjectsSchema.d.ts.map
