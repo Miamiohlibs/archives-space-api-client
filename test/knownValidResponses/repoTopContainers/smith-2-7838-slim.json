@@ -1,0 +1,74 @@
+{
+    "lock_version": 51,
+    "indicator": "3 [2A-H-1C]",
+    "created_by": "sprungd",
+    "last_modified_by": "sprungd",
+    "create_time": "2019-06-25T18:59:19Z",
+    "system_mtime": "2024-06-20T15:13:18Z",
+    "user_mtime": "2021-04-19T13:51:21Z",
+    "type": "box",
+    "jsonmodel_type": "top_container",
+    "active_restrictions": [
+        {
+            "id": 24506,
+            "resource_id": 634,
+            "restriction_note_type": "accessrestrict",
+            "jsonmodel_type": "rights_restriction",
+            "local_access_restriction_type": [
+                "RestrictedSpecColl"
+            ],
+            "linked_records": {
+                "ref": "/repositories/2/resources/634"
+            }
+        }
+    ],
+    "container_locations": [
+        {
+            "jsonmodel_type": "container_location",
+            "status": "current",
+            "start_date": "2021-04-19",
+            "system_mtime": "2021-04-19 13:51:21 UTC",
+            "user_mtime": "2021-04-19 13:51:21 UTC",
+            "ref": "/locations/17846",
+            "_resolved": {
+                "lock_version": 0,
+                "building": "King Library",
+                "title": "King Library, 3rd Floor, Walter Havighurst , Special Collections and Archives [Range: 2A, Section: H, Shelf: 1C]",
+                "floor": "3rd Floor",
+                "room": "Walter Havighurst ",
+                "area": "Special Collections and Archives",
+                "coordinate_1_label": "Range",
+                "coordinate_1_indicator": "2A",
+                "coordinate_2_label": "Section",
+                "coordinate_2_indicator": "H",
+                "coordinate_3_label": "Shelf",
+                "coordinate_3_indicator": "1C",
+                "created_by": "sprungd",
+                "last_modified_by": "sprungd",
+                "create_time": "2021-04-19T13:43:24Z",
+                "system_mtime": "2023-02-24T12:51:24Z",
+                "user_mtime": "2021-04-19T13:43:24Z",
+                "jsonmodel_type": "location",
+                "external_ids": [],
+                "functions": [],
+                "uri": "/locations/17846"
+            }
+        }
+    ],
+    "series": [],
+    "collection": [
+        {
+            "ref": "/repositories/2/resources/634",
+            "identifier": "8--FAC--SMI",
+            "display_string": "William E. Smith Student Diaries Collection"
+        }
+    ],
+    "uri": "/repositories/2/top_containers/7838",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restricted": true,
+    "is_linked_to_published_record": true,
+    "display_string": "Box 3 [2A-H-1C]",
+    "long_display_string": "Box 3 [2A-H-1C], King Library, 3rd Floor, Walter Havighurst , Special Collections and Archives [Range: 2A, Section: H, Shelf: 1C], 8--FAC--SMI, William E. Smith Student Diaries Collection"
+}
