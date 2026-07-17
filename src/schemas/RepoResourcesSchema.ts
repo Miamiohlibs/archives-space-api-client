@@ -472,7 +472,7 @@ export interface ResourceRecord {
   notes: z.infer<typeof noteSchema>[];
   metadata_rights_declarations?: unknown[];
   repository: z.infer<typeof repositorySchema>;
-  tree: z.infer<typeof treeSchema>;
+  tree?: z.infer<typeof treeSchema>;
 }
 
 export const collectionRefSchema: z.ZodType<{
@@ -634,5 +634,5 @@ export const repoResourcesSchema = z.object({
   notes: z.array(noteSchema),
   metadata_rights_declarations: z.array(z.unknown()).optional(),
   repository: repositorySchema,
-  tree: treeSchema,
+  tree: treeSchema.optional(),
 });

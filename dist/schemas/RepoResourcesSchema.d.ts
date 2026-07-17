@@ -434,7 +434,7 @@ export interface ResourceRecord {
     uri: string;
     level: string;
     resource_type?: string;
-    id_0: string;
+    id_0?: string;
     id_1?: string;
     id_2?: string;
     finding_aid_title?: string;
@@ -442,8 +442,8 @@ export interface ResourceRecord {
     finding_aid_date?: string;
     finding_aid_author?: string;
     finding_aid_description_rules?: string;
-    finding_aid_language: string;
-    finding_aid_script: string;
+    finding_aid_language?: string;
+    finding_aid_script?: string;
     finding_aid_language_note?: string;
     finding_aid_status?: string;
     created_by?: string;
@@ -461,17 +461,17 @@ export interface ResourceRecord {
     rights_statements: z.infer<typeof rightsStatementSchema>[];
     linked_agents: z.infer<typeof linkedAgentSchema>[];
     import_previous_arks: unknown[];
-    revision_statements: unknown[];
+    revision_statements?: unknown[];
     instances: z.infer<typeof instanceSchema>[];
-    deaccessions: unknown[];
+    deaccessions?: unknown[];
     ead_id?: string;
     ead_location?: string;
-    related_accessions: unknown[];
-    classifications: z.infer<typeof classificationSchema>[];
+    related_accessions?: unknown[];
+    classifications?: z.infer<typeof classificationSchema>[];
     notes: z.infer<typeof noteSchema>[];
-    metadata_rights_declarations: unknown[];
+    metadata_rights_declarations?: unknown[];
     repository: z.infer<typeof repositorySchema>;
-    tree: z.infer<typeof treeSchema>;
+    tree?: z.infer<typeof treeSchema>;
 }
 export declare const collectionRefSchema: z.ZodType<{
     ref: string;
@@ -834,7 +834,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
     uri: z.ZodString;
     level: z.ZodString;
     resource_type: z.ZodOptional<z.ZodString>;
-    id_0: z.ZodString;
+    id_0: z.ZodOptional<z.ZodString>;
     id_1: z.ZodOptional<z.ZodString>;
     id_2: z.ZodOptional<z.ZodString>;
     finding_aid_title: z.ZodOptional<z.ZodString>;
@@ -842,8 +842,8 @@ export declare const repoResourcesSchema: z.ZodObject<{
     finding_aid_date: z.ZodOptional<z.ZodString>;
     finding_aid_author: z.ZodOptional<z.ZodString>;
     finding_aid_description_rules: z.ZodOptional<z.ZodString>;
-    finding_aid_language: z.ZodString;
-    finding_aid_script: z.ZodString;
+    finding_aid_language: z.ZodOptional<z.ZodString>;
+    finding_aid_script: z.ZodOptional<z.ZodString>;
     finding_aid_language_note: z.ZodOptional<z.ZodString>;
     finding_aid_status: z.ZodOptional<z.ZodString>;
     created_by: z.ZodOptional<z.ZodString>;
@@ -1146,7 +1146,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
         terms: z.ZodArray<z.ZodUnknown>;
     }, z.core.$strip>>;
     import_previous_arks: z.ZodArray<z.ZodUnknown>;
-    revision_statements: z.ZodArray<z.ZodUnknown>;
+    revision_statements: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
     instances: z.ZodArray<z.ZodObject<{
         lock_version: z.ZodNumber;
         instance_type: z.ZodString;
@@ -1266,11 +1266,11 @@ export declare const repoResourcesSchema: z.ZodObject<{
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
     }, z.core.$strip>>;
-    deaccessions: z.ZodArray<z.ZodUnknown>;
+    deaccessions: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
     ead_id: z.ZodOptional<z.ZodString>;
     ead_location: z.ZodOptional<z.ZodString>;
-    related_accessions: z.ZodArray<z.ZodUnknown>;
-    classifications: z.ZodArray<z.ZodObject<{
+    related_accessions: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
+    classifications: z.ZodOptional<z.ZodArray<z.ZodObject<{
         ref: z.ZodString;
         _resolved: z.ZodOptional<z.ZodObject<{
             lock_version: z.ZodNumber;
@@ -1297,7 +1297,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
         }, z.core.$strip>>;
-    }, z.core.$strip>>;
+    }, z.core.$strip>>>;
     notes: z.ZodArray<z.ZodDiscriminatedUnion<[z.ZodObject<{
         jsonmodel_type: z.ZodLiteral<"note_singlepart">;
         persistent_id: z.ZodString;
@@ -1326,7 +1326,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
         content: z.ZodArray<z.ZodString>;
         publish: z.ZodOptional<z.ZodBoolean>;
     }, z.core.$strip>], "jsonmodel_type">>;
-    metadata_rights_declarations: z.ZodArray<z.ZodUnknown>;
+    metadata_rights_declarations: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
     repository: z.ZodObject<{
         ref: z.ZodString;
         _resolved: z.ZodOptional<z.ZodObject<{
@@ -1352,7 +1352,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
             user_mtime: z.ZodString;
         }, z.core.$strip>>;
     }, z.core.$strip>;
-    tree: z.ZodObject<{
+    tree: z.ZodOptional<z.ZodObject<{
         ref: z.ZodString;
         _resolved: z.ZodOptional<z.ZodObject<{
             title: z.ZodString;
@@ -1368,7 +1368,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
             children: z.ZodArray<z.ZodType<TreeNode, unknown, z.core.$ZodTypeInternals<TreeNode, unknown>>>;
             containers: z.ZodArray<z.ZodUnknown>;
         }, z.core.$strip>>;
-    }, z.core.$strip>;
+    }, z.core.$strip>>;
 }, z.core.$strip>;
 export {};
 //# sourceMappingURL=RepoResourcesSchema.d.ts.map

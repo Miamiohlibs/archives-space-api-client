@@ -324,7 +324,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             uri: z.ZodString;
             level: z.ZodString;
             resource_type: z.ZodOptional<z.ZodString>;
-            id_0: z.ZodString;
+            id_0: z.ZodOptional<z.ZodString>;
             id_1: z.ZodOptional<z.ZodString>;
             id_2: z.ZodOptional<z.ZodString>;
             finding_aid_title: z.ZodOptional<z.ZodString>;
@@ -332,8 +332,8 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             finding_aid_date: z.ZodOptional<z.ZodString>;
             finding_aid_author: z.ZodOptional<z.ZodString>;
             finding_aid_description_rules: z.ZodOptional<z.ZodString>;
-            finding_aid_language: z.ZodString;
-            finding_aid_script: z.ZodString;
+            finding_aid_language: z.ZodOptional<z.ZodString>;
+            finding_aid_script: z.ZodOptional<z.ZodString>;
             finding_aid_language_note: z.ZodOptional<z.ZodString>;
             finding_aid_status: z.ZodOptional<z.ZodString>;
             created_by: z.ZodOptional<z.ZodString>;
@@ -636,7 +636,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 terms: z.ZodArray<z.ZodUnknown>;
             }, z.core.$strip>>;
             import_previous_arks: z.ZodArray<z.ZodUnknown>;
-            revision_statements: z.ZodArray<z.ZodUnknown>;
+            revision_statements: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
             instances: z.ZodArray<z.ZodObject<{
                 lock_version: z.ZodNumber;
                 instance_type: z.ZodString;
@@ -756,11 +756,11 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 system_mtime: z.ZodString;
                 user_mtime: z.ZodString;
             }, z.core.$strip>>;
-            deaccessions: z.ZodArray<z.ZodUnknown>;
+            deaccessions: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
             ead_id: z.ZodOptional<z.ZodString>;
             ead_location: z.ZodOptional<z.ZodString>;
-            related_accessions: z.ZodArray<z.ZodUnknown>;
-            classifications: z.ZodArray<z.ZodObject<{
+            related_accessions: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
+            classifications: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 ref: z.ZodString;
                 _resolved: z.ZodOptional<z.ZodObject<{
                     lock_version: z.ZodNumber;
@@ -787,7 +787,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     system_mtime: z.ZodString;
                     user_mtime: z.ZodString;
                 }, z.core.$strip>>;
-            }, z.core.$strip>>;
+            }, z.core.$strip>>>;
             notes: z.ZodArray<z.ZodDiscriminatedUnion<[z.ZodObject<{
                 jsonmodel_type: z.ZodLiteral<"note_singlepart">;
                 persistent_id: z.ZodString;
@@ -816,7 +816,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 content: z.ZodArray<z.ZodString>;
                 publish: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$strip>], "jsonmodel_type">>;
-            metadata_rights_declarations: z.ZodArray<z.ZodUnknown>;
+            metadata_rights_declarations: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
             repository: z.ZodObject<{
                 ref: z.ZodString;
                 _resolved: z.ZodOptional<z.ZodObject<{
@@ -842,7 +842,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     user_mtime: z.ZodString;
                 }, z.core.$strip>>;
             }, z.core.$strip>;
-            tree: z.ZodObject<{
+            tree: z.ZodOptional<z.ZodObject<{
                 ref: z.ZodString;
                 _resolved: z.ZodOptional<z.ZodObject<{
                     title: z.ZodString;
@@ -858,7 +858,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     children: z.ZodArray<z.ZodType<import("./RepoResourcesSchema.js").TreeNode, unknown, z.core.$ZodTypeInternals<import("./RepoResourcesSchema.js").TreeNode, unknown>>>;
                     containers: z.ZodArray<z.ZodUnknown>;
                 }, z.core.$strip>>;
-            }, z.core.$strip>;
+            }, z.core.$strip>>;
         }, z.core.$strip>>;
         level: z.ZodString;
     }, z.core.$strip>>;
@@ -1049,7 +1049,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             uri: z.ZodString;
             level: z.ZodString;
             resource_type: z.ZodOptional<z.ZodString>;
-            id_0: z.ZodString;
+            id_0: z.ZodOptional<z.ZodString>;
             id_1: z.ZodOptional<z.ZodString>;
             id_2: z.ZodOptional<z.ZodString>;
             finding_aid_title: z.ZodOptional<z.ZodString>;
@@ -1057,8 +1057,8 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             finding_aid_date: z.ZodOptional<z.ZodString>;
             finding_aid_author: z.ZodOptional<z.ZodString>;
             finding_aid_description_rules: z.ZodOptional<z.ZodString>;
-            finding_aid_language: z.ZodString;
-            finding_aid_script: z.ZodString;
+            finding_aid_language: z.ZodOptional<z.ZodString>;
+            finding_aid_script: z.ZodOptional<z.ZodString>;
             finding_aid_language_note: z.ZodOptional<z.ZodString>;
             finding_aid_status: z.ZodOptional<z.ZodString>;
             created_by: z.ZodOptional<z.ZodString>;
@@ -1361,7 +1361,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 terms: z.ZodArray<z.ZodUnknown>;
             }, z.core.$strip>>;
             import_previous_arks: z.ZodArray<z.ZodUnknown>;
-            revision_statements: z.ZodArray<z.ZodUnknown>;
+            revision_statements: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
             instances: z.ZodArray<z.ZodObject<{
                 lock_version: z.ZodNumber;
                 instance_type: z.ZodString;
@@ -1481,11 +1481,11 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 system_mtime: z.ZodString;
                 user_mtime: z.ZodString;
             }, z.core.$strip>>;
-            deaccessions: z.ZodArray<z.ZodUnknown>;
+            deaccessions: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
             ead_id: z.ZodOptional<z.ZodString>;
             ead_location: z.ZodOptional<z.ZodString>;
-            related_accessions: z.ZodArray<z.ZodUnknown>;
-            classifications: z.ZodArray<z.ZodObject<{
+            related_accessions: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
+            classifications: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 ref: z.ZodString;
                 _resolved: z.ZodOptional<z.ZodObject<{
                     lock_version: z.ZodNumber;
@@ -1512,7 +1512,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     system_mtime: z.ZodString;
                     user_mtime: z.ZodString;
                 }, z.core.$strip>>;
-            }, z.core.$strip>>;
+            }, z.core.$strip>>>;
             notes: z.ZodArray<z.ZodDiscriminatedUnion<[z.ZodObject<{
                 jsonmodel_type: z.ZodLiteral<"note_singlepart">;
                 persistent_id: z.ZodString;
@@ -1541,7 +1541,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 content: z.ZodArray<z.ZodString>;
                 publish: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$strip>], "jsonmodel_type">>;
-            metadata_rights_declarations: z.ZodArray<z.ZodUnknown>;
+            metadata_rights_declarations: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
             repository: z.ZodObject<{
                 ref: z.ZodString;
                 _resolved: z.ZodOptional<z.ZodObject<{
@@ -1567,7 +1567,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     user_mtime: z.ZodString;
                 }, z.core.$strip>>;
             }, z.core.$strip>;
-            tree: z.ZodObject<{
+            tree: z.ZodOptional<z.ZodObject<{
                 ref: z.ZodString;
                 _resolved: z.ZodOptional<z.ZodObject<{
                     title: z.ZodString;
@@ -1583,7 +1583,7 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     children: z.ZodArray<z.ZodType<import("./RepoResourcesSchema.js").TreeNode, unknown, z.core.$ZodTypeInternals<import("./RepoResourcesSchema.js").TreeNode, unknown>>>;
                     containers: z.ZodArray<z.ZodUnknown>;
                 }, z.core.$strip>>;
-            }, z.core.$strip>;
+            }, z.core.$strip>>;
         }, z.core.$strip>>;
     }, z.core.$strip>;
     has_unpublished_ancestor: z.ZodBoolean;
