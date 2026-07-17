@@ -1,0 +1,2729 @@
+{
+    "lock_version": 0,
+    "position": 13,
+    "publish": true,
+    "ref_id": "22caa713390f75ba8e43fcf2f6a1379a",
+    "title": "Cody, Nancy",
+    "display_string": "Cody, Nancy, 1945 - 1946",
+    "restrictions_apply": false,
+    "created_by": "sprungd",
+    "last_modified_by": "sprungd",
+    "create_time": "2019-07-15T19:50:50Z",
+    "system_mtime": "2024-06-20T14:54:45Z",
+    "user_mtime": "2019-07-15T19:50:50Z",
+    "suppressed": false,
+    "is_slug_auto": false,
+    "level": "item",
+    "jsonmodel_type": "archival_object",
+    "external_ids": [],
+    "subjects": [],
+    "linked_events": [],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "1",
+            "created_by": "sprungd",
+            "last_modified_by": "sprungd",
+            "create_time": "2019-07-15T19:50:50Z",
+            "system_mtime": "2019-07-15T19:50:50Z",
+            "user_mtime": "2019-07-15T19:50:50Z",
+            "portion": "whole",
+            "extent_type": "Items",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "lang_materials": [
+        {
+            "lock_version": 0,
+            "create_time": "2019-07-15T19:50:50Z",
+            "system_mtime": "2023-02-24T12:41:44Z",
+            "user_mtime": "2019-07-15T19:50:50Z",
+            "jsonmodel_type": "lang_material",
+            "notes": [],
+            "language_and_script": {
+                "lock_version": 0,
+                "create_time": "2019-07-15T19:50:50Z",
+                "system_mtime": "2023-02-24T12:41:44Z",
+                "user_mtime": "2019-07-15T19:50:50Z",
+                "language": "eng",
+                "jsonmodel_type": "language_and_script"
+            }
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "begin": "1945",
+            "end": "1946",
+            "created_by": "sprungd",
+            "last_modified_by": "sprungd",
+            "create_time": "2019-07-15T19:50:50Z",
+            "system_mtime": "2019-07-15T19:50:50Z",
+            "user_mtime": "2019-07-15T19:50:50Z",
+            "date_type": "inclusive",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [],
+    "import_previous_arks": [],
+    "ancestors": [
+        {
+            "ref": "/repositories/2/archival_objects/13391",
+            "level": "subseries",
+            "_resolved": {
+                "lock_version": 5,
+                "position": 3,
+                "publish": true,
+                "ref_id": "144fdb3b5b2088a62e14d1aa6928fac2",
+                "title": "Subseries IV: Miami University Student Diaries",
+                "display_string": "Subseries IV: Miami University Student Diaries, 1945 - 1946",
+                "restrictions_apply": false,
+                "created_by": "sprungd",
+                "last_modified_by": "johnsoj",
+                "create_time": "2019-07-15T19:26:14Z",
+                "system_mtime": "2024-06-20T14:54:45Z",
+                "user_mtime": "2022-06-09T13:17:04Z",
+                "suppressed": false,
+                "is_slug_auto": false,
+                "level": "subseries",
+                "jsonmodel_type": "archival_object",
+                "external_ids": [],
+                "subjects": [],
+                "linked_events": [],
+                "extents": [],
+                "lang_materials": [
+                    {
+                        "lock_version": 0,
+                        "create_time": "2019-07-15T19:26:14Z",
+                        "system_mtime": "2023-02-24T12:41:44Z",
+                        "user_mtime": "2022-06-09T13:17:04Z",
+                        "jsonmodel_type": "lang_material",
+                        "notes": [],
+                        "language_and_script": {
+                            "lock_version": 0,
+                            "create_time": "2019-07-15T19:26:14Z",
+                            "system_mtime": "2023-02-24T12:41:44Z",
+                            "user_mtime": "2022-06-09T13:17:04Z",
+                            "language": "eng",
+                            "jsonmodel_type": "language_and_script"
+                        }
+                    }
+                ],
+                "dates": [
+                    {
+                        "lock_version": 0,
+                        "begin": "1945",
+                        "end": "1946",
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2022-06-09T13:17:04Z",
+                        "system_mtime": "2022-06-09T13:17:04Z",
+                        "user_mtime": "2022-06-09T13:17:04Z",
+                        "date_type": "inclusive",
+                        "label": "creation",
+                        "jsonmodel_type": "date"
+                    }
+                ],
+                "external_documents": [],
+                "rights_statements": [],
+                "linked_agents": [],
+                "import_previous_arks": [],
+                "ancestors": [
+                    {
+                        "ref": "/repositories/2/archival_objects/15277",
+                        "level": "series"
+                    },
+                    {
+                        "ref": "/repositories/2/resources/634",
+                        "level": "item"
+                    }
+                ],
+                "instances": [],
+                "notes": [],
+                "accession_links": [],
+                "uri": "/repositories/2/archival_objects/13391",
+                "repository": {
+                    "ref": "/repositories/2"
+                },
+                "resource": {
+                    "ref": "/repositories/2/resources/634"
+                },
+                "parent": {
+                    "ref": "/repositories/2/archival_objects/15277"
+                },
+                "has_unpublished_ancestor": false
+            }
+        },
+        {
+            "ref": "/repositories/2/archival_objects/15277",
+            "level": "series",
+            "_resolved": {
+                "lock_version": 1,
+                "position": 0,
+                "publish": true,
+                "ref_id": "585836a0ddc9b683399348ae11f693f1",
+                "title": "Series I: Miami University Student Diaries",
+                "display_string": "Series I: Miami University Student Diaries, 1942 - 1957",
+                "restrictions_apply": false,
+                "created_by": "sprungd",
+                "last_modified_by": "sprungd",
+                "create_time": "2020-02-14T20:46:09Z",
+                "system_mtime": "2024-06-20T14:54:45Z",
+                "user_mtime": "2020-02-14T20:46:09Z",
+                "suppressed": false,
+                "is_slug_auto": false,
+                "level": "series",
+                "jsonmodel_type": "archival_object",
+                "external_ids": [],
+                "subjects": [],
+                "linked_events": [],
+                "extents": [],
+                "lang_materials": [
+                    {
+                        "lock_version": 0,
+                        "create_time": "2020-02-14T20:46:09Z",
+                        "system_mtime": "2023-02-24T12:41:44Z",
+                        "user_mtime": "2020-02-14T20:46:09Z",
+                        "jsonmodel_type": "lang_material",
+                        "notes": [],
+                        "language_and_script": {
+                            "lock_version": 0,
+                            "create_time": "2020-02-14T20:46:09Z",
+                            "system_mtime": "2023-02-24T12:41:44Z",
+                            "user_mtime": "2020-02-14T20:46:09Z",
+                            "language": "eng",
+                            "jsonmodel_type": "language_and_script"
+                        }
+                    }
+                ],
+                "dates": [
+                    {
+                        "lock_version": 0,
+                        "begin": "1942",
+                        "end": "1957",
+                        "created_by": "sprungd",
+                        "last_modified_by": "sprungd",
+                        "create_time": "2020-02-14T20:46:09Z",
+                        "system_mtime": "2020-02-14T20:46:09Z",
+                        "user_mtime": "2020-02-14T20:46:09Z",
+                        "date_type": "inclusive",
+                        "label": "creation",
+                        "jsonmodel_type": "date"
+                    }
+                ],
+                "external_documents": [],
+                "rights_statements": [],
+                "linked_agents": [],
+                "import_previous_arks": [],
+                "ancestors": [
+                    {
+                        "ref": "/repositories/2/resources/634",
+                        "level": "item"
+                    }
+                ],
+                "instances": [],
+                "notes": [],
+                "accession_links": [],
+                "uri": "/repositories/2/archival_objects/15277",
+                "repository": {
+                    "ref": "/repositories/2"
+                },
+                "resource": {
+                    "ref": "/repositories/2/resources/634"
+                },
+                "has_unpublished_ancestor": false
+            }
+        },
+        {
+            "ref": "/repositories/2/resources/634",
+            "level": "item",
+            "_resolved": {
+                "lock_version": 49,
+                "title": "William E. Smith Student Diaries Collection",
+                "publish": true,
+                "restrictions": false,
+                "finding_aid_title": "William E. Smith Student Diaries Collection",
+                "finding_aid_filing_title": "William E. Smith Student Diaries Collection",
+                "finding_aid_date": "2021-01-12",
+                "finding_aid_language_note": "English",
+                "created_by": "sprungd",
+                "last_modified_by": "johnsoj",
+                "create_time": "2019-06-20T19:01:48Z",
+                "system_mtime": "2024-06-20T15:13:18Z",
+                "user_mtime": "2024-06-20T14:54:42Z",
+                "suppressed": false,
+                "is_slug_auto": false,
+                "id_0": "8",
+                "id_1": "FAC",
+                "id_2": "SMI",
+                "level": "item",
+                "resource_type": "collection",
+                "finding_aid_description_rules": "dacs",
+                "finding_aid_language": "und",
+                "finding_aid_script": "Zyyy",
+                "finding_aid_status": "completed",
+                "jsonmodel_type": "resource",
+                "external_ids": [],
+                "subjects": [
+                    {
+                        "ref": "/subjects/50"
+                    },
+                    {
+                        "ref": "/subjects/4697"
+                    },
+                    {
+                        "ref": "/subjects/2716"
+                    },
+                    {
+                        "ref": "/subjects/228"
+                    },
+                    {
+                        "ref": "/subjects/4698"
+                    },
+                    {
+                        "ref": "/subjects/5022"
+                    }
+                ],
+                "linked_events": [],
+                "extents": [
+                    {
+                        "lock_version": 0,
+                        "number": "33",
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "portion": "whole",
+                        "extent_type": "Linear Feet",
+                        "jsonmodel_type": "extent"
+                    },
+                    {
+                        "lock_version": 0,
+                        "number": "33",
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "portion": "whole",
+                        "extent_type": "Boxes",
+                        "jsonmodel_type": "extent"
+                    },
+                    {
+                        "lock_version": 0,
+                        "number": "993",
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "portion": "whole",
+                        "extent_type": "Items",
+                        "jsonmodel_type": "extent"
+                    }
+                ],
+                "lang_materials": [
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "lang_material",
+                        "notes": [],
+                        "language_and_script": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "language": "eng",
+                            "jsonmodel_type": "language_and_script"
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "lang_material",
+                        "notes": [
+                            {
+                                "jsonmodel_type": "note_langmaterial",
+                                "persistent_id": "e60409c26865c52ab9e66a3d88fa997e",
+                                "type": "langmaterial",
+                                "content": [
+                                    "Materials are in English."
+                                ],
+                                "publish": true
+                            }
+                        ]
+                    }
+                ],
+                "dates": [
+                    {
+                        "lock_version": 0,
+                        "begin": "1942",
+                        "end": "1957",
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "date_type": "inclusive",
+                        "label": "creation",
+                        "certainty": "inferred",
+                        "era": "ce",
+                        "calendar": "gregorian",
+                        "jsonmodel_type": "date"
+                    }
+                ],
+                "external_documents": [],
+                "rights_statements": [],
+                "linked_agents": [
+                    {
+                        "role": "creator",
+                        "terms": [],
+                        "ref": "/agents/people/377"
+                    },
+                    {
+                        "role": "creator",
+                        "terms": [],
+                        "ref": "/agents/corporate_entities/93"
+                    },
+                    {
+                        "role": "subject",
+                        "terms": [],
+                        "ref": "/agents/corporate_entities/93"
+                    }
+                ],
+                "import_previous_arks": [],
+                "revision_statements": [],
+                "instances": [
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7836"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7837"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7838"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7839"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7840"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7841"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7846"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7862"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7898"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7904"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7909"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7920"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7924"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7933"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7959"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7962"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7966"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7967"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7968"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7969"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7972"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7973"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7974"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7977"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7979"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7980"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7981"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7982"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7983"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7986"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7987"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7988"
+                            }
+                        }
+                    },
+                    {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "instance_type": "text",
+                        "jsonmodel_type": "instance",
+                        "is_representative": false,
+                        "sub_container": {
+                            "lock_version": 0,
+                            "created_by": "johnsoj",
+                            "last_modified_by": "johnsoj",
+                            "create_time": "2024-06-20T14:54:45Z",
+                            "system_mtime": "2024-06-20T14:54:45Z",
+                            "user_mtime": "2024-06-20T14:54:45Z",
+                            "jsonmodel_type": "sub_container",
+                            "top_container": {
+                                "ref": "/repositories/2/top_containers/7989"
+                            }
+                        }
+                    }
+                ],
+                "deaccessions": [],
+                "related_accessions": [],
+                "classifications": [],
+                "notes": [
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "persistent_id": "f63ede1b7a5588b7ca1b84201e6b055b",
+                        "type": "prefercite",
+                        "subnotes": [
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "Researchers are requested to use the following citation in all footnote and bibliographic references:\n\nWilliam E. Smith Student Diaries Collection, The Walter Havighurst Special Collections and University Archives, Miami University Libraries, Oxford, OH",
+                                "publish": true
+                            }
+                        ],
+                        "publish": true
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "persistent_id": "788649920533ee9a693c39d922f462fa",
+                        "type": "bioghist",
+                        "subnotes": [
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "In 1942, Miami University President Alfred H. Upham established a committee to document the University’s involvement in the Second World War. He appointed Dr. William E. Smith, a history professor, to chair the committee. In this role, Smith was charged with collecting documents and other contextual items that would later be used to write a war history for the University. Smith had a personal affinity toward diaries and personal letters, and viewed them as indispensable artifacts in capturing first-hand reactions and opinions during the war period. This thinking prompted Smith to assign his students the task of keeping personal diaries as a way to record the happenings of both the war and university life from their own perspectives. Smith continued the assignment every semester until 1957.",
+                                "publish": true
+                            },
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "Dr. William Ernest Smith was born in Licking, MO on April 30, 1892. Smith served from 1913-1918 as a high school principal in Walnut Grove, MO. He later went on to serve for five years as superintendent of the schools in Belton, MO. Subsequently, Smith received a baccalaureate degree from Southwest Missouri State Teachers College in 1923, a Master of Philosophy degree from the University of Wisconsin in 1924, and a Doctor of Philosophy degree from the University of Wisconsin in 1927. Smith joined the faculty of Miami University as an Assistant Professor of History in 1926 and was promoted to Associate Professor in 1929, and later Professor in 1931. Four years later in 1935, Smith became Chairman of the Department of History, a position which he held until 1957. From 1950-1959, Smith also served as Dean of the Graduate School. Smith completed his service at Miami University as a Research Professor of History from 1959-1962 and as Director of the McGuffey Museum. Miami University honored Dr. Smith by conferring the degree of Doctor of Letters upon him in August 1962. Smith passed away in Oxford, OH on December 12, 1969. He was survived by his wife, Ophia D. Smith, and one son.",
+                                "publish": true
+                            }
+                        ],
+                        "publish": true
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "persistent_id": "96812a1d3e4fcde7bf434bd320a02dd2",
+                        "type": "scopecontent",
+                        "subnotes": [
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "This collection includes over 990 diaries written by over 800 individual undergraduate and graduate students of Dr. William E. Smith in the Department of History at Miami University between 1942 and 1957. The project originated as a means for Dr. Smith and the university to document student perceptions and campus life during World War II, but continued following the war’s end. The contents of the diaries provide commentary on practically every subject relating to World War II, current events, and university life between 1942 and 1957. Included in this collection are 16 diaries written by students from the University of Cincinnati who participated in an evening history course taught by Dr. Smith. Some diaries were written with complete anonymity, while others remain closed to the public for a specified period of time at the request of the author.",
+                                "publish": true
+                            }
+                        ],
+                        "publish": true
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "persistent_id": "b3621a418e25787e5077fc275e4b1cf7",
+                        "type": "arrangement",
+                        "subnotes": [
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "Series I: Miami University Student Diaries, 1942 - 1957\n\tSubseries I: Student Diaries, 1942 - 1943\n\tSubseries II: Student Diaries, 1943 - 1944\n\tSubseries III: Student Diaries, 1944 - 1945\n\tSubseries IV: Student Diaries, 1945 - 1946\n\tSubseries V: Student Diaries, 1946  -1947\n\tSubseries VI: Student Diaries, 1947 - 1948\n\tSubseries VII: Student Diaries, 1948 - 1949\n\tSubseries VIII: Student Diaries, 1949 - 1950\n\tSubseries IX: Student Diaries, 1950 - 1951\n\tSubseries X: Student Diaries, 1951 - 1952\n\tSubseries XI: Student Diaries, 1952 - 1953\n\tSubseries XII: Student Diaries, 1953 - 1954\n\tSubseries XIII: Student Diaries, 1954 - 1955\n\tSubseries XIV: Student Diaries, 1955 - 1956\n\tSubseries XV: Student Diaries, 1956 - 1957\n\nSeries II: University of Cincinnati Student Diaries, 1944 - 1949",
+                                "publish": true
+                            },
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "Diaries are arranged following a [Last Name, First Name] scheme and are arranged alphabetically within subseries by the author's last name.",
+                                "publish": true
+                            }
+                        ],
+                        "publish": true
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "persistent_id": "5d54333e79307ebb245f9ec29ee72279",
+                        "type": "accessrestrict",
+                        "rights_restriction": {
+                            "local_access_restriction_type": [
+                                "RestrictedSpecColl"
+                            ]
+                        },
+                        "subnotes": [
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "This collection is open for research. Item level restrictions are imposed for diaries that remain closed to the public for a specified period of time at the request of the author.",
+                                "publish": true
+                            }
+                        ],
+                        "publish": true
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "persistent_id": "85ffee48d73aeb8e4d43859a287e7fc3",
+                        "type": "userestrict",
+                        "rights_restriction": {
+                            "local_access_restriction_type": []
+                        },
+                        "subnotes": [
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "<a href=\"https://rightsstatements.org/page/UND/1.0/?language=en\">\n  Copyright Undetermined\n</a>\n\nThe copyright and related rights status of this Item has been reviewed by The Walter Havighurst Special Collections and University Archives, but the organization was unable to make a conclusive determination as to the copyright status of the Item. Please refer to <a href=\"https://spec.lib.miamioh.edu/home/\"> The Walter Havighurst Special Collections and University Archives </a> for more information. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use.\n\nNotices:\n\nUnless expressly stated otherwise, The Walter Havighurst Special Collections and University Archives makes no warranties about the Item and cannot guarantee the accuracy of this Rights Statement. You are responsible for your own use.\n\nYou may find additional information about the copyright status of the Item on the website of The Walter Havighurst Special Collections and University Archives.\n\nYou may need to obtain other permissions for your intended use. For example, other rights such as publicity, privacy or moral rights may limit how you may use the material.\n",
+                                "publish": true
+                            }
+                        ],
+                        "publish": true
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "persistent_id": "b4a8e4d1d4749cbb256ae401514e8edd",
+                        "type": "custodhist",
+                        "subnotes": [
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "Received by the Walter Havighurst Special Collections and University Archives as a donation.",
+                                "publish": true
+                            }
+                        ],
+                        "publish": true
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "persistent_id": "097b42d4db93c3a6af16b7379fc2f05d",
+                        "type": "accruals",
+                        "subnotes": [
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "No further additions are expected.",
+                                "publish": true
+                            }
+                        ],
+                        "publish": true
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "persistent_id": "78cfa37a03c3c076ab306603b051c3e4",
+                        "type": "processinfo",
+                        "subnotes": [
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "Collection processing completed 2020-02-14 by Darby Edmondson, Austin Hall, and Cody Sprunger. Finding Aid completed 2020-05-07 by Cody Sprunger. Finding Aid revised 2020-11-16 by Cody Sprunger. Finding Aid revised 2021-01-12 by Cody Sprunger.",
+                                "publish": true
+                            }
+                        ],
+                        "publish": true
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "persistent_id": "0db908940f5342b87d1a031a007e9b4c",
+                        "type": "relatedmaterial",
+                        "subnotes": [
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "<a href=\"http://archivesspace.lib.miamioh.edu/repositories/2/resources/708\">\n  Preston B. Albright Student Diaries and Essays Collection\n</a>",
+                                "publish": true
+                            },
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "<a href=\"http://archivesspace.lib.miamioh.edu/repositories/2/resources/704\">\n  Miami University Jewish Diaries Collection\n</a>",
+                                "publish": true
+                            }
+                        ],
+                        "publish": true
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "persistent_id": "d4ff1fd6a95fc36a7c1fdd2cf9868f0c",
+                        "type": "legalstatus",
+                        "subnotes": [
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "The copyright and related rights status of this item has not been reviewed by the organizations that has been made available, but the organization was unable to make a conclusive determination as to the copyright status of the item. Please refer to the organization that has made the item available for more information. You are free to use this item in any way that is permitted to copyright and related rights legislation that applies to your use.\n\nNotices:\n\tUnless expressly stated otherwise, the organization that has made this item available makes no warranties about the item and cannot guarantee the accuracy of this Rights Statement. You are responsible for your own use. \n    \n    You may find additonal information about the copyright status of the item on the website of the organizaton that has made the item available.\n    \n    You may need to obtain other permissions for your intended use. For example, other rights such as publicity, privacy or moral rights may limit how you may use the material.\n    \n    Please contact the Walter Havighurst Special Collections for more information. ",
+                                "publish": true
+                            }
+                        ],
+                        "publish": true
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "persistent_id": "e423418886c7e879170c62e44816f305",
+                        "type": "accessrestrict",
+                        "rights_restriction": {
+                            "local_access_restriction_type": []
+                        },
+                        "subnotes": [
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "This collection is open for research. Item level restrictions are imposed for diaries that remain closed to the public for a specified period of time at the request of the author. It a diary is sealed within a folder, that item is currently restricted. \n\nIf you cannot determine if a diary is still closed to the public, please ask a staff member of the Walter Havighurst Special Collections and University Archives to determine its status. \n\nDigitization\nItems from this collection cannot be reproduced using current methods (scanning, cellphones, cameras, and other imaging equipment) and future methods of reproduction. ",
+                                "publish": true
+                            }
+                        ],
+                        "publish": true
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "type": "odd",
+                        "subnotes": [
+                            {
+                                "jsonmodel_type": "note_text",
+                                "content": "Dr. William Ernest Smith",
+                                "publish": true
+                            }
+                        ],
+                        "persistent_id": "ae01dab2268f1559f48bb1fa4fe67c56",
+                        "publish": true
+                    }
+                ],
+                "metadata_rights_declarations": [],
+                "uri": "/repositories/2/resources/634",
+                "repository": {
+                    "ref": "/repositories/2"
+                },
+                "tree": {
+                    "ref": "/repositories/2/resources/634/tree"
+                }
+            }
+        }
+    ],
+    "instances": [
+        {
+            "lock_version": 0,
+            "created_by": "sprungd",
+            "last_modified_by": "sprungd",
+            "create_time": "2019-07-15T19:50:51Z",
+            "system_mtime": "2019-07-15T19:50:51Z",
+            "user_mtime": "2019-07-15T19:50:51Z",
+            "instance_type": "text",
+            "jsonmodel_type": "instance",
+            "is_representative": false,
+            "sub_container": {
+                "lock_version": 0,
+                "indicator_2": "24",
+                "created_by": "sprungd",
+                "last_modified_by": "sprungd",
+                "create_time": "2019-07-15T19:50:51Z",
+                "system_mtime": "2022-06-09T15:42:08Z",
+                "user_mtime": "2019-07-15T19:50:51Z",
+                "type_2": "folder",
+                "jsonmodel_type": "sub_container",
+                "top_container": {
+                    "ref": "/repositories/2/top_containers/7839",
+                    "_resolved": {
+                        "lock_version": 60,
+                        "indicator": "4 [2A-H-2A]",
+                        "created_by": "sprungd",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2019-07-15T19:11:48Z",
+                        "system_mtime": "2024-06-20T15:13:18Z",
+                        "user_mtime": "2022-06-09T15:42:08Z",
+                        "type": "box",
+                        "jsonmodel_type": "top_container",
+                        "active_restrictions": [
+                            {
+                                "id": 24506,
+                                "resource_id": 634,
+                                "restriction_note_type": "accessrestrict",
+                                "jsonmodel_type": "rights_restriction",
+                                "local_access_restriction_type": [
+                                    "RestrictedSpecColl"
+                                ],
+                                "linked_records": {
+                                    "ref": "/repositories/2/resources/634"
+                                }
+                            }
+                        ],
+                        "container_locations": [
+                            {
+                                "jsonmodel_type": "container_location",
+                                "status": "current",
+                                "start_date": "2022-06-09",
+                                "system_mtime": "2022-06-09 15:42:08 UTC",
+                                "user_mtime": "2022-06-09 15:42:08 UTC",
+                                "ref": "/locations/8702"
+                            }
+                        ],
+                        "series": [],
+                        "collection": [
+                            {
+                                "ref": "/repositories/2/resources/634",
+                                "identifier": "8--FAC--SMI",
+                                "display_string": "William E. Smith Student Diaries Collection"
+                            }
+                        ],
+                        "uri": "/repositories/2/top_containers/7839",
+                        "repository": {
+                            "ref": "/repositories/2"
+                        },
+                        "restricted": true,
+                        "is_linked_to_published_record": true,
+                        "display_string": "Box 4 [2A-H-2A]",
+                        "long_display_string": "Box 4 [2A-H-2A], King Library, 3rd Floor, Walter Havighurst  [Range: 3A, Section: F, Shelf: 1A], 8--FAC--SMI, William E. Smith Student Diaries Collection"
+                    }
+                }
+            }
+        }
+    ],
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "type": "bioghist",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Course: HST 322",
+                    "publish": true
+                }
+            ],
+            "persistent_id": "04b2908b296e4b9953bef26e02dc4e21",
+            "publish": true
+        }
+    ],
+    "accession_links": [],
+    "uri": "/repositories/2/archival_objects/13405",
+    "repository": {
+        "ref": "/repositories/2",
+        "_resolved": {
+            "lock_version": 0,
+            "repo_code": "Miami University and Western College Memorial Archives",
+            "name": "Miami University and Western College Memorial Archives",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-11-20T16:10:07Z",
+            "system_mtime": "2023-02-24T12:41:41Z",
+            "user_mtime": "2014-11-20T16:10:07Z",
+            "publish": true,
+            "oai_is_disabled": false,
+            "oai_sets_available": "[]",
+            "slug": "miami_university_and_western_college_memorial_arch",
+            "is_slug_auto": true,
+            "position": 1,
+            "jsonmodel_type": "repository",
+            "uri": "/repositories/2",
+            "display_string": "Miami University and Western College Memorial Archives (Miami University and Western College Memorial Archives)",
+            "agent_representation": {
+                "ref": "/agents/corporate_entities/1"
+            }
+        }
+    },
+    "resource": {
+        "ref": "/repositories/2/resources/634",
+        "_resolved": {
+            "lock_version": 49,
+            "title": "William E. Smith Student Diaries Collection",
+            "publish": true,
+            "restrictions": false,
+            "finding_aid_title": "William E. Smith Student Diaries Collection",
+            "finding_aid_filing_title": "William E. Smith Student Diaries Collection",
+            "finding_aid_date": "2021-01-12",
+            "finding_aid_language_note": "English",
+            "created_by": "sprungd",
+            "last_modified_by": "johnsoj",
+            "create_time": "2019-06-20T19:01:48Z",
+            "system_mtime": "2024-06-20T15:13:18Z",
+            "user_mtime": "2024-06-20T14:54:42Z",
+            "suppressed": false,
+            "is_slug_auto": false,
+            "id_0": "8",
+            "id_1": "FAC",
+            "id_2": "SMI",
+            "level": "item",
+            "resource_type": "collection",
+            "finding_aid_description_rules": "dacs",
+            "finding_aid_language": "und",
+            "finding_aid_script": "Zyyy",
+            "finding_aid_status": "completed",
+            "jsonmodel_type": "resource",
+            "external_ids": [],
+            "subjects": [
+                {
+                    "ref": "/subjects/50"
+                },
+                {
+                    "ref": "/subjects/4697"
+                },
+                {
+                    "ref": "/subjects/2716"
+                },
+                {
+                    "ref": "/subjects/228"
+                },
+                {
+                    "ref": "/subjects/4698"
+                },
+                {
+                    "ref": "/subjects/5022"
+                }
+            ],
+            "linked_events": [],
+            "extents": [
+                {
+                    "lock_version": 0,
+                    "number": "33",
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "portion": "whole",
+                    "extent_type": "Linear Feet",
+                    "jsonmodel_type": "extent"
+                },
+                {
+                    "lock_version": 0,
+                    "number": "33",
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "portion": "whole",
+                    "extent_type": "Boxes",
+                    "jsonmodel_type": "extent"
+                },
+                {
+                    "lock_version": 0,
+                    "number": "993",
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "portion": "whole",
+                    "extent_type": "Items",
+                    "jsonmodel_type": "extent"
+                }
+            ],
+            "lang_materials": [
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "jsonmodel_type": "lang_material",
+                    "notes": [],
+                    "language_and_script": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "language": "eng",
+                        "jsonmodel_type": "language_and_script"
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "jsonmodel_type": "lang_material",
+                    "notes": [
+                        {
+                            "jsonmodel_type": "note_langmaterial",
+                            "persistent_id": "e60409c26865c52ab9e66a3d88fa997e",
+                            "type": "langmaterial",
+                            "content": [
+                                "Materials are in English."
+                            ],
+                            "publish": true
+                        }
+                    ]
+                }
+            ],
+            "dates": [
+                {
+                    "lock_version": 0,
+                    "begin": "1942",
+                    "end": "1957",
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "date_type": "inclusive",
+                    "label": "creation",
+                    "certainty": "inferred",
+                    "era": "ce",
+                    "calendar": "gregorian",
+                    "jsonmodel_type": "date"
+                }
+            ],
+            "external_documents": [],
+            "rights_statements": [],
+            "linked_agents": [
+                {
+                    "role": "creator",
+                    "terms": [],
+                    "ref": "/agents/people/377"
+                },
+                {
+                    "role": "creator",
+                    "terms": [],
+                    "ref": "/agents/corporate_entities/93"
+                },
+                {
+                    "role": "subject",
+                    "terms": [],
+                    "ref": "/agents/corporate_entities/93"
+                }
+            ],
+            "import_previous_arks": [],
+            "revision_statements": [],
+            "instances": [
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7836"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7837"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7838"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7839"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7840"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7841"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7846"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7862"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7898"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7904"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7909"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7920"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7924"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7933"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7959"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7962"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7966"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7967"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7968"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7969"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7972"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7973"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7974"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7977"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7979"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7980"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7981"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7982"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7983"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7986"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7987"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7988"
+                        }
+                    }
+                },
+                {
+                    "lock_version": 0,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-06-20T14:54:45Z",
+                    "system_mtime": "2024-06-20T14:54:45Z",
+                    "user_mtime": "2024-06-20T14:54:45Z",
+                    "instance_type": "text",
+                    "jsonmodel_type": "instance",
+                    "is_representative": false,
+                    "sub_container": {
+                        "lock_version": 0,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-06-20T14:54:45Z",
+                        "system_mtime": "2024-06-20T14:54:45Z",
+                        "user_mtime": "2024-06-20T14:54:45Z",
+                        "jsonmodel_type": "sub_container",
+                        "top_container": {
+                            "ref": "/repositories/2/top_containers/7989"
+                        }
+                    }
+                }
+            ],
+            "deaccessions": [],
+            "related_accessions": [],
+            "classifications": [],
+            "notes": [
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "f63ede1b7a5588b7ca1b84201e6b055b",
+                    "type": "prefercite",
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "Researchers are requested to use the following citation in all footnote and bibliographic references:\n\nWilliam E. Smith Student Diaries Collection, The Walter Havighurst Special Collections and University Archives, Miami University Libraries, Oxford, OH",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "788649920533ee9a693c39d922f462fa",
+                    "type": "bioghist",
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "In 1942, Miami University President Alfred H. Upham established a committee to document the University’s involvement in the Second World War. He appointed Dr. William E. Smith, a history professor, to chair the committee. In this role, Smith was charged with collecting documents and other contextual items that would later be used to write a war history for the University. Smith had a personal affinity toward diaries and personal letters, and viewed them as indispensable artifacts in capturing first-hand reactions and opinions during the war period. This thinking prompted Smith to assign his students the task of keeping personal diaries as a way to record the happenings of both the war and university life from their own perspectives. Smith continued the assignment every semester until 1957.",
+                            "publish": true
+                        },
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "Dr. William Ernest Smith was born in Licking, MO on April 30, 1892. Smith served from 1913-1918 as a high school principal in Walnut Grove, MO. He later went on to serve for five years as superintendent of the schools in Belton, MO. Subsequently, Smith received a baccalaureate degree from Southwest Missouri State Teachers College in 1923, a Master of Philosophy degree from the University of Wisconsin in 1924, and a Doctor of Philosophy degree from the University of Wisconsin in 1927. Smith joined the faculty of Miami University as an Assistant Professor of History in 1926 and was promoted to Associate Professor in 1929, and later Professor in 1931. Four years later in 1935, Smith became Chairman of the Department of History, a position which he held until 1957. From 1950-1959, Smith also served as Dean of the Graduate School. Smith completed his service at Miami University as a Research Professor of History from 1959-1962 and as Director of the McGuffey Museum. Miami University honored Dr. Smith by conferring the degree of Doctor of Letters upon him in August 1962. Smith passed away in Oxford, OH on December 12, 1969. He was survived by his wife, Ophia D. Smith, and one son.",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "96812a1d3e4fcde7bf434bd320a02dd2",
+                    "type": "scopecontent",
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "This collection includes over 990 diaries written by over 800 individual undergraduate and graduate students of Dr. William E. Smith in the Department of History at Miami University between 1942 and 1957. The project originated as a means for Dr. Smith and the university to document student perceptions and campus life during World War II, but continued following the war’s end. The contents of the diaries provide commentary on practically every subject relating to World War II, current events, and university life between 1942 and 1957. Included in this collection are 16 diaries written by students from the University of Cincinnati who participated in an evening history course taught by Dr. Smith. Some diaries were written with complete anonymity, while others remain closed to the public for a specified period of time at the request of the author.",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "b3621a418e25787e5077fc275e4b1cf7",
+                    "type": "arrangement",
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "Series I: Miami University Student Diaries, 1942 - 1957\n\tSubseries I: Student Diaries, 1942 - 1943\n\tSubseries II: Student Diaries, 1943 - 1944\n\tSubseries III: Student Diaries, 1944 - 1945\n\tSubseries IV: Student Diaries, 1945 - 1946\n\tSubseries V: Student Diaries, 1946  -1947\n\tSubseries VI: Student Diaries, 1947 - 1948\n\tSubseries VII: Student Diaries, 1948 - 1949\n\tSubseries VIII: Student Diaries, 1949 - 1950\n\tSubseries IX: Student Diaries, 1950 - 1951\n\tSubseries X: Student Diaries, 1951 - 1952\n\tSubseries XI: Student Diaries, 1952 - 1953\n\tSubseries XII: Student Diaries, 1953 - 1954\n\tSubseries XIII: Student Diaries, 1954 - 1955\n\tSubseries XIV: Student Diaries, 1955 - 1956\n\tSubseries XV: Student Diaries, 1956 - 1957\n\nSeries II: University of Cincinnati Student Diaries, 1944 - 1949",
+                            "publish": true
+                        },
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "Diaries are arranged following a [Last Name, First Name] scheme and are arranged alphabetically within subseries by the author's last name.",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "5d54333e79307ebb245f9ec29ee72279",
+                    "type": "accessrestrict",
+                    "rights_restriction": {
+                        "local_access_restriction_type": [
+                            "RestrictedSpecColl"
+                        ]
+                    },
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "This collection is open for research. Item level restrictions are imposed for diaries that remain closed to the public for a specified period of time at the request of the author.",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "85ffee48d73aeb8e4d43859a287e7fc3",
+                    "type": "userestrict",
+                    "rights_restriction": {
+                        "local_access_restriction_type": []
+                    },
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "<a href=\"https://rightsstatements.org/page/UND/1.0/?language=en\">\n  Copyright Undetermined\n</a>\n\nThe copyright and related rights status of this Item has been reviewed by The Walter Havighurst Special Collections and University Archives, but the organization was unable to make a conclusive determination as to the copyright status of the Item. Please refer to <a href=\"https://spec.lib.miamioh.edu/home/\"> The Walter Havighurst Special Collections and University Archives </a> for more information. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use.\n\nNotices:\n\nUnless expressly stated otherwise, The Walter Havighurst Special Collections and University Archives makes no warranties about the Item and cannot guarantee the accuracy of this Rights Statement. You are responsible for your own use.\n\nYou may find additional information about the copyright status of the Item on the website of The Walter Havighurst Special Collections and University Archives.\n\nYou may need to obtain other permissions for your intended use. For example, other rights such as publicity, privacy or moral rights may limit how you may use the material.\n",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "b4a8e4d1d4749cbb256ae401514e8edd",
+                    "type": "custodhist",
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "Received by the Walter Havighurst Special Collections and University Archives as a donation.",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "097b42d4db93c3a6af16b7379fc2f05d",
+                    "type": "accruals",
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "No further additions are expected.",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "78cfa37a03c3c076ab306603b051c3e4",
+                    "type": "processinfo",
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "Collection processing completed 2020-02-14 by Darby Edmondson, Austin Hall, and Cody Sprunger. Finding Aid completed 2020-05-07 by Cody Sprunger. Finding Aid revised 2020-11-16 by Cody Sprunger. Finding Aid revised 2021-01-12 by Cody Sprunger.",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "0db908940f5342b87d1a031a007e9b4c",
+                    "type": "relatedmaterial",
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "<a href=\"http://archivesspace.lib.miamioh.edu/repositories/2/resources/708\">\n  Preston B. Albright Student Diaries and Essays Collection\n</a>",
+                            "publish": true
+                        },
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "<a href=\"http://archivesspace.lib.miamioh.edu/repositories/2/resources/704\">\n  Miami University Jewish Diaries Collection\n</a>",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "d4ff1fd6a95fc36a7c1fdd2cf9868f0c",
+                    "type": "legalstatus",
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "The copyright and related rights status of this item has not been reviewed by the organizations that has been made available, but the organization was unable to make a conclusive determination as to the copyright status of the item. Please refer to the organization that has made the item available for more information. You are free to use this item in any way that is permitted to copyright and related rights legislation that applies to your use.\n\nNotices:\n\tUnless expressly stated otherwise, the organization that has made this item available makes no warranties about the item and cannot guarantee the accuracy of this Rights Statement. You are responsible for your own use. \n    \n    You may find additonal information about the copyright status of the item on the website of the organizaton that has made the item available.\n    \n    You may need to obtain other permissions for your intended use. For example, other rights such as publicity, privacy or moral rights may limit how you may use the material.\n    \n    Please contact the Walter Havighurst Special Collections for more information. ",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "e423418886c7e879170c62e44816f305",
+                    "type": "accessrestrict",
+                    "rights_restriction": {
+                        "local_access_restriction_type": []
+                    },
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "This collection is open for research. Item level restrictions are imposed for diaries that remain closed to the public for a specified period of time at the request of the author. It a diary is sealed within a folder, that item is currently restricted. \n\nIf you cannot determine if a diary is still closed to the public, please ask a staff member of the Walter Havighurst Special Collections and University Archives to determine its status. \n\nDigitization\nItems from this collection cannot be reproduced using current methods (scanning, cellphones, cameras, and other imaging equipment) and future methods of reproduction. ",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "type": "odd",
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "Dr. William Ernest Smith",
+                            "publish": true
+                        }
+                    ],
+                    "persistent_id": "ae01dab2268f1559f48bb1fa4fe67c56",
+                    "publish": true
+                }
+            ],
+            "metadata_rights_declarations": [],
+            "uri": "/repositories/2/resources/634",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "tree": {
+                "ref": "/repositories/2/resources/634/tree"
+            }
+        }
+    },
+    "parent": {
+        "ref": "/repositories/2/archival_objects/13391",
+        "_resolved": {
+            "lock_version": 5,
+            "position": 3,
+            "publish": true,
+            "ref_id": "144fdb3b5b2088a62e14d1aa6928fac2",
+            "title": "Subseries IV: Miami University Student Diaries",
+            "display_string": "Subseries IV: Miami University Student Diaries, 1945 - 1946",
+            "restrictions_apply": false,
+            "created_by": "sprungd",
+            "last_modified_by": "johnsoj",
+            "create_time": "2019-07-15T19:26:14Z",
+            "system_mtime": "2024-06-20T14:54:45Z",
+            "user_mtime": "2022-06-09T13:17:04Z",
+            "suppressed": false,
+            "is_slug_auto": false,
+            "level": "subseries",
+            "jsonmodel_type": "archival_object",
+            "external_ids": [],
+            "subjects": [],
+            "linked_events": [],
+            "extents": [],
+            "lang_materials": [
+                {
+                    "lock_version": 0,
+                    "create_time": "2019-07-15T19:26:14Z",
+                    "system_mtime": "2023-02-24T12:41:44Z",
+                    "user_mtime": "2022-06-09T13:17:04Z",
+                    "jsonmodel_type": "lang_material",
+                    "notes": [],
+                    "language_and_script": {
+                        "lock_version": 0,
+                        "create_time": "2019-07-15T19:26:14Z",
+                        "system_mtime": "2023-02-24T12:41:44Z",
+                        "user_mtime": "2022-06-09T13:17:04Z",
+                        "language": "eng",
+                        "jsonmodel_type": "language_and_script"
+                    }
+                }
+            ],
+            "dates": [
+                {
+                    "lock_version": 0,
+                    "begin": "1945",
+                    "end": "1946",
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2022-06-09T13:17:04Z",
+                    "system_mtime": "2022-06-09T13:17:04Z",
+                    "user_mtime": "2022-06-09T13:17:04Z",
+                    "date_type": "inclusive",
+                    "label": "creation",
+                    "jsonmodel_type": "date"
+                }
+            ],
+            "external_documents": [],
+            "rights_statements": [],
+            "linked_agents": [],
+            "import_previous_arks": [],
+            "ancestors": [
+                {
+                    "ref": "/repositories/2/archival_objects/15277",
+                    "level": "series"
+                },
+                {
+                    "ref": "/repositories/2/resources/634",
+                    "level": "item"
+                }
+            ],
+            "instances": [],
+            "notes": [],
+            "accession_links": [],
+            "uri": "/repositories/2/archival_objects/13391",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "resource": {
+                "ref": "/repositories/2/resources/634"
+            },
+            "parent": {
+                "ref": "/repositories/2/archival_objects/15277"
+            },
+            "has_unpublished_ancestor": false
+        }
+    },
+    "has_unpublished_ancestor": false
+}
