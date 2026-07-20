@@ -1,5 +1,15 @@
 # Release Notes
 
+## v. 0.3.0
+
+### Added
+
+- Implemented unit tests to test zod schemas against known valid API responses. Adding more example API response data will improve the reliability of the test results.
+
+### Fixed
+
+- fixed many validation errors based on testing results
+
 ## v. 0.2.5
 
 ### Fixed
