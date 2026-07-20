@@ -1,5 +1,11 @@
 # Release Notes
 
+## v. 0.3.1
+
+### Added
+
+- Added zod catchAll options to most schemas to validate unfamiliar string types. (Non-string types will still need to be added to the zod schemas.)
+
 ## v. 0.3.0
 
 ### Added

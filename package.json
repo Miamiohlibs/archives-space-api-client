@@ -1,6 +1,6 @@
 {
   "name": "@kenxirwin/archives-space-api-client",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Read-only API client for ArchivesSpace API",
   "keywords": [
     "Archives",
