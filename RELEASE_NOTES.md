@@ -1,5 +1,15 @@
 # Release Notes
 
+## v. 0.3.2
+
+### Added
+
+- added more example API responses to test against
+
+### Fixed
+
+- fixed some validation errors by making some topContainer and subContainer schema fields optional
+
 ## v. 0.3.1
 
 ### Added
