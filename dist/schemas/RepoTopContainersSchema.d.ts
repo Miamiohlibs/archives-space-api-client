@@ -1,7 +1,8 @@
 export declare const repoTopContainerSchema: import("zod").ZodObject<{
     lock_version: import("zod").ZodNumber;
     indicator: import("zod").ZodString;
-    type: import("zod").ZodString;
+    type: import("zod").ZodOptional<import("zod").ZodString>;
+    created_for_collection: import("zod").ZodOptional<import("zod").ZodString>;
     display_string: import("zod").ZodString;
     long_display_string: import("zod").ZodString;
     restricted: import("zod").ZodBoolean;

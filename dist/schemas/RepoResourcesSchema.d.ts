@@ -486,7 +486,8 @@ export declare const collectionRefSchema: z.ZodType<{
 export declare const topContainerResolvedSchema: z.ZodObject<{
     lock_version: z.ZodNumber;
     indicator: z.ZodString;
-    type: z.ZodString;
+    type: z.ZodOptional<z.ZodString>;
+    created_for_collection: z.ZodOptional<z.ZodString>;
     display_string: z.ZodString;
     long_display_string: z.ZodString;
     restricted: z.ZodBoolean;
@@ -584,7 +585,8 @@ export declare const topContainerSchema: z.ZodObject<{
     _resolved: z.ZodOptional<z.ZodObject<{
         lock_version: z.ZodNumber;
         indicator: z.ZodString;
-        type: z.ZodString;
+        type: z.ZodOptional<z.ZodString>;
+        created_for_collection: z.ZodOptional<z.ZodString>;
         display_string: z.ZodString;
         long_display_string: z.ZodString;
         restricted: z.ZodBoolean;
@@ -691,7 +693,8 @@ export declare const instanceSchema: z.ZodObject<{
             _resolved: z.ZodOptional<z.ZodObject<{
                 lock_version: z.ZodNumber;
                 indicator: z.ZodString;
-                type: z.ZodString;
+                type: z.ZodOptional<z.ZodString>;
+                created_for_collection: z.ZodOptional<z.ZodString>;
                 display_string: z.ZodString;
                 long_display_string: z.ZodString;
                 restricted: z.ZodBoolean;
@@ -790,6 +793,8 @@ export declare const instanceSchema: z.ZodObject<{
         create_time: z.ZodString;
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
+        type: z.ZodOptional<z.ZodString>;
+        indicator: z.ZodOptional<z.ZodString>;
         indicator_2: z.ZodOptional<z.ZodString>;
         type_2: z.ZodOptional<z.ZodString>;
     }, z.core.$strip>;
@@ -1177,7 +1182,8 @@ export declare const repoResourcesSchema: z.ZodObject<{
                 _resolved: z.ZodOptional<z.ZodObject<{
                     lock_version: z.ZodNumber;
                     indicator: z.ZodString;
-                    type: z.ZodString;
+                    type: z.ZodOptional<z.ZodString>;
+                    created_for_collection: z.ZodOptional<z.ZodString>;
                     display_string: z.ZodString;
                     long_display_string: z.ZodString;
                     restricted: z.ZodBoolean;
@@ -1276,6 +1282,8 @@ export declare const repoResourcesSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
+            type: z.ZodOptional<z.ZodString>;
+            indicator: z.ZodOptional<z.ZodString>;
             indicator_2: z.ZodOptional<z.ZodString>;
             type_2: z.ZodOptional<z.ZodString>;
         }, z.core.$strip>;

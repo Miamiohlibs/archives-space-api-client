@@ -665,7 +665,8 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                         _resolved: z.ZodOptional<z.ZodObject<{
                             lock_version: z.ZodNumber;
                             indicator: z.ZodString;
-                            type: z.ZodString;
+                            type: z.ZodOptional<z.ZodString>;
+                            created_for_collection: z.ZodOptional<z.ZodString>;
                             display_string: z.ZodString;
                             long_display_string: z.ZodString;
                             restricted: z.ZodBoolean;
@@ -764,6 +765,8 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     create_time: z.ZodString;
                     system_mtime: z.ZodString;
                     user_mtime: z.ZodString;
+                    type: z.ZodOptional<z.ZodString>;
+                    indicator: z.ZodOptional<z.ZodString>;
                     indicator_2: z.ZodOptional<z.ZodString>;
                     type_2: z.ZodOptional<z.ZodString>;
                 }, z.core.$strip>;
@@ -901,7 +904,8 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                 _resolved: z.ZodOptional<z.ZodObject<{
                     lock_version: z.ZodNumber;
                     indicator: z.ZodString;
-                    type: z.ZodString;
+                    type: z.ZodOptional<z.ZodString>;
+                    created_for_collection: z.ZodOptional<z.ZodString>;
                     display_string: z.ZodString;
                     long_display_string: z.ZodString;
                     restricted: z.ZodBoolean;
@@ -1000,6 +1004,8 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
+            type: z.ZodOptional<z.ZodString>;
+            indicator: z.ZodOptional<z.ZodString>;
             indicator_2: z.ZodOptional<z.ZodString>;
             type_2: z.ZodOptional<z.ZodString>;
         }, z.core.$strip>;
@@ -1414,7 +1420,8 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                         _resolved: z.ZodOptional<z.ZodObject<{
                             lock_version: z.ZodNumber;
                             indicator: z.ZodString;
-                            type: z.ZodString;
+                            type: z.ZodOptional<z.ZodString>;
+                            created_for_collection: z.ZodOptional<z.ZodString>;
                             display_string: z.ZodString;
                             long_display_string: z.ZodString;
                             restricted: z.ZodBoolean;
@@ -1513,6 +1520,8 @@ export declare const repoArchivalObjectSchema: z.ZodObject<{
                     create_time: z.ZodString;
                     system_mtime: z.ZodString;
                     user_mtime: z.ZodString;
+                    type: z.ZodOptional<z.ZodString>;
+                    indicator: z.ZodOptional<z.ZodString>;
                     indicator_2: z.ZodOptional<z.ZodString>;
                     type_2: z.ZodOptional<z.ZodString>;
                 }, z.core.$strip>;

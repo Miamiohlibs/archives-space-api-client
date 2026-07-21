@@ -432,7 +432,8 @@ export const collectionRefSchema = resolvableRefSchema(z.lazy(() => repoResource
 export const topContainerResolvedSchema = z.object({
     lock_version: z.number(),
     indicator: z.string(),
-    type: z.string(),
+    type: z.string().optional(),
+    created_for_collection: z.string().optional(),
     display_string: z.string(),
     long_display_string: z.string(),
     restricted: z.boolean(),
@@ -460,6 +461,8 @@ const subContainerSchema = z.object({
     create_time: z.string(),
     system_mtime: z.string(),
     user_mtime: z.string(),
+    type: z.string().optional(),
+    indicator: z.string().optional(),
     indicator_2: z.string().optional(),
     type_2: z.string().optional(),
 });
