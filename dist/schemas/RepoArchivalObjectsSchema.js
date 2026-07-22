@@ -7,6 +7,8 @@ import { dateSchema, extentSchema, externalIdSchema, instanceSchema, langMateria
 const ancestorSchema = resolvableRefSchema(repoResourcesSchema).extend({
     level: z.string(),
 });
+// The runtime field list for `_resolved` in `parentSchema` (RepoResourcesSchema.ts)
+// — mirrored by hand in the `ArchivalObjectRecord` interface above.
 export const repoArchivalObjectSchema = z.object({
     lock_version: z.number(),
     position: z.number(),

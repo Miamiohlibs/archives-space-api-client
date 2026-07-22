@@ -22,6 +22,10 @@ let archivalObjectSchema;
 export function registerArchivalObjectSchema(schema) {
     archivalObjectSchema = schema;
 }
+// `_resolved`'s actual field list at runtime is whatever gets registered
+// above — currently `repoArchivalObjectSchema` in RepoArchivalObjectsSchema.ts —
+// not anything declared here. `ArchivalObjectRecord` (same file) is the type
+// that mirrors it.
 export const parentSchema = resolvableRefSchema(z.lazy(() => {
     if (!archivalObjectSchema) {
         throw new Error('parentSchema used before RepoArchivalObjectsSchema.js registered its schema');

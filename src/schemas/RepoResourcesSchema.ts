@@ -32,6 +32,10 @@ export function registerArchivalObjectSchema(
   archivalObjectSchema = schema;
 }
 
+// `_resolved`'s actual field list at runtime is whatever gets registered
+// above — currently `repoArchivalObjectSchema` in RepoArchivalObjectsSchema.ts —
+// not anything declared here. `ArchivalObjectRecord` (same file) is the type
+// that mirrors it.
 export const parentSchema: z.ZodType<{
   ref: string;
   _resolved?: ArchivalObjectRecord;

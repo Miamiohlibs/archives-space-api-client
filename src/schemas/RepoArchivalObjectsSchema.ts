@@ -26,11 +26,14 @@ const ancestorSchema = resolvableRefSchema(repoResourcesSchema).extend({
   level: z.string(),
 });
 
-// The full shape of a resolved archival object. This is hand-written (rather
-// than derived via z.infer<typeof repoArchivalObjectSchema>) because
-// `parentSchema` (defined in RepoResourcesSchema.ts, shared with
-// `repoResourcesSchema`) resolves back to this same shape, and it needs a
-// concrete type to refer to before `repoArchivalObjectSchema` exists.
+// The full shape of a resolved archival object, mirroring the fields of
+// `repoArchivalObjectSchema` below. This is hand-written (rather than derived
+// via z.infer<typeof repoArchivalObjectSchema>) because `parentSchema`
+// (defined in RepoResourcesSchema.ts, shared with `repoResourcesSchema`)
+// resolves back to this same shape, and it needs a concrete type to refer to
+// before `repoArchivalObjectSchema` exists. Keep this in sync by hand when
+// adding/renaming fields below — `tsc` will catch a field removed here but
+// still present below, but not the reverse.
 export interface ArchivalObjectRecord {
   lock_version: number;
   position: number;
@@ -69,6 +72,8 @@ export interface ArchivalObjectRecord {
   has_unpublished_ancestor: boolean;
 }
 
+// The runtime field list for `_resolved` in `parentSchema` (RepoResourcesSchema.ts)
+// — mirrored by hand in the `ArchivalObjectRecord` interface above.
 export const repoArchivalObjectSchema: z.ZodType<ArchivalObjectRecord> =
   z.object({
     lock_version: z.number(),
