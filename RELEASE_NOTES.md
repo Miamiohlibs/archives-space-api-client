@@ -1,5 +1,11 @@
 # Release Notes
 
+## v. 0.3.3
+
+### Added
+
+- fleshed out parentSchema rather than z.any()
+
 ## v. 0.3.2
 
 ### Added
