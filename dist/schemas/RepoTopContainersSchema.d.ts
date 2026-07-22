@@ -1,7 +1,8 @@
 export declare const repoTopContainerSchema: import("zod").ZodObject<{
     lock_version: import("zod").ZodNumber;
     indicator: import("zod").ZodString;
-    type: import("zod").ZodString;
+    type: import("zod").ZodOptional<import("zod").ZodString>;
+    created_for_collection: import("zod").ZodOptional<import("zod").ZodString>;
     display_string: import("zod").ZodString;
     long_display_string: import("zod").ZodString;
     restricted: import("zod").ZodBoolean;
@@ -31,7 +32,7 @@ export declare const repoTopContainerSchema: import("zod").ZodObject<{
             create_time: import("zod").ZodString;
             system_mtime: import("zod").ZodString;
             user_mtime: import("zod").ZodString;
-        }, import("zod/v4/core").$strip>>;
+        }, import("zod/v4/core").$catchall<import("zod").ZodOptional<import("zod").ZodString>>>>;
     }, import("zod/v4/core").$strip>;
     collection: import("zod").ZodArray<import("zod").ZodType<{
         ref: string;
@@ -69,7 +70,7 @@ export declare const repoTopContainerSchema: import("zod").ZodObject<{
             create_time: import("zod").ZodString;
             system_mtime: import("zod").ZodString;
             user_mtime: import("zod").ZodString;
-        }, import("zod/v4/core").$strip>>;
+        }, import("zod/v4/core").$catchall<import("zod").ZodOptional<import("zod").ZodString>>>>;
         status: import("zod").ZodString;
         start_date: import("zod").ZodString;
         jsonmodel_type: import("zod").ZodString;
@@ -87,7 +88,7 @@ export declare const repoTopContainerSchema: import("zod").ZodObject<{
         linked_records: import("zod").ZodObject<{
             ref: import("zod").ZodString;
         }, import("zod/v4/core").$strip>;
-    }, import("zod/v4/core").$strip>>;
+    }, import("zod/v4/core").$catchall<import("zod").ZodOptional<import("zod").ZodString>>>>;
     created_by: import("zod").ZodOptional<import("zod").ZodString>;
     last_modified_by: import("zod").ZodOptional<import("zod").ZodString>;
     create_time: import("zod").ZodString;

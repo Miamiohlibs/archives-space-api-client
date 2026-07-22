@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import type { ArchivalObjectRecord } from './RepoArchivalObjectsSchema.js';
 export declare const refSchema: z.ZodObject<{
     ref: z.ZodString;
 }, z.core.$strip>;
@@ -6,6 +7,11 @@ export declare const resolvableRefSchema: <T extends z.ZodTypeAny>(resolvedSchem
     ref: z.ZodString;
     _resolved: z.ZodOptional<T>;
 }, z.core.$strip>;
+export declare function registerArchivalObjectSchema(schema: z.ZodType<ArchivalObjectRecord>): void;
+export declare const parentSchema: z.ZodType<{
+    ref: string;
+    _resolved?: ArchivalObjectRecord;
+}>;
 export declare const dateSchema: z.ZodObject<{
     lock_version: z.ZodNumber;
     begin: z.ZodOptional<z.ZodString>;
@@ -13,6 +19,7 @@ export declare const dateSchema: z.ZodObject<{
     calendar: z.ZodOptional<z.ZodString>;
     certainty: z.ZodOptional<z.ZodString>;
     era: z.ZodOptional<z.ZodString>;
+    expression: z.ZodOptional<z.ZodString>;
     date_type: z.ZodString;
     label: z.ZodString;
     jsonmodel_type: z.ZodString;
@@ -21,7 +28,7 @@ export declare const dateSchema: z.ZodObject<{
     create_time: z.ZodString;
     system_mtime: z.ZodString;
     user_mtime: z.ZodString;
-}, z.core.$strip>;
+}, z.core.$catchall<z.ZodOptional<z.ZodString>>>;
 export declare const extentSchema: z.ZodObject<{
     lock_version: z.ZodNumber;
     number: z.ZodString;
@@ -33,7 +40,7 @@ export declare const extentSchema: z.ZodObject<{
     create_time: z.ZodString;
     system_mtime: z.ZodString;
     user_mtime: z.ZodString;
-}, z.core.$strip>;
+}, z.core.$catchall<z.ZodOptional<z.ZodString>>>;
 export declare const externalIdSchema: z.ZodObject<{
     external_id: z.ZodString;
     source: z.ZodOptional<z.ZodString>;
@@ -43,7 +50,7 @@ export declare const externalIdSchema: z.ZodObject<{
     create_time: z.ZodString;
     system_mtime: z.ZodString;
     user_mtime: z.ZodString;
-}, z.core.$strip>;
+}, z.core.$catchall<z.ZodOptional<z.ZodString>>>;
 export declare const rightsStatementSchema: z.ZodObject<{
     lock_version: z.ZodNumber;
     identifier: z.ZodString;
@@ -60,33 +67,35 @@ export declare const rightsStatementSchema: z.ZodObject<{
     create_time: z.ZodString;
     system_mtime: z.ZodString;
     user_mtime: z.ZodString;
-}, z.core.$strip>;
+}, z.core.$catchall<z.ZodOptional<z.ZodString>>>;
 export declare const noteSchema: z.ZodDiscriminatedUnion<[z.ZodObject<{
     jsonmodel_type: z.ZodLiteral<"note_singlepart">;
     persistent_id: z.ZodString;
     type: z.ZodString;
+    label: z.ZodOptional<z.ZodString>;
     content: z.ZodArray<z.ZodString>;
     publish: z.ZodOptional<z.ZodBoolean>;
-}, z.core.$strip>, z.ZodObject<{
+}, z.core.$catchall<z.ZodOptional<z.ZodString>>>, z.ZodObject<{
     jsonmodel_type: z.ZodLiteral<"note_multipart">;
     persistent_id: z.ZodString;
     type: z.ZodString;
+    label: z.ZodOptional<z.ZodString>;
     subnotes: z.ZodArray<z.ZodObject<{
         jsonmodel_type: z.ZodLiteral<"note_text">;
         content: z.ZodString;
         publish: z.ZodOptional<z.ZodBoolean>;
-    }, z.core.$strip>>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
     publish: z.ZodOptional<z.ZodBoolean>;
     rights_restriction: z.ZodOptional<z.ZodObject<{
         local_access_restriction_type: z.ZodArray<z.ZodString>;
     }, z.core.$strip>>;
-}, z.core.$strip>, z.ZodObject<{
+}, z.core.$catchall<z.ZodOptional<z.ZodString>>>, z.ZodObject<{
     jsonmodel_type: z.ZodLiteral<"note_langmaterial">;
     persistent_id: z.ZodString;
     type: z.ZodString;
     content: z.ZodArray<z.ZodString>;
     publish: z.ZodOptional<z.ZodBoolean>;
-}, z.core.$strip>], "jsonmodel_type">;
+}, z.core.$catchall<z.ZodOptional<z.ZodString>>>], "jsonmodel_type">;
 export declare const langMaterialSchema: z.ZodObject<{
     lock_version: z.ZodNumber;
     jsonmodel_type: z.ZodString;
@@ -99,39 +108,41 @@ export declare const langMaterialSchema: z.ZodObject<{
         create_time: z.ZodString;
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
-    }, z.core.$strip>>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
     notes: z.ZodArray<z.ZodDiscriminatedUnion<[z.ZodObject<{
         jsonmodel_type: z.ZodLiteral<"note_singlepart">;
         persistent_id: z.ZodString;
         type: z.ZodString;
+        label: z.ZodOptional<z.ZodString>;
         content: z.ZodArray<z.ZodString>;
         publish: z.ZodOptional<z.ZodBoolean>;
-    }, z.core.$strip>, z.ZodObject<{
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>, z.ZodObject<{
         jsonmodel_type: z.ZodLiteral<"note_multipart">;
         persistent_id: z.ZodString;
         type: z.ZodString;
+        label: z.ZodOptional<z.ZodString>;
         subnotes: z.ZodArray<z.ZodObject<{
             jsonmodel_type: z.ZodLiteral<"note_text">;
             content: z.ZodString;
             publish: z.ZodOptional<z.ZodBoolean>;
-        }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
         publish: z.ZodOptional<z.ZodBoolean>;
         rights_restriction: z.ZodOptional<z.ZodObject<{
             local_access_restriction_type: z.ZodArray<z.ZodString>;
         }, z.core.$strip>>;
-    }, z.core.$strip>, z.ZodObject<{
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>, z.ZodObject<{
         jsonmodel_type: z.ZodLiteral<"note_langmaterial">;
         persistent_id: z.ZodString;
         type: z.ZodString;
         content: z.ZodArray<z.ZodString>;
         publish: z.ZodOptional<z.ZodBoolean>;
-    }, z.core.$strip>], "jsonmodel_type">>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>], "jsonmodel_type">>;
     created_by: z.ZodOptional<z.ZodString>;
     last_modified_by: z.ZodOptional<z.ZodString>;
     create_time: z.ZodString;
     system_mtime: z.ZodString;
     user_mtime: z.ZodString;
-}, z.core.$strip>;
+}, z.core.$catchall<z.ZodOptional<z.ZodString>>>;
 export declare const linkedAgentSchema: z.ZodObject<{
     ref: z.ZodString;
     _resolved: z.ZodOptional<z.ZodObject<{
@@ -148,6 +159,8 @@ export declare const linkedAgentSchema: z.ZodObject<{
             primary_name: z.ZodString;
             rest_of_name: z.ZodOptional<z.ZodString>;
             subordinate_name_1: z.ZodOptional<z.ZodString>;
+            subordinate_name_2: z.ZodOptional<z.ZodString>;
+            subordinate_name_3: z.ZodOptional<z.ZodString>;
             sort_name: z.ZodString;
             sort_name_auto_generate: z.ZodBoolean;
             authorized: z.ZodBoolean;
@@ -167,12 +180,14 @@ export declare const linkedAgentSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
-        }, z.core.$strip>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>;
         names: z.ZodArray<z.ZodObject<{
             lock_version: z.ZodNumber;
             primary_name: z.ZodString;
             rest_of_name: z.ZodOptional<z.ZodString>;
             subordinate_name_1: z.ZodOptional<z.ZodString>;
+            subordinate_name_2: z.ZodOptional<z.ZodString>;
+            subordinate_name_3: z.ZodOptional<z.ZodString>;
             sort_name: z.ZodString;
             sort_name_auto_generate: z.ZodBoolean;
             authorized: z.ZodBoolean;
@@ -192,7 +207,7 @@ export declare const linkedAgentSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
-        }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
         dates_of_existence: z.ZodArray<z.ZodObject<{
             lock_version: z.ZodNumber;
             date_label: z.ZodString;
@@ -207,12 +222,12 @@ export declare const linkedAgentSchema: z.ZodObject<{
                 create_time: z.ZodString;
                 system_mtime: z.ZodString;
                 user_mtime: z.ZodString;
-            }, z.core.$strip>;
+            }, z.core.$catchall<z.ZodOptional<z.ZodString>>>;
             jsonmodel_type: z.ZodString;
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
-        }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
         linked_agent_roles: z.ZodArray<z.ZodString>;
         agent_genders: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
         agent_contacts: z.ZodArray<z.ZodUnknown>;
@@ -241,7 +256,7 @@ export declare const linkedAgentSchema: z.ZodObject<{
         create_time: z.ZodString;
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
-    }, z.core.$strip>>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
     role: z.ZodString;
     terms: z.ZodArray<z.ZodUnknown>;
 }, z.core.$strip>;
@@ -269,7 +284,7 @@ export declare const subjectSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
-        }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
         external_ids: z.ZodArray<z.ZodObject<{
             external_id: z.ZodString;
             source: z.ZodOptional<z.ZodString>;
@@ -279,7 +294,7 @@ export declare const subjectSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
-        }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
         external_documents: z.ZodArray<z.ZodUnknown>;
         metadata_rights_declarations: z.ZodArray<z.ZodUnknown>;
         used_within_repositories: z.ZodArray<z.ZodUnknown>;
@@ -289,7 +304,7 @@ export declare const subjectSchema: z.ZodObject<{
         create_time: z.ZodString;
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
-    }, z.core.$strip>>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
 }, z.core.$strip>;
 declare const classificationSchema: z.ZodObject<{
     ref: z.ZodString;
@@ -305,7 +320,7 @@ declare const classificationSchema: z.ZodObject<{
         path_from_root: z.ZodArray<z.ZodObject<{
             identifier: z.ZodString;
             title: z.ZodString;
-        }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
         linked_records: z.ZodArray<z.ZodObject<{
             ref: z.ZodString;
         }, z.core.$strip>>;
@@ -317,7 +332,7 @@ declare const classificationSchema: z.ZodObject<{
         create_time: z.ZodString;
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
-    }, z.core.$strip>>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
 }, z.core.$strip>;
 export declare const linkedEventSchema: z.ZodObject<{
     ref: z.ZodString;
@@ -348,7 +363,7 @@ export declare const linkedEventSchema: z.ZodObject<{
         create_time: z.ZodString;
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
-    }, z.core.$strip>>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
 }, z.core.$strip>;
 export declare const repositorySchema: z.ZodObject<{
     ref: z.ZodString;
@@ -373,7 +388,7 @@ export declare const repositorySchema: z.ZodObject<{
         create_time: z.ZodString;
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
-    }, z.core.$strip>>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
 }, z.core.$strip>;
 export declare const activeRestrictionSchema: z.ZodObject<{
     id: z.ZodNumber;
@@ -386,7 +401,7 @@ export declare const activeRestrictionSchema: z.ZodObject<{
     linked_records: z.ZodObject<{
         ref: z.ZodString;
     }, z.core.$strip>;
-}, z.core.$strip>;
+}, z.core.$catchall<z.ZodOptional<z.ZodString>>>;
 export declare const containerLocationSchema: z.ZodObject<{
     ref: z.ZodString;
     _resolved: z.ZodOptional<z.ZodObject<{
@@ -411,7 +426,7 @@ export declare const containerLocationSchema: z.ZodObject<{
         create_time: z.ZodString;
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
-    }, z.core.$strip>>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
     status: z.ZodString;
     start_date: z.ZodString;
     jsonmodel_type: z.ZodString;
@@ -422,14 +437,14 @@ export interface ResourceRecord {
     lock_version: number;
     title: string;
     publish?: boolean;
-    restrictions: boolean;
+    restrictions?: boolean;
     suppressed: boolean;
     is_slug_auto: boolean;
     jsonmodel_type: string;
     uri: string;
     level: string;
     resource_type?: string;
-    id_0: string;
+    id_0?: string;
     id_1?: string;
     id_2?: string;
     finding_aid_title?: string;
@@ -437,8 +452,8 @@ export interface ResourceRecord {
     finding_aid_date?: string;
     finding_aid_author?: string;
     finding_aid_description_rules?: string;
-    finding_aid_language: string;
-    finding_aid_script: string;
+    finding_aid_language?: string;
+    finding_aid_script?: string;
     finding_aid_language_note?: string;
     finding_aid_status?: string;
     created_by?: string;
@@ -456,15 +471,21 @@ export interface ResourceRecord {
     rights_statements: z.infer<typeof rightsStatementSchema>[];
     linked_agents: z.infer<typeof linkedAgentSchema>[];
     import_previous_arks: unknown[];
-    revision_statements: unknown[];
+    revision_statements?: unknown[];
     instances: z.infer<typeof instanceSchema>[];
-    deaccessions: unknown[];
-    related_accessions: unknown[];
-    classifications: z.infer<typeof classificationSchema>[];
+    deaccessions?: unknown[];
+    ead_id?: string;
+    ead_location?: string;
+    related_accessions?: unknown[];
+    classifications?: z.infer<typeof classificationSchema>[];
     notes: z.infer<typeof noteSchema>[];
-    metadata_rights_declarations: unknown[];
+    metadata_rights_declarations?: unknown[];
     repository: z.infer<typeof repositorySchema>;
-    tree: z.infer<typeof treeSchema>;
+    tree?: z.infer<typeof treeSchema>;
+    parent?: {
+        ref: string;
+        _resolved?: ArchivalObjectRecord;
+    };
 }
 export declare const collectionRefSchema: z.ZodType<{
     ref: string;
@@ -475,7 +496,8 @@ export declare const collectionRefSchema: z.ZodType<{
 export declare const topContainerResolvedSchema: z.ZodObject<{
     lock_version: z.ZodNumber;
     indicator: z.ZodString;
-    type: z.ZodString;
+    type: z.ZodOptional<z.ZodString>;
+    created_for_collection: z.ZodOptional<z.ZodString>;
     display_string: z.ZodString;
     long_display_string: z.ZodString;
     restricted: z.ZodBoolean;
@@ -505,7 +527,7 @@ export declare const topContainerResolvedSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
-        }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
     }, z.core.$strip>;
     collection: z.ZodArray<z.ZodType<{
         ref: string;
@@ -543,7 +565,7 @@ export declare const topContainerResolvedSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
-        }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
         status: z.ZodString;
         start_date: z.ZodString;
         jsonmodel_type: z.ZodString;
@@ -561,7 +583,7 @@ export declare const topContainerResolvedSchema: z.ZodObject<{
         linked_records: z.ZodObject<{
             ref: z.ZodString;
         }, z.core.$strip>;
-    }, z.core.$strip>>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
     created_by: z.ZodOptional<z.ZodString>;
     last_modified_by: z.ZodOptional<z.ZodString>;
     create_time: z.ZodString;
@@ -573,7 +595,8 @@ export declare const topContainerSchema: z.ZodObject<{
     _resolved: z.ZodOptional<z.ZodObject<{
         lock_version: z.ZodNumber;
         indicator: z.ZodString;
-        type: z.ZodString;
+        type: z.ZodOptional<z.ZodString>;
+        created_for_collection: z.ZodOptional<z.ZodString>;
         display_string: z.ZodString;
         long_display_string: z.ZodString;
         restricted: z.ZodBoolean;
@@ -603,7 +626,7 @@ export declare const topContainerSchema: z.ZodObject<{
                 create_time: z.ZodString;
                 system_mtime: z.ZodString;
                 user_mtime: z.ZodString;
-            }, z.core.$strip>>;
+            }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
         }, z.core.$strip>;
         collection: z.ZodArray<z.ZodType<{
             ref: string;
@@ -641,7 +664,7 @@ export declare const topContainerSchema: z.ZodObject<{
                 create_time: z.ZodString;
                 system_mtime: z.ZodString;
                 user_mtime: z.ZodString;
-            }, z.core.$strip>>;
+            }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
             status: z.ZodString;
             start_date: z.ZodString;
             jsonmodel_type: z.ZodString;
@@ -659,7 +682,7 @@ export declare const topContainerSchema: z.ZodObject<{
             linked_records: z.ZodObject<{
                 ref: z.ZodString;
             }, z.core.$strip>;
-        }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
         created_by: z.ZodOptional<z.ZodString>;
         last_modified_by: z.ZodOptional<z.ZodString>;
         create_time: z.ZodString;
@@ -680,7 +703,8 @@ export declare const instanceSchema: z.ZodObject<{
             _resolved: z.ZodOptional<z.ZodObject<{
                 lock_version: z.ZodNumber;
                 indicator: z.ZodString;
-                type: z.ZodString;
+                type: z.ZodOptional<z.ZodString>;
+                created_for_collection: z.ZodOptional<z.ZodString>;
                 display_string: z.ZodString;
                 long_display_string: z.ZodString;
                 restricted: z.ZodBoolean;
@@ -710,7 +734,7 @@ export declare const instanceSchema: z.ZodObject<{
                         create_time: z.ZodString;
                         system_mtime: z.ZodString;
                         user_mtime: z.ZodString;
-                    }, z.core.$strip>>;
+                    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
                 }, z.core.$strip>;
                 collection: z.ZodArray<z.ZodType<{
                     ref: string;
@@ -748,7 +772,7 @@ export declare const instanceSchema: z.ZodObject<{
                         create_time: z.ZodString;
                         system_mtime: z.ZodString;
                         user_mtime: z.ZodString;
-                    }, z.core.$strip>>;
+                    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
                     status: z.ZodString;
                     start_date: z.ZodString;
                     jsonmodel_type: z.ZodString;
@@ -766,7 +790,7 @@ export declare const instanceSchema: z.ZodObject<{
                     linked_records: z.ZodObject<{
                         ref: z.ZodString;
                     }, z.core.$strip>;
-                }, z.core.$strip>>;
+                }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
                 created_by: z.ZodOptional<z.ZodString>;
                 last_modified_by: z.ZodOptional<z.ZodString>;
                 create_time: z.ZodString;
@@ -779,6 +803,10 @@ export declare const instanceSchema: z.ZodObject<{
         create_time: z.ZodString;
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
+        type: z.ZodOptional<z.ZodString>;
+        indicator: z.ZodOptional<z.ZodString>;
+        indicator_2: z.ZodOptional<z.ZodString>;
+        type_2: z.ZodOptional<z.ZodString>;
     }, z.core.$strip>;
     created_by: z.ZodOptional<z.ZodString>;
     last_modified_by: z.ZodOptional<z.ZodString>;
@@ -820,25 +848,32 @@ export declare const repoResourcesSchema: z.ZodObject<{
     lock_version: z.ZodNumber;
     title: z.ZodString;
     publish: z.ZodOptional<z.ZodBoolean>;
-    restrictions: z.ZodBoolean;
+    restrictions: z.ZodOptional<z.ZodBoolean>;
     suppressed: z.ZodBoolean;
     is_slug_auto: z.ZodBoolean;
     jsonmodel_type: z.ZodString;
     uri: z.ZodString;
     level: z.ZodString;
     resource_type: z.ZodOptional<z.ZodString>;
-    id_0: z.ZodString;
+    id_0: z.ZodOptional<z.ZodString>;
     id_1: z.ZodOptional<z.ZodString>;
     id_2: z.ZodOptional<z.ZodString>;
+    accession_links: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
+    ancestors: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        level: z.ZodString;
+        ref: z.ZodString;
+    }, z.core.$strip>>>;
+    display_string: z.ZodOptional<z.ZodString>;
     finding_aid_title: z.ZodOptional<z.ZodString>;
     finding_aid_filing_title: z.ZodOptional<z.ZodString>;
     finding_aid_date: z.ZodOptional<z.ZodString>;
     finding_aid_author: z.ZodOptional<z.ZodString>;
     finding_aid_description_rules: z.ZodOptional<z.ZodString>;
-    finding_aid_language: z.ZodString;
-    finding_aid_script: z.ZodString;
+    finding_aid_language: z.ZodOptional<z.ZodString>;
+    finding_aid_script: z.ZodOptional<z.ZodString>;
     finding_aid_language_note: z.ZodOptional<z.ZodString>;
     finding_aid_status: z.ZodOptional<z.ZodString>;
+    has_unpublished_ancestor: z.ZodOptional<z.ZodBoolean>;
     created_by: z.ZodOptional<z.ZodString>;
     last_modified_by: z.ZodOptional<z.ZodString>;
     create_time: z.ZodString;
@@ -853,7 +888,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
         create_time: z.ZodString;
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
-    }, z.core.$strip>>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
     subjects: z.ZodArray<z.ZodObject<{
         ref: z.ZodString;
         _resolved: z.ZodOptional<z.ZodObject<{
@@ -878,7 +913,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
                 create_time: z.ZodString;
                 system_mtime: z.ZodString;
                 user_mtime: z.ZodString;
-            }, z.core.$strip>>;
+            }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
             external_ids: z.ZodArray<z.ZodObject<{
                 external_id: z.ZodString;
                 source: z.ZodOptional<z.ZodString>;
@@ -888,7 +923,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
                 create_time: z.ZodString;
                 system_mtime: z.ZodString;
                 user_mtime: z.ZodString;
-            }, z.core.$strip>>;
+            }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
             external_documents: z.ZodArray<z.ZodUnknown>;
             metadata_rights_declarations: z.ZodArray<z.ZodUnknown>;
             used_within_repositories: z.ZodArray<z.ZodUnknown>;
@@ -898,7 +933,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
-        }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
     }, z.core.$strip>>;
     linked_events: z.ZodArray<z.ZodObject<{
         ref: z.ZodString;
@@ -929,7 +964,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
-        }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
     }, z.core.$strip>>;
     extents: z.ZodArray<z.ZodObject<{
         lock_version: z.ZodNumber;
@@ -942,7 +977,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
         create_time: z.ZodString;
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
-    }, z.core.$strip>>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
     lang_materials: z.ZodArray<z.ZodObject<{
         lock_version: z.ZodNumber;
         jsonmodel_type: z.ZodString;
@@ -955,39 +990,41 @@ export declare const repoResourcesSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
-        }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
         notes: z.ZodArray<z.ZodDiscriminatedUnion<[z.ZodObject<{
             jsonmodel_type: z.ZodLiteral<"note_singlepart">;
             persistent_id: z.ZodString;
             type: z.ZodString;
+            label: z.ZodOptional<z.ZodString>;
             content: z.ZodArray<z.ZodString>;
             publish: z.ZodOptional<z.ZodBoolean>;
-        }, z.core.$strip>, z.ZodObject<{
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>, z.ZodObject<{
             jsonmodel_type: z.ZodLiteral<"note_multipart">;
             persistent_id: z.ZodString;
             type: z.ZodString;
+            label: z.ZodOptional<z.ZodString>;
             subnotes: z.ZodArray<z.ZodObject<{
                 jsonmodel_type: z.ZodLiteral<"note_text">;
                 content: z.ZodString;
                 publish: z.ZodOptional<z.ZodBoolean>;
-            }, z.core.$strip>>;
+            }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
             publish: z.ZodOptional<z.ZodBoolean>;
             rights_restriction: z.ZodOptional<z.ZodObject<{
                 local_access_restriction_type: z.ZodArray<z.ZodString>;
             }, z.core.$strip>>;
-        }, z.core.$strip>, z.ZodObject<{
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>, z.ZodObject<{
             jsonmodel_type: z.ZodLiteral<"note_langmaterial">;
             persistent_id: z.ZodString;
             type: z.ZodString;
             content: z.ZodArray<z.ZodString>;
             publish: z.ZodOptional<z.ZodBoolean>;
-        }, z.core.$strip>], "jsonmodel_type">>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>], "jsonmodel_type">>;
         created_by: z.ZodOptional<z.ZodString>;
         last_modified_by: z.ZodOptional<z.ZodString>;
         create_time: z.ZodString;
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
-    }, z.core.$strip>>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
     dates: z.ZodArray<z.ZodObject<{
         lock_version: z.ZodNumber;
         begin: z.ZodOptional<z.ZodString>;
@@ -995,6 +1032,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
         calendar: z.ZodOptional<z.ZodString>;
         certainty: z.ZodOptional<z.ZodString>;
         era: z.ZodOptional<z.ZodString>;
+        expression: z.ZodOptional<z.ZodString>;
         date_type: z.ZodString;
         label: z.ZodString;
         jsonmodel_type: z.ZodString;
@@ -1003,7 +1041,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
         create_time: z.ZodString;
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
-    }, z.core.$strip>>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
     external_documents: z.ZodArray<z.ZodUnknown>;
     rights_statements: z.ZodArray<z.ZodObject<{
         lock_version: z.ZodNumber;
@@ -1021,7 +1059,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
         create_time: z.ZodString;
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
-    }, z.core.$strip>>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
     linked_agents: z.ZodArray<z.ZodObject<{
         ref: z.ZodString;
         _resolved: z.ZodOptional<z.ZodObject<{
@@ -1038,6 +1076,8 @@ export declare const repoResourcesSchema: z.ZodObject<{
                 primary_name: z.ZodString;
                 rest_of_name: z.ZodOptional<z.ZodString>;
                 subordinate_name_1: z.ZodOptional<z.ZodString>;
+                subordinate_name_2: z.ZodOptional<z.ZodString>;
+                subordinate_name_3: z.ZodOptional<z.ZodString>;
                 sort_name: z.ZodString;
                 sort_name_auto_generate: z.ZodBoolean;
                 authorized: z.ZodBoolean;
@@ -1057,12 +1097,14 @@ export declare const repoResourcesSchema: z.ZodObject<{
                 create_time: z.ZodString;
                 system_mtime: z.ZodString;
                 user_mtime: z.ZodString;
-            }, z.core.$strip>;
+            }, z.core.$catchall<z.ZodOptional<z.ZodString>>>;
             names: z.ZodArray<z.ZodObject<{
                 lock_version: z.ZodNumber;
                 primary_name: z.ZodString;
                 rest_of_name: z.ZodOptional<z.ZodString>;
                 subordinate_name_1: z.ZodOptional<z.ZodString>;
+                subordinate_name_2: z.ZodOptional<z.ZodString>;
+                subordinate_name_3: z.ZodOptional<z.ZodString>;
                 sort_name: z.ZodString;
                 sort_name_auto_generate: z.ZodBoolean;
                 authorized: z.ZodBoolean;
@@ -1082,7 +1124,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
                 create_time: z.ZodString;
                 system_mtime: z.ZodString;
                 user_mtime: z.ZodString;
-            }, z.core.$strip>>;
+            }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
             dates_of_existence: z.ZodArray<z.ZodObject<{
                 lock_version: z.ZodNumber;
                 date_label: z.ZodString;
@@ -1097,12 +1139,12 @@ export declare const repoResourcesSchema: z.ZodObject<{
                     create_time: z.ZodString;
                     system_mtime: z.ZodString;
                     user_mtime: z.ZodString;
-                }, z.core.$strip>;
+                }, z.core.$catchall<z.ZodOptional<z.ZodString>>>;
                 jsonmodel_type: z.ZodString;
                 create_time: z.ZodString;
                 system_mtime: z.ZodString;
                 user_mtime: z.ZodString;
-            }, z.core.$strip>>;
+            }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
             linked_agent_roles: z.ZodArray<z.ZodString>;
             agent_genders: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
             agent_contacts: z.ZodArray<z.ZodUnknown>;
@@ -1131,12 +1173,12 @@ export declare const repoResourcesSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
-        }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
         role: z.ZodString;
         terms: z.ZodArray<z.ZodUnknown>;
     }, z.core.$strip>>;
     import_previous_arks: z.ZodArray<z.ZodUnknown>;
-    revision_statements: z.ZodArray<z.ZodUnknown>;
+    revision_statements: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
     instances: z.ZodArray<z.ZodObject<{
         lock_version: z.ZodNumber;
         instance_type: z.ZodString;
@@ -1150,7 +1192,8 @@ export declare const repoResourcesSchema: z.ZodObject<{
                 _resolved: z.ZodOptional<z.ZodObject<{
                     lock_version: z.ZodNumber;
                     indicator: z.ZodString;
-                    type: z.ZodString;
+                    type: z.ZodOptional<z.ZodString>;
+                    created_for_collection: z.ZodOptional<z.ZodString>;
                     display_string: z.ZodString;
                     long_display_string: z.ZodString;
                     restricted: z.ZodBoolean;
@@ -1180,7 +1223,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
                             create_time: z.ZodString;
                             system_mtime: z.ZodString;
                             user_mtime: z.ZodString;
-                        }, z.core.$strip>>;
+                        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
                     }, z.core.$strip>;
                     collection: z.ZodArray<z.ZodType<{
                         ref: string;
@@ -1218,7 +1261,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
                             create_time: z.ZodString;
                             system_mtime: z.ZodString;
                             user_mtime: z.ZodString;
-                        }, z.core.$strip>>;
+                        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
                         status: z.ZodString;
                         start_date: z.ZodString;
                         jsonmodel_type: z.ZodString;
@@ -1236,7 +1279,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
                         linked_records: z.ZodObject<{
                             ref: z.ZodString;
                         }, z.core.$strip>;
-                    }, z.core.$strip>>;
+                    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
                     created_by: z.ZodOptional<z.ZodString>;
                     last_modified_by: z.ZodOptional<z.ZodString>;
                     create_time: z.ZodString;
@@ -1249,6 +1292,10 @@ export declare const repoResourcesSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
+            type: z.ZodOptional<z.ZodString>;
+            indicator: z.ZodOptional<z.ZodString>;
+            indicator_2: z.ZodOptional<z.ZodString>;
+            type_2: z.ZodOptional<z.ZodString>;
         }, z.core.$strip>;
         created_by: z.ZodOptional<z.ZodString>;
         last_modified_by: z.ZodOptional<z.ZodString>;
@@ -1256,9 +1303,11 @@ export declare const repoResourcesSchema: z.ZodObject<{
         system_mtime: z.ZodString;
         user_mtime: z.ZodString;
     }, z.core.$strip>>;
-    deaccessions: z.ZodArray<z.ZodUnknown>;
-    related_accessions: z.ZodArray<z.ZodUnknown>;
-    classifications: z.ZodArray<z.ZodObject<{
+    deaccessions: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
+    ead_id: z.ZodOptional<z.ZodString>;
+    ead_location: z.ZodOptional<z.ZodString>;
+    related_accessions: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
+    classifications: z.ZodOptional<z.ZodArray<z.ZodObject<{
         ref: z.ZodString;
         _resolved: z.ZodOptional<z.ZodObject<{
             lock_version: z.ZodNumber;
@@ -1272,7 +1321,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
             path_from_root: z.ZodArray<z.ZodObject<{
                 identifier: z.ZodString;
                 title: z.ZodString;
-            }, z.core.$strip>>;
+            }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
             linked_records: z.ZodArray<z.ZodObject<{
                 ref: z.ZodString;
             }, z.core.$strip>>;
@@ -1284,35 +1333,50 @@ export declare const repoResourcesSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
-        }, z.core.$strip>>;
-    }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
+    }, z.core.$strip>>>;
     notes: z.ZodArray<z.ZodDiscriminatedUnion<[z.ZodObject<{
         jsonmodel_type: z.ZodLiteral<"note_singlepart">;
         persistent_id: z.ZodString;
         type: z.ZodString;
+        label: z.ZodOptional<z.ZodString>;
         content: z.ZodArray<z.ZodString>;
         publish: z.ZodOptional<z.ZodBoolean>;
-    }, z.core.$strip>, z.ZodObject<{
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>, z.ZodObject<{
         jsonmodel_type: z.ZodLiteral<"note_multipart">;
         persistent_id: z.ZodString;
         type: z.ZodString;
+        label: z.ZodOptional<z.ZodString>;
         subnotes: z.ZodArray<z.ZodObject<{
             jsonmodel_type: z.ZodLiteral<"note_text">;
             content: z.ZodString;
             publish: z.ZodOptional<z.ZodBoolean>;
-        }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
         publish: z.ZodOptional<z.ZodBoolean>;
         rights_restriction: z.ZodOptional<z.ZodObject<{
             local_access_restriction_type: z.ZodArray<z.ZodString>;
         }, z.core.$strip>>;
-    }, z.core.$strip>, z.ZodObject<{
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>, z.ZodObject<{
         jsonmodel_type: z.ZodLiteral<"note_langmaterial">;
         persistent_id: z.ZodString;
         type: z.ZodString;
         content: z.ZodArray<z.ZodString>;
         publish: z.ZodOptional<z.ZodBoolean>;
-    }, z.core.$strip>], "jsonmodel_type">>;
-    metadata_rights_declarations: z.ZodArray<z.ZodUnknown>;
+    }, z.core.$catchall<z.ZodOptional<z.ZodString>>>], "jsonmodel_type">>;
+    metadata_rights_declarations: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
+    parent: z.ZodOptional<z.ZodType<{
+        ref: string;
+        _resolved?: ArchivalObjectRecord;
+    }, unknown, z.core.$ZodTypeInternals<{
+        ref: string;
+        _resolved?: ArchivalObjectRecord;
+    }, unknown>>>;
+    position: z.ZodOptional<z.ZodNumber>;
+    ref_id: z.ZodOptional<z.ZodString>;
+    resource: z.ZodOptional<z.ZodObject<{
+        ref: z.ZodString;
+    }, z.core.$strip>>;
+    restrictions_apply: z.ZodOptional<z.ZodBoolean>;
     repository: z.ZodObject<{
         ref: z.ZodString;
         _resolved: z.ZodOptional<z.ZodObject<{
@@ -1336,9 +1400,9 @@ export declare const repoResourcesSchema: z.ZodObject<{
             create_time: z.ZodString;
             system_mtime: z.ZodString;
             user_mtime: z.ZodString;
-        }, z.core.$strip>>;
+        }, z.core.$catchall<z.ZodOptional<z.ZodString>>>>;
     }, z.core.$strip>;
-    tree: z.ZodObject<{
+    tree: z.ZodOptional<z.ZodObject<{
         ref: z.ZodString;
         _resolved: z.ZodOptional<z.ZodObject<{
             title: z.ZodString;
@@ -1354,7 +1418,7 @@ export declare const repoResourcesSchema: z.ZodObject<{
             children: z.ZodArray<z.ZodType<TreeNode, unknown, z.core.$ZodTypeInternals<TreeNode, unknown>>>;
             containers: z.ZodArray<z.ZodUnknown>;
         }, z.core.$strip>>;
-    }, z.core.$strip>;
-}, z.core.$strip>;
+    }, z.core.$strip>>;
+}, z.core.$catchall<z.ZodOptional<z.ZodString>>>;
 export {};
 //# sourceMappingURL=RepoResourcesSchema.d.ts.map

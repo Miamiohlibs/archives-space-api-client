@@ -1,0 +1,360 @@
+{
+    "lock_version": 14,
+    "position": 1,
+    "publish": true,
+    "ref_id": "ff2fe802f1286ae5714abd4df1a61892",
+    "title": "Photographic Prints [H-282 - H-580]",
+    "display_string": "Photographic Prints [H-282 - H-580], 1948 - 1984",
+    "restrictions_apply": false,
+    "created_by": "sprungd",
+    "last_modified_by": "johnsoj",
+    "create_time": "2020-04-09T14:55:48Z",
+    "system_mtime": "2024-05-15T20:42:31Z",
+    "user_mtime": "2024-05-15T20:42:31Z",
+    "suppressed": false,
+    "is_slug_auto": false,
+    "level": "series",
+    "jsonmodel_type": "archival_object",
+    "external_ids": [],
+    "subjects": [
+        {
+            "ref": "/subjects/5055",
+            "_resolved": {
+                "lock_version": 39,
+                "title": "George R. Hoxie Photograph Collection -- Photographs -- Miami University (Oxford, Ohio) ",
+                "created_by": "johnsoj",
+                "last_modified_by": "johnsoj",
+                "create_time": "2024-05-15T20:08:18Z",
+                "system_mtime": "2026-07-10T19:38:30Z",
+                "user_mtime": "2024-05-15T20:14:57Z",
+                "is_slug_auto": false,
+                "source": "local",
+                "jsonmodel_type": "subject",
+                "external_ids": [],
+                "publish": true,
+                "used_within_repositories": [],
+                "used_within_published_repositories": [],
+                "terms": [
+                    {
+                        "lock_version": 0,
+                        "term": "George R. Hoxie Photograph Collection",
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-05-15T20:14:57Z",
+                        "system_mtime": "2024-05-15T20:14:57Z",
+                        "user_mtime": "2024-05-15T20:14:57Z",
+                        "term_type": "topical",
+                        "jsonmodel_type": "term",
+                        "uri": "/terms/5588",
+                        "vocabulary": "/vocabularies/1"
+                    },
+                    {
+                        "lock_version": 0,
+                        "term": "Photographs",
+                        "created_by": "admin",
+                        "last_modified_by": "admin",
+                        "create_time": "2014-11-20T16:10:29Z",
+                        "system_mtime": "2014-11-20T16:10:29Z",
+                        "user_mtime": "2014-11-20T16:10:29Z",
+                        "term_type": "topical",
+                        "jsonmodel_type": "term",
+                        "uri": "/terms/56",
+                        "vocabulary": "/vocabularies/1"
+                    },
+                    {
+                        "lock_version": 0,
+                        "term": "Miami University (Oxford, Ohio) ",
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2015-11-18T19:21:27Z",
+                        "system_mtime": "2015-11-18T19:21:27Z",
+                        "user_mtime": "2015-11-18T19:21:27Z",
+                        "term_type": "topical",
+                        "jsonmodel_type": "term",
+                        "uri": "/terms/680",
+                        "vocabulary": "/vocabularies/1"
+                    }
+                ],
+                "external_documents": [],
+                "metadata_rights_declarations": [],
+                "uri": "/subjects/5055",
+                "vocabulary": "/vocabularies/1",
+                "is_linked_to_published_record": true
+            }
+        }
+    ],
+    "linked_events": [],
+    "extents": [],
+    "lang_materials": [
+        {
+            "lock_version": 0,
+            "created_by": "johnsoj",
+            "last_modified_by": "johnsoj",
+            "create_time": "2024-05-15T20:42:31Z",
+            "system_mtime": "2024-05-15T20:42:31Z",
+            "user_mtime": "2024-05-15T20:42:31Z",
+            "jsonmodel_type": "lang_material",
+            "notes": [],
+            "language_and_script": {
+                "lock_version": 0,
+                "created_by": "johnsoj",
+                "last_modified_by": "johnsoj",
+                "create_time": "2024-05-15T20:42:31Z",
+                "system_mtime": "2024-05-15T20:42:31Z",
+                "user_mtime": "2024-05-15T20:42:31Z",
+                "language": "eng",
+                "jsonmodel_type": "language_and_script"
+            }
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "begin": "1948",
+            "end": "1984",
+            "created_by": "johnsoj",
+            "last_modified_by": "johnsoj",
+            "create_time": "2024-05-15T20:42:31Z",
+            "system_mtime": "2024-05-15T20:42:31Z",
+            "user_mtime": "2024-05-15T20:42:31Z",
+            "date_type": "inclusive",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+        {
+            "role": "creator",
+            "terms": [],
+            "ref": "/agents/corporate_entities/432",
+            "_resolved": {
+                "lock_version": 97,
+                "publish": true,
+                "created_by": "johnsoj",
+                "last_modified_by": "johnsoj",
+                "create_time": "2024-05-15T20:15:42Z",
+                "system_mtime": "2026-07-10T19:38:30Z",
+                "user_mtime": "2024-05-15T20:15:42Z",
+                "is_slug_auto": false,
+                "jsonmodel_type": "agent_corporate_entity",
+                "agent_contacts": [],
+                "agent_record_controls": [],
+                "agent_alternate_sets": [],
+                "agent_conventions_declarations": [],
+                "agent_other_agency_codes": [],
+                "agent_maintenance_histories": [],
+                "agent_record_identifiers": [],
+                "agent_identifiers": [],
+                "agent_sources": [],
+                "agent_places": [],
+                "agent_occupations": [],
+                "agent_functions": [],
+                "agent_topics": [],
+                "agent_resources": [],
+                "linked_agent_roles": [
+                    "creator",
+                    "subject"
+                ],
+                "external_documents": [],
+                "notes": [],
+                "used_within_repositories": [],
+                "used_within_published_repositories": [],
+                "dates_of_existence": [],
+                "used_languages": [],
+                "metadata_rights_declarations": [],
+                "names": [
+                    {
+                        "lock_version": 0,
+                        "primary_name": "Hoxie, George R. ",
+                        "sort_name": "Hoxie, George R. ",
+                        "sort_name_auto_generate": true,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-05-15T20:15:42Z",
+                        "system_mtime": "2024-05-15T20:15:42Z",
+                        "user_mtime": "2024-05-15T20:15:42Z",
+                        "authorized": true,
+                        "is_display_name": true,
+                        "jurisdiction": false,
+                        "conference_meeting": false,
+                        "source": "local",
+                        "rules": "local",
+                        "language": "eng",
+                        "jsonmodel_type": "name_corporate_entity",
+                        "use_dates": [],
+                        "parallel_names": []
+                    }
+                ],
+                "related_agents": [],
+                "uri": "/agents/corporate_entities/432",
+                "agent_type": "agent_corporate_entity",
+                "is_linked_to_published_record": true,
+                "display_name": {
+                    "lock_version": 0,
+                    "primary_name": "Hoxie, George R. ",
+                    "sort_name": "Hoxie, George R. ",
+                    "sort_name_auto_generate": true,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-05-15T20:15:42Z",
+                    "system_mtime": "2024-05-15T20:15:42Z",
+                    "user_mtime": "2024-05-15T20:15:42Z",
+                    "authorized": true,
+                    "is_display_name": true,
+                    "jurisdiction": false,
+                    "conference_meeting": false,
+                    "source": "local",
+                    "rules": "local",
+                    "language": "eng",
+                    "jsonmodel_type": "name_corporate_entity",
+                    "use_dates": [],
+                    "parallel_names": []
+                },
+                "title": "Hoxie, George R. "
+            }
+        },
+        {
+            "role": "subject",
+            "terms": [],
+            "ref": "/agents/corporate_entities/432",
+            "_resolved": {
+                "lock_version": 97,
+                "publish": true,
+                "created_by": "johnsoj",
+                "last_modified_by": "johnsoj",
+                "create_time": "2024-05-15T20:15:42Z",
+                "system_mtime": "2026-07-10T19:38:30Z",
+                "user_mtime": "2024-05-15T20:15:42Z",
+                "is_slug_auto": false,
+                "jsonmodel_type": "agent_corporate_entity",
+                "agent_contacts": [],
+                "agent_record_controls": [],
+                "agent_alternate_sets": [],
+                "agent_conventions_declarations": [],
+                "agent_other_agency_codes": [],
+                "agent_maintenance_histories": [],
+                "agent_record_identifiers": [],
+                "agent_identifiers": [],
+                "agent_sources": [],
+                "agent_places": [],
+                "agent_occupations": [],
+                "agent_functions": [],
+                "agent_topics": [],
+                "agent_resources": [],
+                "linked_agent_roles": [
+                    "creator",
+                    "subject"
+                ],
+                "external_documents": [],
+                "notes": [],
+                "used_within_repositories": [],
+                "used_within_published_repositories": [],
+                "dates_of_existence": [],
+                "used_languages": [],
+                "metadata_rights_declarations": [],
+                "names": [
+                    {
+                        "lock_version": 0,
+                        "primary_name": "Hoxie, George R. ",
+                        "sort_name": "Hoxie, George R. ",
+                        "sort_name_auto_generate": true,
+                        "created_by": "johnsoj",
+                        "last_modified_by": "johnsoj",
+                        "create_time": "2024-05-15T20:15:42Z",
+                        "system_mtime": "2024-05-15T20:15:42Z",
+                        "user_mtime": "2024-05-15T20:15:42Z",
+                        "authorized": true,
+                        "is_display_name": true,
+                        "jurisdiction": false,
+                        "conference_meeting": false,
+                        "source": "local",
+                        "rules": "local",
+                        "language": "eng",
+                        "jsonmodel_type": "name_corporate_entity",
+                        "use_dates": [],
+                        "parallel_names": []
+                    }
+                ],
+                "related_agents": [],
+                "uri": "/agents/corporate_entities/432",
+                "agent_type": "agent_corporate_entity",
+                "is_linked_to_published_record": true,
+                "display_name": {
+                    "lock_version": 0,
+                    "primary_name": "Hoxie, George R. ",
+                    "sort_name": "Hoxie, George R. ",
+                    "sort_name_auto_generate": true,
+                    "created_by": "johnsoj",
+                    "last_modified_by": "johnsoj",
+                    "create_time": "2024-05-15T20:15:42Z",
+                    "system_mtime": "2024-05-15T20:15:42Z",
+                    "user_mtime": "2024-05-15T20:15:42Z",
+                    "authorized": true,
+                    "is_display_name": true,
+                    "jurisdiction": false,
+                    "conference_meeting": false,
+                    "source": "local",
+                    "rules": "local",
+                    "language": "eng",
+                    "jsonmodel_type": "name_corporate_entity",
+                    "use_dates": [],
+                    "parallel_names": []
+                },
+                "title": "Hoxie, George R. "
+            }
+        }
+    ],
+    "import_previous_arks": [],
+    "ancestors": [
+        {
+            "ref": "/repositories/2/resources/706",
+            "level": "item"
+        }
+    ],
+    "instances": [],
+    "notes": [
+        {
+            "jsonmodel_type": "note_singlepart",
+            "persistent_id": "b3f16d4875b110e49392092d9a59b867",
+            "label": "Drawer 15F2 Contents:",
+            "type": "abstract",
+            "content": [
+                "George Hoxie Photograph Collection; Photographic Prints [H-282 - H-580],1948-1984; Photograph Filing Cabinet [15F2]\n\n\n[H-282] Murphey, Lawrence and Aurelia (1967-1968)\n\t[H-283] Liggett, Marj [Mrs. William L.] (1967-1968)\n\t[H-284] Bristol Steel and Iron Works, Inc. (1967-1968)\n\t[H-285] Cooks, Mrs. Lucile (1973-1974)\n\t[H-286] Hiestand, William (1962-1963)\n\t[H-287] Liggett, William (1968-1969)\n\t[H-288] Lord, Miss Mary (1962-1963)\n\t[H-289] Lord, Mary (1966-1967)\n\t[H-290] McNamara, J. Paul and Mary (1981-1982)\n\t[H-291] Nichols, Hugh and Winnie (1976-1977)\n\t[H-292] Whitlock, John (undated)\n\t[H-293] Hahne, Dr. Ernest H. (1948-1949)\n\t[H-294] Shriver, Dr. Phillip (1969-1970)\n\t[H-295] Shriver, Dr. Phillip (July 1965)\n\t[H-296] Shriver, Dr. Phillip (July 1965)\n\t[H-297] Shriver, Dr. Phillip (undated)\n\t[H-298] Brandon, E.E. (1949-1950)\n\t[H-299] Kreger (undated)\n\t[H-300] Wilson, Dr. Ray (1963-1964)\n\t[H-301] Bowers, George (1963-1964)\n\t[H-302] Brown, Dr. Naomi (1970-1971)\n\t[H-303] Brown, David G. (1970-1971)\n\t[H-304] Williamson, Dr. C.K. [Bud] (1968-1969)\n\t[H-305] Barron, George (1949-1950)\n\t[H-306] Barron, George (1962-1963)\n\t[H-307] Abegglen, Homer and Henrietta (1977-1978)\n\t[H-308] Abegglen, Mrs. Homer (1977-1978)\n\t[H-309] Dennison, J. Belden (1948)\n\t[H-310] Edwards, Derwin (1961-1962)\n\t[H-311] Edwards, Dr. Ray L. (1962-1963)\n\t[H-312] Fathauer, George (1971-1972)\n\t[H-313] Gordon, James (1962-1963)\n\t[H-314] Fulwider, Ed [Wash drawings] (1964-1965)\n\t[H-315] Glass, Kenneth (1963-1964)\n\t[H-316] Siegal, Gilbert (1969-1970)\n\t[H-317] White, Dr. Howard (1970-1971)\n\t[H-318] Wittman, Bob (1974-1975)\n\t[H-319] Brown, Dr. Robert and Bonnie (undated)\n\t[H-320] Phelps, Dr. Bernard (1976-1977)\n\t[H-321] Flower, Miss Olive (1951-1952)\n\t[H-322] Glos, Dr. Ray E. (1966-1967)\n\t[H-323] Knox, Carl W. (1965-1966)\n\t[H-324] Limper, Karl (1980-1981)\n\t[H-325] Miner, Dr. Robert (1952-1953)\n\t[H-326] Moeckel, Dean William (1972-1973)\n\t[H-327] Warfel, Ruth (1963-1964)\n\t[H-328] Grinnell, Albert A. (1948-1949)\n\t[H-329] Heimsch, Charles (1961-1962)\n\t[H-330] Heimsch, Charles (1971-1972)\n\t[H-331] Hodgin, Marston and Lucy (1962-1963)\n\t[H-332] Irvin, L.P. and Milner, Mary (1972-1973)\n\t[H-333] McNelly, Dr. Walter (1969-1970)\n\t[H-334] Nelson, Everett (1951-1952)\n\t[H-335] Miller, Dr. Marion (1964-1965)\n\t[H-336] Myers, Robert (1969-1970)\n\t[H-337] Niswonger, Rolly (1965-1966)\n\t[H-338] Moloney, Dr. Ray (1969-1970)\n\t[H-339] Phillips, Margaret (1961-1962)\n\t[H-340] Phillips, Margaret (1961-1962)\n\t[H-341] Phillips, Margaret (1977-1978)\n\t[H-342] Phillips, Margaret (1970-1971)\n\t[H-343] Puff, Dr. Harold (1981-1982)\n\t[H-344] Rees, Jane (1981-1982)\n\t[H-345] Robinson, Frank (1964-1965)\n\t[H-346] Rosenberg, Lana and Jerome (1968-1969)\n\t[H-347] Stark, Dr. Orton (1966-1967)\n\t[H-348] Strousland (1966-1967)\n\t[H-349] Strousland, Charles (1961-1962)\n\t[H-350] Wagner, Dr. Florence (1952-1953)\n\t[H-351] Wagner, Dr. Florence (1962-1963)\n\t[H-352] White, Howard (1961-1962)\n\t[H-353] Wickenden, Dr. and Mrs. (1961-1962)\n\t[H-354] Abegglen, Henrietta (1971-1972)\n\t[H-355] Abegglen, Homer and Henrietta (1968-1969)\n\t[H-356] Angus, Sam (1976-1977)\n\t[H-357] Atchley, Roberta (1968-1969)\n\t[H-358] Angus, Sam and Family (1967-1968)\n\t[H-359] Becker, Dr. David W. (1965-1966)\n\t[H-360] Black, J.B. (1963-1964)\n\t[H-361] Albright, Preston (1957-1958)\n\t[H-362] Anderson, Tom (1962-1963)\n\t[H-363] Atchley, Tom (1966-1967)\n\t[H-364] Aulds, Ellen Lou (1963-1964)\n\t[H-365] Aston, Dr. John (1972-1973)\n\t[H-366] Anderson, Arthur (1973-1974)\n\t[H-367] Ball, John (1948-1949)\n\t[H-368] Ball, John (1957-1958)\n\t[H-369] Ball, John (1951-1952)\n\t[H-370] Bangert, Charles (1964-1965)\n\t[H-371] Rankin, Sara (1974-1975)\n\t[H-372] Barr, Dr. and Mrs. Glenn (1948-1949)\n\t[H-373] Bauer, Mr. and Mrs. Arthur (1971-1972)\n\t[H-374] Bean, Dr. Virginia (1979-1980)\n\t[H-375] Bean, David (1963-1964)\n\t[H-376] Bein, Joe (1949-1950)\n\t[H-377] Bennett, Sam (1970-1971)\n\t[H-378] Bergstrom, David (1973-1974)\n\t[H-379] Berry, Robert E. (1952-1953)\n\t[H-380] Anderson, Mr. and Mrs. Tom (1967-1968)\n\t[H-381] Arfken, George (1967-1968)\n\t[H-382] Arfken, Bruce and Ellen (1971-1972)\n\t[H-383] Breitenbucher, Jacques (1967-1968)\n\t[H-384] Buckingham, John (1967-1968)\n\t[H-385] Buckingham, Dr. John (1972-1973)\n\t[H-386] Cottrell, Dr. Fred (1976-1977)\n\t[H-387] Bhattacharjee, Gourab (1973-1974)\n\t[H-388] Bibza, Olga (1973-1974)\n\t[H-389] Black, Joseph E. (1951-1952)\n\t[H-390] Black, Dr. James A. (1983-1984)\n\t[H-391] Bloom, Dr. Melvin (1973-1974)\n\t[H-392] Bloom, Melvin (1963-1964)\n\t[H-393] Booth, Newell, Mary Lou, Alden, Edwin, and Karen (1978-1979)\n\t[H-394] Branch, Ed (1961-1962)\n\t[H-395] Brill, Dr. Harvey C. (1964-1965)\n\t[H-396] Brill, Dr. Harvey (1964-1965)\n\t[H-397] Butler, C.W. (1978-1979)\n\t[H-397A] Campbell, J. Helen (1962-1963)\n\t[H-398] Campbell, Mrs. Phyliss (1973-1974)\n\t[H-399] Cawthorn, Del (1966-1967)\n\t[H-400] Christoperson, Dr. and Mrs. H.C. (1968-1969)\n\t[H-401] Christofferson (1951-1952)\n\t[H-402] Clark, Isabel (1949-1950)\n\t[H-403] Crum, Dick (1976-1977)\n\t[H-404] Cope, David (1974-1975)\n\t[H-405] Dacruz, Daniel (1981-1982)\n\t[H-406] Dagenais, James (1972-1973)\n\t[H-407] Daiker, Dr. Donald (1978-1979)\n\t[H-408] Daniel, Chris (1972-1973)\n\t[H-409] De Saint-Rat, Catherine (1970-1971)\n\t[H-410] De Saint-Rat, Elizabeth (1968-1969)\n\t[H-411] De Saint-Rat, Mark (1968-1969)\n\t[H-412] Diehl, T. Handley (1969-1970)\n\t[H-413] Di Palma, Jerry (1969-1970)\n\t[H-414] Doepper, Paul (1970-1971)\n\t[H-415] Dome, John (1978-1979)\n\t[H-416] Donnell, Richard (1971-1972)\n\t[H-417] Druesedow, John (1970-1971)\n\t[H-418] Drill, Miss Dorothy (1967-1968)\n\t[H-419] Druesedow, John and Jean (1969-1970)\n\t[H-420] Ducan, Dick and Dorothy (1963-1964)\n\t[H-421] Duricy, Daniel (1971-1972)\n\t[H-422] Fathauer, Johanne (1981-1982)\n\t[H-423] Moore, Dr. William (1981-1982)\n\t[H-424] Fiehter, Joseph (1964-1965)\n\t[H-425] Fisher, Ann (1962-1963)\n\t[H-426] Foster, Adon (1965-1966)\n\t[H-427] Foster, Adon (1964-1965)\n\t[H-428] Foster, E.K. (1949-1950)\n\t[H-429] Foster, Susan (1965-1966)\n\t[H-430] Gass, Fred and Margery (1968-1969)\n\t[H-431] Easton, Robert and Family (1966-1967)\n\t[H-432] Edwards, Don (1974-1975)\n\t[H-433] Emerson, Bertha (1969-1970)\n\t[H-434] Eshbaugh, Dr. Hardy (1969-1970)\n\t[H-435] Eshbaugh, Barbara (1969-1970)\n\t[H-436] Eshbaugh, David, Stephen, and Wendy (1969-1970)\n\t[H-437] Eshbaugh, Dr. Hardy (1969-1970)\n\t[H-438] Eshbaugh, Hardy, Mrs., and Children (1969-1970)\n\t[H-439] Erickson, Byron (1969-1970)\n\t[H-440] Galat, Joe, Marcia, and Greg (undated)\n\t[H-441] Garling, Dr. L.C. (1966-1967)\n\t[H-442] Cerdine, Leigh (1949-1950)\n\t[H-443] Frankel, Richard (1965-1966)\n\t[H-444] Frankel, Sandy and Devay, Lauren (1965-1966)\n\t[H-445] Franz, Vivian (1970-1971)\n\t[H-446] Frohlich, Otto (1968-1969)\n\t[H-447] Fryman, Bob (1949-1950)\n\t[H-448] Fuhr, Bernard, Twila, and Alec (undated)\n\t[H-449] Fuhr, Debbie (1972-1973)\n\t[H-450] Giddis, Wm. J. (1966-1967)\n\t[H-451] Gilmore, Tom (1976-1977)\n\t[H-452] Gix, Donald (1966-1967)\n\t[H-453] Glass, Ken and Family (1968-1969)\n\t[H-454] Gracie, William (1970-1971)\n\t[H-455] Gracie, William (1976-1977)\n\t[H-456] Grandstaff, Harvey (1976-1977)\n\t[H-457] Grice, Eileen (Mrs.) (1962-1963)\n\t[H-458] Griffith, Russell (1963-1964)\n\t[H-459] Grosscup, George (1967-1968)\n\t[H-460] Grove, W. Alan (1949-1950)\n\t[H-461] Alderman, William (1980-1981)\n\t[H-462] Harrison, J. Robert (1964-1965)\n\t[H-463] Harwood, Britton (1968-1969)\n\t[H-464] Hathaway, Steven and Maxine (1974-1975)\n\t[H-465] Havinghurst, Walter and Marion (1955-1956)\n\t[H-466] Havinghurst, Marion Boyd (1949-1950)\n\t[H-467] Henneberger, Jane (1974-1975)\n\t[H-468] Hill, Eldon (1948-1949)\n\t[H-469] Hill, Eugene (1965-1966)\n\t[H-471] Hofmann, Richard and Lydia (1970-1971)\n\t[H-472] Houghton, Everett (1948-1949)\n\t[H-473] Houtchens, Lawrence Huston (1963-1964)\n\t[H-474] Houtchens, Carolyn (1963-1964)\n\t[H-475] Howard, Ed and Miriam (1962-1963)\n\t[H-476] Huntington, John (1970-1971)\n\t[H-477] Hynes, Lawrence (1952-1953)\n\t[H-478] Irvin, Pat and Lydia (1973-1974)\n\t[H-479] Ittel, Alberta Lutz (1948-1949)\n\t[H-480] Jacobs, Dan and Family (1974-1975)\n\t[H-481] Jasper, Harold and Family (1968-1969)\n\t[H-482] Jellison, Dr. and Mrs. (1965-1966)\n\t[H-483] Jacobs, Dan (1963-1964)\n\t[H-484] Jellison, Richard (1973-1974)\n\t[H-485] Jellison, Kay (1973-1974)\n\t[H-486] Johnson, Elizabeth (1975-1976)\n\t[H-487] Jones, Willis and Daniel (1969)\n\t[H-488] Jones, Willis K. (1974-1975)\n\t[H-489] Keister, Wilbur (1974-1975)\n\t[H-490] Kerek, Andrew (1974-1975)\n\t[H-491] Kerek, Yvonne (1974-1975)\n\t[H-492] Kerek, Yvonne (1974-1975)\n\t[H-493] Kern, Barb (1974-1975)\n\t[H-494] Klein, Chuck and Family (1973-1974)\n\t[H-495] Klein, Susan (1973-1974)\n\t[H-496] Knock, Libby (1968-1969)\n\t[H-497] Kochan, Ivan (1977-1978)\n\t[H-498] Kochan, Tatiana (1977-1978)\n\t[H-499] Lane, Elizabeth (1964-1965)\n\t[H-500] Landfair, Paul (undated)\n\t[H-501] Lekvold, A.D. (1948-1949)\n\t[H-502] Lekvold, A.D. (1948-1949)\n\t[H-503] Lewis, David (1963-1964)\n\t[H-504] List, George (1949-1950)\n\t[H-505] Locke, John and Michael (1969-1970)\n\t[H-506] Locke, Nancy (1969-1970)\n\t[H-507] Luce, Stan and LouAnn (1973-1974)\n\t[H-508] Lyden, Richard (1973-1974)\n\t[H-509] Lykins, Everett (1975-1976)\n\t[H-510] Lykins, Everett (1975-1976)\n\t[H-511] Lyle, Harry (1978-1979)\n\t[H-512] Macklin, Pailup (1971-1972)\n\t[H-513] Macklin,  Steven (1971-1972)\n\t[H-514] Maggard, John and Melva (1975-1976)\n\t[H-515] Mallory, Curt (1969-1970)\n\t[H-516] Martin, Clara F. (1964-1965)\n\t[H-517] Mason, Warren (1966-1967)\n\t[H-518] McMasters, William (1957-1958)\n\t[H-519] McNiff, Williams (1968-1969)\n\t[H-520] McNiff, William J. (1970-1971)\n\t[H-521] McNiff, Dr. and Mrs. William J. (1965-1966)\n\t[H-522] Mead, E.G. (1951-1952)\n\t[H-523] Melvin, Mary (1969-1970)\n\t[H-524] Mohr, Mr. and Mrs. Harold (1973-1974)\n\t[H-525] Moloney, Raymand, Patricia and Family (1968-1969)\n\t[H-526] Montgomery, Dr. James (1980-1981)\n\t[H-527] Moore, Melton A. (1971-1972)\n\t[H-528] Moran, Dr. Forrest (1966-1967)\n\t[H-529] Morgenson, Mrs. Rebecca (1970-1971)\n\t[H-530] Morsberger, Robert and Wendy (1968-1969)\n\t[H-531] Moynagh, Joan (1968-1969)\n\t[H-532] Mundell, Percy, Margaret, Alan and Barbara (undated)\n\t[H-533] Murray, Dr. Malcom (1963-1964)\n\t[H-534] Murray, Dr. and Mrs. Malcom (1964-1965)\n\t[H-535] Nafzinger, George (1975-1976)\n\t[H-536] Neill, Dr. Jack (1976-1977)\n\t[H-537] Nelson, Don (1975-1976)\n\t[H-538] Nelson, Everett and Irene (1971-1972)\n\t[H-539] Nelson, Wilise (1968-1969)\n\t[H-540] Niswonger, Rollin C. (1975-1976)\n\t[H-541] Niswonger, Mr. and Mrs. (1970-1971)\n\t[H-542] O'Connor, Margaret (1963-1964)\n\t[H-543] Oehlers, Steven (1975-1976)\n\t[H-544] Oerter, Herbert (1969-1970)\n\t[H-545] O'Lenick, Mike (1975-1976)\n\t[H-546] Olson, Bruce, Joann, Eric, and Jeanne (1975-1976)\n\t[H-547] Ortleb, Dr. Ruth (1952-1953)\n\t[H-548] Ortleb, Dr. Ruth (1956-1957)\n\t[H-549] Ormiston, Donald (1972-1973)\n\t[H-550] Osborne, Dr. David (1973-1974)\n\t[H-551] Outland, Lloyd (1949-1950)\n\t[H-552] Owsley, Margaret, Scott and Lucy (1967-1968)\n\t[H-553] Paetow, Judith (1963-1964)\n\t[H-554] Rama Rao, Pappu (1968-1969)\n\t[H-555] Pelley, Dr. James (1965-1966)\n\t[H-556] Perin, C. Theodore (1981-1982)\n\t[H-557] Phelps, Margaret and Ernie (1976-1977)\n\t[H-558] Poccia, Nicholas (1952-1953)\n\t[H-559] Pollard, Harry (1949-1950)\n\t[H-560] Pollins, Marvin and Merle (1965-1966)\n\t[H-561] Porter, H.P. (1966-1967)\n\t[H-562] Porter, Kay (1968-1969)\n\t[H-563] Poth, Dr. James (1966-1967)\n\t[H-564] Potteizer, Eliz (1969-1970)\n\t[H-566] Powell, Marcy (1973-1974)\n\t[H-567] Pratt, Dr. William (1974-1975)\n\t[H-568] Purcell, Robert (1968-1969)\n\t[H-569] Purdy, Ralph and Crystal (1979-1980)\n\t[H-570] Pyle, Beatrice (1963-1964)\n\t[H-571] Ramsey, William (1966-1967)\n\t[H-572] Rejai, Dr. (1965-1966)\n\t[H-573] Richardson, Josephine (1957-1958)\n\t[H-574] Richey, Sheffield (1972-1973)\n\t[H-575] Roberts, Bernice (1962-1963)\n\t[H-576] Rodabaugh, Jim and Mary Jane (1971-1972)\n\t[H-577] Romano, Jonn (1973-1974)\n\t[H-578] Ross, Rachel (1965-1966)\n\t[H-579] Rouse, Barbara (1976-1977)\n\t[H-580] Rowe, Dorothy (1976-1977)"
+            ],
+            "publish": true
+        }
+    ],
+    "accession_links": [],
+    "uri": "/repositories/2/archival_objects/15610",
+    "repository": {
+        "ref": "/repositories/2",
+        "_resolved": {
+            "lock_version": 0,
+            "repo_code": "Miami University and Western College Memorial Archives",
+            "name": "Miami University and Western College Memorial Archives",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-11-20T16:10:07Z",
+            "system_mtime": "2023-02-24T12:41:41Z",
+            "user_mtime": "2014-11-20T16:10:07Z",
+            "publish": true,
+            "oai_is_disabled": false,
+            "oai_sets_available": "[]",
+            "slug": "miami_university_and_western_college_memorial_arch",
+            "is_slug_auto": true,
+            "position": 1,
+            "jsonmodel_type": "repository",
+            "uri": "/repositories/2",
+            "display_string": "Miami University and Western College Memorial Archives (Miami University and Western College Memorial Archives)",
+            "agent_representation": {
+                "ref": "/agents/corporate_entities/1"
+            }
+        }
+    },
+    "resource": {
+        "ref": "/repositories/2/resources/706"
+    },
+    "has_unpublished_ancestor": false
+}

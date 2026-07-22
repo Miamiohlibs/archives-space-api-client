@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { dateSchema, extentSchema, externalIdSchema, instanceSchema, langMaterialSchema, linkedAgentSchema, linkedEventSchema, noteSchema, repoResourcesSchema, repositorySchema, resolvableRefSchema, rightsStatementSchema, subjectSchema, } from './RepoResourcesSchema.js';
+import { dateSchema, extentSchema, externalIdSchema, instanceSchema, langMaterialSchema, linkedAgentSchema, linkedEventSchema, noteSchema, parentSchema, registerArchivalObjectSchema, repoResourcesSchema, repositorySchema, resolvableRefSchema, rightsStatementSchema, subjectSchema, } from './RepoResourcesSchema.js';
 // An ancestor is a resolvable reference to the resource or archival object
 // above this one in the tree, plus the `level` of that ancestor (which is
 // redundant with the `level` on the resolved record itself, but is present
@@ -7,6 +7,8 @@ import { dateSchema, extentSchema, externalIdSchema, instanceSchema, langMateria
 const ancestorSchema = resolvableRefSchema(repoResourcesSchema).extend({
     level: z.string(),
 });
+// The runtime field list for `_resolved` in `parentSchema` (RepoResourcesSchema.ts)
+// — mirrored by hand in the `ArchivalObjectRecord` interface above.
 export const repoArchivalObjectSchema = z.object({
     lock_version: z.number(),
     position: z.number(),
@@ -41,5 +43,7 @@ export const repoArchivalObjectSchema = z.object({
     uri: z.string(),
     repository: repositorySchema,
     resource: resolvableRefSchema(repoResourcesSchema),
+    parent: parentSchema.optional(),
     has_unpublished_ancestor: z.boolean(),
 });
+registerArchivalObjectSchema(repoArchivalObjectSchema);

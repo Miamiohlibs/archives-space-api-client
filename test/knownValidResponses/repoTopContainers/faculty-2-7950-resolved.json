@@ -1,0 +1,60 @@
+{
+    "lock_version": 93,
+    "indicator": "1;  Faculty Files [Overflow] Fr-Zi, 1950-2011; [2A-C-5A]",
+    "created_by": "student",
+    "last_modified_by": "student",
+    "create_time": "2019-10-31T16:49:37Z",
+    "system_mtime": "2026-07-20T19:58:45Z",
+    "user_mtime": "2019-10-31T16:49:37Z",
+    "type": "box",
+    "jsonmodel_type": "top_container",
+    "active_restrictions": [],
+    "container_locations": [
+        {
+            "jsonmodel_type": "container_location",
+            "status": "current",
+            "start_date": "2019-10-31",
+            "system_mtime": "2019-10-31 16:49:37 UTC",
+            "user_mtime": "2019-10-31 16:49:37 UTC",
+            "ref": "/locations/9278"
+        }
+    ],
+    "series": [],
+    "collection": [
+        {
+            "ref": "/repositories/2/resources/607",
+            "identifier": "009--FAC--2016100503",
+            "display_string": "Faculty, Miami University"
+        }
+    ],
+    "uri": "/repositories/2/top_containers/7950",
+    "repository": {
+        "ref": "/repositories/2",
+        "_resolved": {
+            "lock_version": 0,
+            "repo_code": "Miami University and Western College Memorial Archives",
+            "name": "Miami University and Western College Memorial Archives",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-11-20T16:10:07Z",
+            "system_mtime": "2023-02-24T12:41:41Z",
+            "user_mtime": "2014-11-20T16:10:07Z",
+            "publish": true,
+            "oai_is_disabled": false,
+            "oai_sets_available": "[]",
+            "slug": "miami_university_and_western_college_memorial_arch",
+            "is_slug_auto": true,
+            "position": 1,
+            "jsonmodel_type": "repository",
+            "uri": "/repositories/2",
+            "display_string": "Miami University and Western College Memorial Archives (Miami University and Western College Memorial Archives)",
+            "agent_representation": {
+                "ref": "/agents/corporate_entities/1"
+            }
+        }
+    },
+    "restricted": false,
+    "is_linked_to_published_record": true,
+    "display_string": "Box 1;  Faculty Files [Overflow] Fr-Zi, 1950-2011; [2A-C-5A]",
+    "long_display_string": "Box 1;  Faculty Files [Overflow] Fr-Zi, 1950-2011; [2A-C-5A], King Library, 3rd Floor, Walter Havighurst , Special Collections and Archives [Range: 2A, Section: C, Shelf: 5A], 009--FAC--2016100503, Faculty, Miami University"
+}

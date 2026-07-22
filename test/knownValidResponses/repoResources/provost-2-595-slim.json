@@ -1,0 +1,201 @@
+{
+    "lock_version": 57,
+    "title": "Academic Affairs/Provost",
+    "publish": true,
+    "restrictions": false,
+    "created_by": "maureren",
+    "last_modified_by": "johnsoj",
+    "create_time": "2016-07-22T14:10:19Z",
+    "system_mtime": "2026-07-13T14:13:30Z",
+    "user_mtime": "2024-11-21T18:48:33Z",
+    "suppressed": false,
+    "is_slug_auto": false,
+    "id_0": "00",
+    "id_1": "AAP",
+    "id_2": "2016072201",
+    "level": "recordgrp",
+    "resource_type": "papers",
+    "finding_aid_language": "und",
+    "finding_aid_script": "Zyyy",
+    "jsonmodel_type": "resource",
+    "external_ids": [],
+    "subjects": [
+        {
+            "ref": "/subjects/4575"
+        },
+        {
+            "ref": "/subjects/1317"
+        },
+        {
+            "ref": "/subjects/95"
+        },
+        {
+            "ref": "/subjects/565"
+        },
+        {
+            "ref": "/subjects/193"
+        }
+    ],
+    "linked_events": [],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "136",
+            "created_by": "johnsoj",
+            "last_modified_by": "johnsoj",
+            "create_time": "2024-11-21T18:48:34Z",
+            "system_mtime": "2024-11-21T18:48:34Z",
+            "user_mtime": "2024-11-21T18:48:34Z",
+            "portion": "whole",
+            "extent_type": "Boxes",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "lang_materials": [
+        {
+            "lock_version": 0,
+            "created_by": "johnsoj",
+            "last_modified_by": "johnsoj",
+            "create_time": "2024-11-21T18:48:34Z",
+            "system_mtime": "2024-11-21T18:48:34Z",
+            "user_mtime": "2024-11-21T18:48:34Z",
+            "jsonmodel_type": "lang_material",
+            "notes": [],
+            "language_and_script": {
+                "lock_version": 0,
+                "created_by": "johnsoj",
+                "last_modified_by": "johnsoj",
+                "create_time": "2024-11-21T18:48:34Z",
+                "system_mtime": "2024-11-21T18:48:34Z",
+                "user_mtime": "2024-11-21T18:48:34Z",
+                "language": "eng",
+                "jsonmodel_type": "language_and_script"
+            }
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "begin": "1956",
+            "created_by": "johnsoj",
+            "last_modified_by": "johnsoj",
+            "create_time": "2024-11-21T18:48:34Z",
+            "system_mtime": "2024-11-21T18:48:34Z",
+            "user_mtime": "2024-11-21T18:48:34Z",
+            "date_type": "bulk",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+        {
+            "role": "creator",
+            "terms": [],
+            "ref": "/agents/corporate_entities/24"
+        },
+        {
+            "role": "subject",
+            "terms": [],
+            "ref": "/agents/corporate_entities/24"
+        },
+        {
+            "role": "creator",
+            "terms": [],
+            "ref": "/agents/corporate_entities/277"
+        },
+        {
+            "role": "subject",
+            "terms": [],
+            "ref": "/agents/corporate_entities/277"
+        }
+    ],
+    "import_previous_arks": [],
+    "revision_statements": [],
+    "instances": [],
+    "deaccessions": [],
+    "related_accessions": [],
+    "classifications": [
+        {
+            "ref": "/repositories/2/classifications/2"
+        }
+    ],
+    "notes": [
+        {
+            "jsonmodel_type": "note_singlepart",
+            "persistent_id": "60f64c583c3d422cfcc601e00514ce42",
+            "type": "physloc",
+            "content": [
+                "Miami University Archives, King Library, 3rd Floor, Walter Havighurst Special Collections, Miami University, Oxford, Ohio"
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "174cc5d4bef67bc1292eeddba2a6af4d",
+            "type": "accessrestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Materials do not circulate and are made available to users in the Miami University Archives.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "ac60cdde7b43234f1d8e83e70e8ca6c0",
+            "type": "prefercite",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Miami University Libraries. Miami University Archives, Oxford, Ohio",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "38041118b5e8160881a2d8e6d0ca74de",
+            "type": "userestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Materials do circulate and may only be used in the archives.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "86a94ec47a3b07f60eb64d64ca32d7fa",
+            "type": "bioghist",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "As Miami's chief academic officer, the Provost is responsible for the stewardship of curricular endeavors and leads strategic and entrepreneurial academic initiatives on behalf of the University. The Provost facilitates faculty policies and procedures, promotes the values of academic integrity, and directs the process of University Accreditation. The provost oversees the university's academic mission and supports the efforts of Miami’s faculty and staff whose teaching, research, scholarship, advising and support services make Miami's educational opportunities possible for Miami students.\n\nWorking with her staff, the deans, and other academic leaders, the Provost fosters a rigorous learning environment, inspires high-quality scholarship and creative activity, promotes intercultural and global engagement, and supports a transparent and fair governance system.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        }
+    ],
+    "metadata_rights_declarations": [],
+    "uri": "/repositories/2/resources/595",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "tree": {
+        "ref": "/repositories/2/resources/595/tree"
+    }
+}
