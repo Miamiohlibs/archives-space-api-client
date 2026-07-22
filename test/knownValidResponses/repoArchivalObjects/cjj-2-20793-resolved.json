@@ -169,10 +169,335 @@
         }
     },
     "resource": {
-        "ref": "/repositories/2/resources/722"
+        "ref": "/repositories/2/resources/722",
+        "_resolved": {
+            "lock_version": 6,
+            "title": "Carolyn Jefferson-Jenkins Collection",
+            "publish": true,
+            "restrictions": false,
+            "created_by": "pinecn",
+            "last_modified_by": "maderir",
+            "create_time": "2023-11-06T16:38:41Z",
+            "system_mtime": "2026-07-10T18:28:56Z",
+            "user_mtime": "2026-07-10T18:28:56Z",
+            "suppressed": false,
+            "is_slug_auto": false,
+            "id_0": "Mss. Coll. Jefferson-Jenkins",
+            "level": "collection",
+            "finding_aid_language": "eng",
+            "finding_aid_script": "Zyyy",
+            "jsonmodel_type": "resource",
+            "external_ids": [],
+            "subjects": [
+                {
+                    "ref": "/subjects/970"
+                },
+                {
+                    "ref": "/subjects/56"
+                },
+                {
+                    "ref": "/subjects/28"
+                },
+                {
+                    "ref": "/subjects/27"
+                },
+                {
+                    "ref": "/subjects/5018"
+                }
+            ],
+            "linked_events": [],
+            "extents": [
+                {
+                    "lock_version": 0,
+                    "number": "32",
+                    "created_by": "maderir",
+                    "last_modified_by": "maderir",
+                    "create_time": "2026-07-10T18:28:56Z",
+                    "system_mtime": "2026-07-10T18:28:56Z",
+                    "user_mtime": "2026-07-10T18:28:56Z",
+                    "portion": "whole",
+                    "extent_type": "Boxes",
+                    "jsonmodel_type": "extent"
+                }
+            ],
+            "lang_materials": [
+                {
+                    "lock_version": 0,
+                    "created_by": "maderir",
+                    "last_modified_by": "maderir",
+                    "create_time": "2026-07-10T18:28:56Z",
+                    "system_mtime": "2026-07-10T18:28:56Z",
+                    "user_mtime": "2026-07-10T18:28:56Z",
+                    "jsonmodel_type": "lang_material",
+                    "notes": [],
+                    "language_and_script": {
+                        "lock_version": 0,
+                        "created_by": "maderir",
+                        "last_modified_by": "maderir",
+                        "create_time": "2026-07-10T18:28:56Z",
+                        "system_mtime": "2026-07-10T18:28:56Z",
+                        "user_mtime": "2026-07-10T18:28:56Z",
+                        "language": "eng",
+                        "jsonmodel_type": "language_and_script"
+                    }
+                }
+            ],
+            "dates": [
+                {
+                    "lock_version": 0,
+                    "begin": "1983",
+                    "end": "2021",
+                    "created_by": "maderir",
+                    "last_modified_by": "maderir",
+                    "create_time": "2026-07-10T18:28:56Z",
+                    "system_mtime": "2026-07-10T18:28:56Z",
+                    "user_mtime": "2026-07-10T18:28:56Z",
+                    "date_type": "bulk",
+                    "label": "creation",
+                    "jsonmodel_type": "date"
+                }
+            ],
+            "external_documents": [
+                {
+                    "lock_version": 0,
+                    "title": "Dr. Carolyn Jefferson-Jenkins and the League of Women Voters Digital Collection",
+                    "location": "https://www.lib.miamioh.edu/research/digital-collections/cjj",
+                    "publish": true,
+                    "created_by": "maderir",
+                    "last_modified_by": "maderir",
+                    "create_time": "2026-07-10T18:28:56Z",
+                    "system_mtime": "2026-07-10T18:28:56Z",
+                    "user_mtime": "2026-07-10T18:28:56Z",
+                    "jsonmodel_type": "external_document"
+                },
+                {
+                    "lock_version": 0,
+                    "title": "Dr. Carolyn Jefferson-Jenkins Oral History Interview",
+                    "location": "https://digital.lib.miamioh.edu/digital/collection/western/id/5/rec/1",
+                    "publish": true,
+                    "created_by": "maderir",
+                    "last_modified_by": "maderir",
+                    "create_time": "2026-07-10T18:28:56Z",
+                    "system_mtime": "2026-07-10T18:28:56Z",
+                    "user_mtime": "2026-07-10T18:28:56Z",
+                    "jsonmodel_type": "external_document"
+                },
+                {
+                    "lock_version": 0,
+                    "title": "Dr. Carolyn Jefferson-Jenkins Podcast Interview - Love the League",
+                    "location": "https://studio809podcasts.com/love-the-league/",
+                    "publish": true,
+                    "created_by": "maderir",
+                    "last_modified_by": "maderir",
+                    "create_time": "2026-07-10T18:28:56Z",
+                    "system_mtime": "2026-07-10T18:28:56Z",
+                    "user_mtime": "2026-07-10T18:28:56Z",
+                    "jsonmodel_type": "external_document"
+                }
+            ],
+            "rights_statements": [],
+            "linked_agents": [
+                {
+                    "role": "creator",
+                    "terms": [],
+                    "ref": "/agents/people/13"
+                },
+                {
+                    "role": "creator",
+                    "terms": [],
+                    "ref": "/agents/corporate_entities/39"
+                },
+                {
+                    "role": "subject",
+                    "terms": [],
+                    "ref": "/agents/corporate_entities/278"
+                }
+            ],
+            "import_previous_arks": [],
+            "revision_statements": [],
+            "instances": [],
+            "deaccessions": [],
+            "related_accessions": [],
+            "classifications": [],
+            "notes": [
+                {
+                    "jsonmodel_type": "note_singlepart",
+                    "persistent_id": "cc2913c2c958b9709640f1f2ecd92364",
+                    "type": "abstract",
+                    "content": [
+                        "Collection includes records, correspondence, reports, printed materials, and memorabilia related to the life and career of Dr. Carolyn Jefferson-Jenkins, 15th National President of the League of Women Voters of the United States."
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "e4fc4387170d6282b34247218dfb92b3",
+                    "type": "accessrestrict",
+                    "rights_restriction": {
+                        "local_access_restriction_type": []
+                    },
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "Materials do not circulate and are made available to users at the Walter Havighurst Special Collections and University Archives, Miami University.",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "73b1816f11fa24193ea5962799c5b5e8",
+                    "type": "acqinfo",
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "Received from Carolyn Jefferson Jenkins in 2006. Additional materials recieved in 2021 from Carolyn Jefferson Jenkins.",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "4d5e7aefb7bd9d764a22737963b80d92",
+                    "type": "prefercite",
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "Cite as Carolyn Jefferson Jenkins Collection, Miami University Archives, Oxford, Ohio.",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "764f68de12bd7a30863c2022ead8ef19",
+                    "label": "Dr. Carolyn Jefferson-Jenkins and the League of Women Voters Digital Collection",
+                    "type": "altformavail",
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "Access the Dr. Carolyn Jefferson-Jenkins and the League of Women Voters Digital Collection here: https://www.lib.miamioh.edu/research/digital-collections/cjj ",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "54516e7330d409d9001bf92245f79df9",
+                    "label": "Biographical Note",
+                    "type": "bioghist",
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "In 1994 Dr. Carolyn Jefferson-Jenkins, a 1974 graduate of Western College served as the 15th National President of the League of Women Voters of the United States, a political advocacy and membership organization. As president of the League, Dr. Jefferson-Jenkins worked to increase citizen participation in the electoral process and lead the education and advocacy work of the League on public policy issues. She was the first woman of African-American descent to head the League. Dr. Jefferson-Jenkins is a recognized authority on the voting rights of African Americans and is the author of The Road to Black Suffrage and One Man One Vote: The History of the African-American Vote in the United States.  While a student at Western College in Ohio she majored in Social Science and Education and received her Master’s in Education in Administration and Supervision from John Carroll University in Ohio. She then obtained her Ph.D. in Urban Education and Administration from Cleveland State University in 1991. Jefferson-Jenkins began her career as a public school teacher and administrator in 1974 in which she served for 20 year.  She joined the League in 1982.  At the time of her presidency there were more than 120,000 members in all 50 states. Dr. Jefferson-Jenkins served two terms as the president of the League of Women Voters. In the last year of her presidency, 1998, Jefferson-Jenkins promoted the Wired for Democracy project, one of the earliest efforts to increase citizen participation particularly among the young via the newly developed Internet.\tIn 1998 Jefferson-Jenkins became chair of the League of Women Voters Education Fund, a post she held until 2002.  Beginning in 2002 she participated in democracy building efforts in Argentina, Uruguay, Brazil, the Netherlands, Israel, and eight African countries through her work with non-governmental organizations (NGOs) in these nations.  Jefferson-Jenkins was also a senior associate for America's Choice Schools at the National Center on Education and the Economy in Washington, D.C.  She also serves on the Board of the Women Ambassadors Program at Howard University in Washington, D.C. and in 2010 she was named to the Board of the Colorado Judicial Institute.",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_multipart",
+                    "persistent_id": "28b0b1a501e0c93db9b19f775e834f22",
+                    "type": "processinfo",
+                    "subnotes": [
+                        {
+                            "jsonmodel_type": "note_text",
+                            "content": "The collection was processed by Jacky Johnson, Archivist, Western College Memorial Archives, Oxford, Ohio. \n\nCollection addition processed 2021/07/19 by Marie Pruitt. \n\nFinding aid revised 2021/07/26 by Cody Sprunger. \n\nCollection reprocessed by Candace Pine, Rare Books and Manuscript Librarian, Walter Havighurst Special Collections and University Archives, Oxford, Ohio. \n\nFinding aid revised 2023/11/03 by Sean Poland.",
+                            "publish": true
+                        }
+                    ],
+                    "publish": true
+                }
+            ],
+            "metadata_rights_declarations": [],
+            "uri": "/repositories/2/resources/722",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "tree": {
+                "ref": "/repositories/2/resources/722/tree"
+            }
+        }
     },
     "parent": {
-        "ref": "/repositories/2/archival_objects/20792"
+        "ref": "/repositories/2/archival_objects/20792",
+        "_resolved": {
+            "lock_version": 0,
+            "position": 0,
+            "publish": true,
+            "ref_id": "e9e68878596ff6c9e703d862bd9d153d",
+            "title": "Sub-Series I: Administrative Materials",
+            "display_string": "Sub-Series I: Administrative Materials",
+            "restrictions_apply": false,
+            "created_by": "student",
+            "last_modified_by": "student",
+            "create_time": "2023-11-10T20:42:27Z",
+            "system_mtime": "2026-07-10T18:28:56Z",
+            "user_mtime": "2023-11-10T20:42:27Z",
+            "suppressed": false,
+            "is_slug_auto": false,
+            "level": "subseries",
+            "jsonmodel_type": "archival_object",
+            "external_ids": [],
+            "subjects": [],
+            "linked_events": [],
+            "extents": [],
+            "lang_materials": [
+                {
+                    "lock_version": 0,
+                    "created_by": "student",
+                    "last_modified_by": "student",
+                    "create_time": "2023-11-10T20:42:27Z",
+                    "system_mtime": "2023-11-10T20:42:27Z",
+                    "user_mtime": "2023-11-10T20:42:27Z",
+                    "jsonmodel_type": "lang_material",
+                    "notes": [],
+                    "language_and_script": {
+                        "lock_version": 0,
+                        "created_by": "student",
+                        "last_modified_by": "student",
+                        "create_time": "2023-11-10T20:42:27Z",
+                        "system_mtime": "2023-11-10T20:42:27Z",
+                        "user_mtime": "2023-11-10T20:42:27Z",
+                        "language": "eng",
+                        "jsonmodel_type": "language_and_script"
+                    }
+                }
+            ],
+            "dates": [],
+            "external_documents": [],
+            "rights_statements": [],
+            "linked_agents": [],
+            "import_previous_arks": [],
+            "ancestors": [
+                {
+                    "ref": "/repositories/2/archival_objects/20791",
+                    "level": "series"
+                },
+                {
+                    "ref": "/repositories/2/resources/722",
+                    "level": "collection"
+                }
+            ],
+            "instances": [],
+            "notes": [],
+            "accession_links": [],
+            "uri": "/repositories/2/archival_objects/20792",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "resource": {
+                "ref": "/repositories/2/resources/722"
+            },
+            "parent": {
+                "ref": "/repositories/2/archival_objects/20791"
+            },
+            "has_unpublished_ancestor": false
+        }
     },
     "has_unpublished_ancestor": false
 }
