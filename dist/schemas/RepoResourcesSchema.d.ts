@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import type { ArchivalObjectRecord } from './RepoArchivalObjectsSchema.js';
 export declare const refSchema: z.ZodObject<{
     ref: z.ZodString;
 }, z.core.$strip>;
@@ -6,6 +7,11 @@ export declare const resolvableRefSchema: <T extends z.ZodTypeAny>(resolvedSchem
     ref: z.ZodString;
     _resolved: z.ZodOptional<T>;
 }, z.core.$strip>;
+export declare function registerArchivalObjectSchema(schema: z.ZodType<ArchivalObjectRecord>): void;
+export declare const parentSchema: z.ZodType<{
+    ref: string;
+    _resolved?: ArchivalObjectRecord;
+}>;
 export declare const dateSchema: z.ZodObject<{
     lock_version: z.ZodNumber;
     begin: z.ZodOptional<z.ZodString>;
@@ -476,6 +482,10 @@ export interface ResourceRecord {
     metadata_rights_declarations?: unknown[];
     repository: z.infer<typeof repositorySchema>;
     tree?: z.infer<typeof treeSchema>;
+    parent?: {
+        ref: string;
+        _resolved?: ArchivalObjectRecord;
+    };
 }
 export declare const collectionRefSchema: z.ZodType<{
     ref: string;
@@ -1354,9 +1364,13 @@ export declare const repoResourcesSchema: z.ZodObject<{
         publish: z.ZodOptional<z.ZodBoolean>;
     }, z.core.$catchall<z.ZodOptional<z.ZodString>>>], "jsonmodel_type">>;
     metadata_rights_declarations: z.ZodOptional<z.ZodArray<z.ZodUnknown>>;
-    parent: z.ZodOptional<z.ZodObject<{
-        ref: z.ZodString;
-    }, z.core.$strip>>;
+    parent: z.ZodOptional<z.ZodType<{
+        ref: string;
+        _resolved?: ArchivalObjectRecord;
+    }, unknown, z.core.$ZodTypeInternals<{
+        ref: string;
+        _resolved?: ArchivalObjectRecord;
+    }, unknown>>>;
     position: z.ZodOptional<z.ZodNumber>;
     ref_id: z.ZodOptional<z.ZodString>;
     resource: z.ZodOptional<z.ZodObject<{

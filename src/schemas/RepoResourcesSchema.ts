@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import type { ArchivalObjectRecord } from './RepoArchivalObjectsSchema.js';
 
 // A bare reference to another record, with no embedded data.
 export const refSchema = z.object({
@@ -14,6 +15,36 @@ export const resolvableRefSchema = <T extends z.ZodTypeAny>(
     ref: z.string(),
     _resolved: resolvedSchema.optional(),
   });
+
+// A resolvable reference to the archival object (or occasionally a resource)
+// immediately above a record in the tree. Both `repoResourcesSchema` and
+// `repoArchivalObjectSchema` use this for their `parent` field, but the full
+// archival object schema lives in RepoArchivalObjectsSchema.ts, which already
+// imports from this module — a value import in the other direction would be
+// a genuine circular dependency and deadlock on whichever file's module
+// happens to load first. `registerArchivalObjectSchema` lets that module
+// plug its schema in after the fact instead, keeping the import graph
+// one-directional.
+let archivalObjectSchema: z.ZodType<ArchivalObjectRecord> | undefined;
+export function registerArchivalObjectSchema(
+  schema: z.ZodType<ArchivalObjectRecord>,
+): void {
+  archivalObjectSchema = schema;
+}
+
+export const parentSchema: z.ZodType<{
+  ref: string;
+  _resolved?: ArchivalObjectRecord;
+}> = resolvableRefSchema(
+  z.lazy(() => {
+    if (!archivalObjectSchema) {
+      throw new Error(
+        'parentSchema used before RepoArchivalObjectsSchema.js registered its schema',
+      );
+    }
+    return archivalObjectSchema;
+  }),
+);
 
 export const dateSchema = z
   .object({
@@ -519,6 +550,7 @@ export interface ResourceRecord {
   metadata_rights_declarations?: unknown[];
   repository: z.infer<typeof repositorySchema>;
   tree?: z.infer<typeof treeSchema>;
+  parent?: { ref: string; _resolved?: ArchivalObjectRecord };
 }
 
 export const collectionRefSchema: z.ZodType<{
@@ -693,7 +725,7 @@ export const repoResourcesSchema = z
     classifications: z.array(classificationSchema).optional(),
     notes: z.array(noteSchema),
     metadata_rights_declarations: z.array(z.unknown()).optional(),
-    parent: refSchema.optional(),
+    parent: parentSchema.optional(),
     position: z.number().optional(),
     ref_id: z.string().optional(),
     resource: refSchema.optional(),

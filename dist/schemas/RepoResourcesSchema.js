@@ -9,6 +9,25 @@ export const resolvableRefSchema = (resolvedSchema) => z.object({
     ref: z.string(),
     _resolved: resolvedSchema.optional(),
 });
+// A resolvable reference to the archival object (or occasionally a resource)
+// immediately above a record in the tree. Both `repoResourcesSchema` and
+// `repoArchivalObjectSchema` use this for their `parent` field, but the full
+// archival object schema lives in RepoArchivalObjectsSchema.ts, which already
+// imports from this module — a value import in the other direction would be
+// a genuine circular dependency and deadlock on whichever file's module
+// happens to load first. `registerArchivalObjectSchema` lets that module
+// plug its schema in after the fact instead, keeping the import graph
+// one-directional.
+let archivalObjectSchema;
+export function registerArchivalObjectSchema(schema) {
+    archivalObjectSchema = schema;
+}
+export const parentSchema = resolvableRefSchema(z.lazy(() => {
+    if (!archivalObjectSchema) {
+        throw new Error('parentSchema used before RepoArchivalObjectsSchema.js registered its schema');
+    }
+    return archivalObjectSchema;
+}));
 export const dateSchema = z
     .object({
     lock_version: z.number(),
@@ -563,7 +582,7 @@ export const repoResourcesSchema = z
     classifications: z.array(classificationSchema).optional(),
     notes: z.array(noteSchema),
     metadata_rights_declarations: z.array(z.unknown()).optional(),
-    parent: refSchema.optional(),
+    parent: parentSchema.optional(),
     position: z.number().optional(),
     ref_id: z.string().optional(),
     resource: refSchema.optional(),
