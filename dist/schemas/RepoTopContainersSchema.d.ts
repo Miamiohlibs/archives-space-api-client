@@ -32,7 +32,7 @@ export declare const repoTopContainerSchema: import("zod").ZodObject<{
             create_time: import("zod").ZodString;
             system_mtime: import("zod").ZodString;
             user_mtime: import("zod").ZodString;
-        }, import("zod/v4/core").$catchall<import("zod").ZodOptional<import("zod").ZodString>>>>;
+        }, import("zod/v4/core").$catchall<import("zod").ZodOptional<import("zod").ZodUnion<readonly [import("zod").ZodString, import("zod").ZodNumber, import("zod").ZodBoolean]>>>>>;
     }, import("zod/v4/core").$strip>;
     collection: import("zod").ZodArray<import("zod").ZodType<{
         ref: string;
@@ -88,7 +88,7 @@ export declare const repoTopContainerSchema: import("zod").ZodObject<{
         linked_records: import("zod").ZodObject<{
             ref: import("zod").ZodString;
         }, import("zod/v4/core").$strip>;
-    }, import("zod/v4/core").$catchall<import("zod").ZodOptional<import("zod").ZodString>>>>;
+    }, import("zod/v4/core").$catchall<import("zod").ZodOptional<import("zod").ZodUnion<readonly [import("zod").ZodString, import("zod").ZodNumber, import("zod").ZodBoolean]>>>>>;
     created_by: import("zod").ZodOptional<import("zod").ZodString>;
     last_modified_by: import("zod").ZodOptional<import("zod").ZodString>;
     create_time: import("zod").ZodString;
