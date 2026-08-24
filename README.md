@@ -12,6 +12,18 @@ You will need an ArchivesSpace username and password key with bib permissions to
 npm install @kenxirwin/archives-space-api-client
 ```
 
+#### Sample .env file
+
+```
+USERNAME=yourAspaceApiUser
+PASSWORD=yourAspaceApiPassword
+ASPACE_BASE_URL=https://archivesspace.your.org/api
+# provide a working example endpoint for each of the three types of API calls:
+REPO_RESOURCES_TEST_URL=https://archivesspace.your.org/api/repositories/2/resources/634
+TOP_CONTAINERS_TEST_URL=https://archivesspace.your.org/api/repositories/2/top_containers/7836
+ARCHIVAL_OBJECTS_TEST_URL=https://archivesspace.your.org/api/repositories/2/archival_objects/5616
+```
+
 ### Usage
 
 #### Importing
