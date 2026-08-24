@@ -9,6 +9,9 @@ import { repoArchivalObjectSchema } from '../dist/schemas/RepoArchivalObjectsSch
 const baseUrl = process.env.ASPACE_BASE_URL || '';
 const username = process.env.USERNAME || '';
 const password = process.env.PASSWORD || '';
+const RepoResourcesTestUrl = process.env.REPO_RESOURCES_TEST_URL || '';
+const TopContainersTestUrl = process.env.TOP_CONTAINERS_TEST_URL || '';
+const ArchivalObjectsTestUrl = process.env.ARCHIVAL_OBJECTS_TEST_URL || '';
 
 describe('getUrl (unit, mocked executeFetch)', () => {
   afterEach(() => {
@@ -88,8 +91,7 @@ describe('getUrl (live/async, tested against Miami University endpoints, vpn req
     });
     await client.getToken();
     console.log(`Token: ${client.token}`);
-    const url =
-      'https://archivesstaff.lib.miamioh.edu/api/repositories/2/resources/634';
+    const url = RepoResourcesTestUrl;
     const raw = await client.getUrl(url);
     const results = repoResourcesSchema.parse(raw);
     expect(results).toEqual(raw);
@@ -102,8 +104,7 @@ describe('getUrl (live/async, tested against Miami University endpoints, vpn req
       password,
     });
     await client.getToken();
-    const url =
-      'https://archivesstaff.lib.miamioh.edu/api/repositories/2/top_containers/7836';
+    const url = TopContainersTestUrl;
     const raw = await client.getUrl(url);
     const results = repoTopContainerSchema.parse(raw);
     expect(results).toEqual(raw);
@@ -116,8 +117,7 @@ describe('getUrl (live/async, tested against Miami University endpoints, vpn req
       password,
     });
     await client.getToken();
-    const url =
-      'https://archivesstaff.lib.miamioh.edu/api/repositories/2/archival_objects/5616';
+    const url = ArchivalObjectsTestUrl;
     const raw = await client.getUrl(url);
     const results = repoArchivalObjectSchema.parse(raw);
     expect(results).toEqual(raw);
