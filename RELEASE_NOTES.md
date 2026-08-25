@@ -1,5 +1,12 @@
 # Release Notes
 
+## v. 0.3.4
+
+- made the catchAll statements in RepoResourcesSchema more permissive -- accepts z.any().optional()
+- added a new knownValidResponse test case
+- removed hard-coded test urls from getUrl.test.ts; replaced with .env settings
+- removed .env from repo
+
 ## v. 0.3.3
 
 ### Added
