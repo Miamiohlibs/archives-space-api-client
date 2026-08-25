@@ -68,7 +68,7 @@ export const dateSchema = z
     system_mtime: z.string(),
     user_mtime: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 export const extentSchema = z
   .object({
@@ -83,7 +83,7 @@ export const extentSchema = z
     system_mtime: z.string(),
     user_mtime: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 export const externalIdSchema = z
   .object({
@@ -96,7 +96,7 @@ export const externalIdSchema = z
     system_mtime: z.string(),
     user_mtime: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 // Rights statements. `acts`, `linked_agents`, and `notes` were always empty
 // across the sample data, so their item shapes are left unknown rather than
@@ -119,7 +119,7 @@ export const rightsStatementSchema = z
     system_mtime: z.string(),
     user_mtime: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 // Notes (top-level `notes` and `lang_materials[].notes`) are a discriminated
 // union keyed on `jsonmodel_type`. `note_text` only ever shows up nested
@@ -130,7 +130,7 @@ const noteTextSchema = z
     content: z.string(),
     publish: z.boolean().optional(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 const noteSinglepartSchema = z
   .object({
@@ -141,7 +141,7 @@ const noteSinglepartSchema = z
     content: z.array(z.string()),
     publish: z.boolean().optional(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 const noteMultipartSchema = z
   .object({
@@ -157,7 +157,7 @@ const noteMultipartSchema = z
       })
       .optional(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 const noteLangmaterialSchema = z
   .object({
@@ -167,7 +167,7 @@ const noteLangmaterialSchema = z
     content: z.array(z.string()),
     publish: z.boolean().optional(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 export const noteSchema = z.discriminatedUnion('jsonmodel_type', [
   noteSinglepartSchema,
@@ -186,7 +186,7 @@ const languageAndScriptSchema = z
     system_mtime: z.string(),
     user_mtime: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 export const langMaterialSchema = z
   .object({
@@ -200,7 +200,7 @@ export const langMaterialSchema = z
     system_mtime: z.string(),
     user_mtime: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 // Linked agents (creators, sources, subjects of the resource).
 const structuredDateRangeSchema = z
@@ -215,7 +215,7 @@ const structuredDateRangeSchema = z
     system_mtime: z.string(),
     user_mtime: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 const agentDateOfExistenceSchema = z
   .object({
@@ -228,7 +228,7 @@ const agentDateOfExistenceSchema = z
     system_mtime: z.string(),
     user_mtime: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 const agentNameSchema = z
   .object({
@@ -258,7 +258,7 @@ const agentNameSchema = z
     system_mtime: z.string(),
     user_mtime: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 // Agents carry many sub-record arrays (contacts, conventions declarations,
 // etc.) that were always empty across the sample data, so their item shape
@@ -305,7 +305,7 @@ const agentResolvedSchema = z
     system_mtime: z.string(),
     user_mtime: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 export const linkedAgentSchema = resolvableRefSchema(
   agentResolvedSchema,
@@ -330,7 +330,7 @@ const subjectTermSchema = z
     system_mtime: z.string(),
     user_mtime: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 const subjectResolvedSchema = z
   .object({
@@ -355,7 +355,7 @@ const subjectResolvedSchema = z
     system_mtime: z.string(),
     user_mtime: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 export const subjectSchema = resolvableRefSchema(subjectResolvedSchema);
 
@@ -365,7 +365,7 @@ const classificationPathSchema = z
     identifier: z.string(),
     title: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 const classificationResolvedSchema = z
   .object({
@@ -386,7 +386,7 @@ const classificationResolvedSchema = z
     system_mtime: z.string(),
     user_mtime: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 const classificationSchema = resolvableRefSchema(classificationResolvedSchema);
 
@@ -422,7 +422,7 @@ const linkedEventResolvedSchema = z
     system_mtime: z.string(),
     user_mtime: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 export const linkedEventSchema = resolvableRefSchema(linkedEventResolvedSchema);
 
@@ -448,7 +448,7 @@ const repositoryResolvedSchema = z
     system_mtime: z.string(),
     user_mtime: z.string(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 export const repositorySchema = resolvableRefSchema(repositoryResolvedSchema);
 
@@ -464,7 +464,7 @@ export const activeRestrictionSchema = z
     jsonmodel_type: z.string(),
     linked_records: refSchema,
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
 
 const locationResolvedSchema = z
   .object({
@@ -738,4 +738,4 @@ export const repoResourcesSchema = z
     repository: repositorySchema,
     tree: treeSchema.optional(),
   })
-  .catchall(z.union([z.string(), z.number(), z.boolean()]).optional());
+  .catchall(z.any().optional());
